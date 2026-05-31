@@ -76,7 +76,7 @@ sudo apt update
 
 - 为或基于 debian trixie
 - 使用 ifupdown2 管理网络（不能使用 systemd-networkd/NetworkManager/netplan）
-- 能够将主机名解析为 127.0.0.1 之外的地址
+- 能够将主机名解析为 127.0.0.1 之外的地址（如内网地址或 127.0.1.1）
 
 ```bash
 sudo apt install proxmox-ve
