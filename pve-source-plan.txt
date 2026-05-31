@@ -1,0 +1,142 @@
+# binary packages
+proxmox-ve	proxmox-ve	9.2.0	all
+proxmox-archive-keyring	proxmox-archive-keyring	4.0	all
+pve-manager	pve-manager	9.2.3	all
+pve-qemu-kvm	pve-qemu-kvm	11.0.0-4	arm64
+qemu-server	qemu-server	9.1.16	amd64
+fonts-font-logos	fonts-font-logos	1.0.1-3	all
+ifupdown2	ifupdown2	3.3.0-1+pmx12	all
+libjs-extjs	libjs-extjs	7.0.0-5	all
+libjs-qrcodejs	libjs-qrcodejs	1.20230525-pve1	all
+libproxmox-acme-perl	libproxmox-acme	1.7.1	all
+libproxmox-acme-plugins	libproxmox-acme	1.7.1	all
+libproxmox-rs-perl	libproxmox-rs-perl	0.4.1	all
+libpve-apiclient-perl	libpve-apiclient-perl	3.4.2	all
+libpve-access-control	libpve-access-control	9.1.1	all
+libpve-cluster-api-perl	pve-cluster	9.1.6	all
+libpve-cluster-perl	pve-cluster	9.1.6	all
+libpve-common-perl	libpve-common-perl	9.1.13	all
+libpve-guest-common-perl	libpve-guest-common-perl	6.0.3	all
+libpve-http-server-perl	libpve-http-server-perl	6.0.5	all
+libpve-network-api-perl	libpve-network-perl	1.6.6	all
+libpve-network-perl	libpve-network-perl	1.6.6	all
+libpve-notify-perl	pve-cluster	9.1.6	all
+libpve-rs-perl	libpve-rs-perl	0.15.3	arm64
+libpve-storage-perl	libpve-storage-perl	9.1.5	all
+novnc-pve	novnc-pve	1.7.0-1	all
+proxmox-enterprise-support-keyring	proxmox-enterprise-support-keyring	1.0	all
+proxmox-mail-forward	rust-proxmox-mail-forward	1.0.3	arm64
+proxmox-mini-journalreader	proxmox-mini-journalreader	1.6	arm64
+proxmox-termproxy	proxmox-termproxy	2.1.0	arm64
+proxmox-widget-toolkit	proxmox-widget-toolkit	5.2.3	all
+pve-cluster	pve-cluster	9.1.6	arm64
+pve-container	pve-container	6.1.10	all
+pve-docs	pve-docs	9.2.2	all
+pve-firewall	pve-firewall	6.0.4	arm64
+pve-ha-manager	pve-ha-manager	5.2.4	arm64
+pve-i18n	proxmox-i18n	3.7.5	all
+pve-xtermjs	pve-xtermjs	6.0.0-1	all
+pve-yew-mobile-gui	pve-yew-mobile-gui	0.7.0	arm64
+spiceterm	spiceterm	3.4.2	amd64
+vncterm	vncterm	1.9.2	amd64
+proxmox-firewall	proxmox-firewall	1.2.3	arm64
+proxmox-offline-mirror-helper	rust-proxmox-offline-mirror	0.7.4	arm64
+pve-nvidia-vgpu-helper	pve-nvidia-vgpu-helper	0.3.1	all
+libproxmox-backup-qemu0	proxmox-backup-qemu	2.0.2	amd64
+proxmox-websocket-tunnel	rust-proxmox-websocket-tunnel	1.0.0	arm64
+pve-edk2-firmware-legacy	pve-edk2-firmware	4.2025.05-2	all
+pve-edk2-firmware	pve-edk2-firmware	4.2025.05-2	all
+pve-edk2-firmware-ovmf	pve-edk2-firmware	4.2025.05-2	all
+swtpm	swtpm	0.8.0+pve3	amd64
+swtpm-tools	swtpm	0.8.0+pve3	amd64
+proxmox-backup-file-restore	rust-proxmox-backup	4.2.1-1	arm64
+libcrypt-openssl-rsa-perl	libcrypt-openssl-rsa-perl	0.35-1.1	amd64
+librrds-perl	rrdtool	1.7.2-4.2+pve4	amd64
+rrdcached	rrdtool	1.7.2-4.2+pve4	amd64
+frr-pythontools	frr	10.6.1-1+pve2	all
+lvm2	lvm2	2.03.31-2+pmx1	amd64
+proxmox-backup-client	rust-proxmox-backup	4.2.1-1	arm64
+smartmontools	smartmontools	7.5-pve2	amd64
+pve-esxi-import-tools	pve-esxi-import-tools	1.0.1	arm64
+corosync	corosync	3.1.10-pve2	amd64
+libcmap4	corosync	3.1.10-pve2	amd64
+libcorosync-common4	corosync	3.1.10-pve2	amd64
+libcpg4	corosync	3.1.10-pve2	amd64
+libquorum5	corosync	3.1.10-pve2	amd64
+librrd8t64	rrdtool	1.7.2-4.2+pve4	amd64
+lxc-pve	lxc-pve	7.0.0-2	amd64
+pve-lxc-syscalld	pve-lxc-syscalld	2.0.2	arm64
+pve-yew-mobile-i18n	proxmox-i18n	3.7.5	all
+proxmox-offline-mirror-docs	rust-proxmox-offline-mirror	0.7.4	all
+swtpm-libs	swtpm	0.8.0+pve3	amd64
+libtpms0	libtpms	0.9.7+pve2	amd64
+frr	frr	10.6.1-1+pve2	amd64
+libdevmapper-event1.02.1	lvm2	2:1.02.205-2+pmx1	amd64
+dmsetup	lvm2	2:1.02.205-2+pmx1	amd64
+dmeventd	lvm2	2:1.02.205-2+pmx1	amd64
+libcfg7	corosync	3.1.10-pve2	amd64
+libknet1t64	kronosnet	1.31-pve1	amd64
+libnozzle1t64	kronosnet	1.31-pve1	amd64
+libvotequorum8	corosync	3.1.10-pve2	amd64
+apparmor	apparmor	4.1.1-pmx1	amd64
+lxcfs	lxcfs	7.0.0-pve1	amd64
+libapparmor1	apparmor	4.1.1-pmx1	amd64
+libdevmapper1.02.1	lvm2	2:1.02.205-2+pmx1	amd64
+liblvm2cmd2.03	lvm2	2.03.31-2+pmx1	amd64
+# source packages
+proxmox-ve
+proxmox-archive-keyring
+pve-manager
+pve-qemu-kvm
+qemu-server
+fonts-font-logos
+ifupdown2
+libjs-extjs
+libjs-qrcodejs
+libproxmox-acme
+libproxmox-rs-perl
+libpve-apiclient-perl
+libpve-access-control
+pve-cluster
+libpve-common-perl
+libpve-guest-common-perl
+libpve-http-server-perl
+libpve-network-perl
+libpve-rs-perl
+libpve-storage-perl
+novnc-pve
+proxmox-enterprise-support-keyring
+rust-proxmox-mail-forward
+proxmox-mini-journalreader
+proxmox-termproxy
+proxmox-widget-toolkit
+pve-container
+pve-docs
+pve-firewall
+pve-ha-manager
+proxmox-i18n
+pve-xtermjs
+pve-yew-mobile-gui
+spiceterm
+vncterm
+proxmox-firewall
+rust-proxmox-offline-mirror
+pve-nvidia-vgpu-helper
+proxmox-backup-qemu
+rust-proxmox-websocket-tunnel
+pve-edk2-firmware
+swtpm
+rust-proxmox-backup
+libcrypt-openssl-rsa-perl
+rrdtool
+frr
+lvm2
+smartmontools
+pve-esxi-import-tools
+corosync
+lxc-pve
+pve-lxc-syscalld
+libtpms
+kronosnet
+apparmor
+lxcfs
