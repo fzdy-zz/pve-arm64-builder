@@ -1,16 +1,20 @@
-# PVE ARM64 Builder
+# PVE ARM64/RISCV64 Builder
 
-这个目录用于构建 Debian trixie 上的 Proxmox VE arm64 deb 包。容器本身是 amd64，使用交叉构建生成 arm64 包。
+This repository builds Proxmox VE Debian packages for Debian trixie on `arm64`
+and `riscv64`. The build container itself runs on `amd64` and uses Debian
+cross-building toolchains.
 
-## 构建开发容器
+## Build The Container
 
-在 `pve-arm64-builder` 仓库目录内执行：
+Run this inside the repository directory.
 
 ```bash
 docker build -t pve-arm64-builder:trixie .
 ```
 
-后台运行容器，并把 `pve-arm64-builder` 的父目录挂载到 `/workspaces/pve`：
+Run the container in the background. The parent directory of this repository is
+mounted at `/workspaces/pve`, so the repository path inside the container is
+`/workspaces/pve/pve-arm64-builder`.
 
 ```bash
 docker run -d --name pve-arm64-builder \
@@ -20,71 +24,156 @@ docker run -d --name pve-arm64-builder \
   sleep infinity
 ```
 
-进入容器：
+Enter the container when manual inspection is needed.
 
 ```bash
 docker exec -it pve-arm64-builder bash
 ```
 
-## 构建 PVE arm64 包
+## Build ARM64
+
+Build all supported Proxmox VE packages for `arm64`.
 
 ```bash
-docker exec pve-arm64-builder bash -lc '/workspaces/pve/pve-arm64-builder/build_pve_arm64.sh'
+docker exec pve-arm64-builder bash -lc \
+  '/workspaces/pve/pve-arm64-builder/build_pve_arm64.sh'
 ```
 
-输出目录：
+Artifacts and logs:
 
 ```text
-out/arm64
+../out/arm64/
+../logs/pve-arm64/
 ```
 
-脚本会拉取源码、排除 kernel/zfs/ceph 相关组件、构建 arm64 deb，并生成 flat apt 源索引：
+## Build RISCV64
+
+Build all supported Proxmox VE packages for `riscv64`.
+
+```bash
+docker exec pve-arm64-builder bash -lc \
+  '/workspaces/pve/pve-arm64-builder/build_pve_riscv64.sh'
+```
+
+Artifacts and logs:
 
 ```text
-out/arm64/Packages
-out/arm64/Packages.gz
+../out/riscv64/
+../logs/pve-riscv64/
 ```
 
-## 使用生成的 apt 源
+## Build Options
 
-本机文件源：
+Rebuild only selected source packages. This is useful after changing a patch or
+fixing one package.
+
+```bash
+docker exec pve-arm64-builder bash -lc \
+  'ONLY_SOURCES="qemu-server lxc-pve" MAX_PASSES=1 RESUME_BUILT=0 \
+   /workspaces/pve/pve-arm64-builder/build_pve_riscv64.sh'
+```
+
+Common environment variables:
+
+```text
+ONLY_SOURCES   Space or comma separated source package list.
+MAX_PASSES     Build retry passes. Default: 4.
+RESUME_BUILT   Reuse LOG_DIR/built.txt when set to 1. Default: 1.
+OUT_DIR        Override output directory.
+LOG_DIR        Override log directory.
+PATCH_DIR      Override patch directory. Default: pve-arm64-builder/patches.
+```
+
+## Local Patches
+
+Patches are loaded recursively from `patches/`. A patch is applied when its
+filename matches one of these patterns:
+
+```text
+<source>.patch
+<source>-*.patch
+<repo-name>.patch
+<repo-name>-*.patch
+```
+
+The current patch set includes QEMU target extensions for `riscv64` and
+`loongarch64`, plus fixes for non-x86 Proxmox VE runtime issues found during
+testing.
+
+## APT Repository
+
+Each build refreshes a flat apt repository:
+
+```text
+../out/arm64/Packages
+../out/arm64/Packages.gz
+../out/riscv64/Packages
+../out/riscv64/Packages.gz
+```
+
+Use a local file source on the build host.
 
 ```bash
 echo "deb [trusted=yes arch=arm64] file:$(dirname "$PWD")/out/arm64 ./" \
   | sudo tee /etc/apt/sources.list.d/pve-arm64-local.list
+
+echo "deb [trusted=yes arch=riscv64] file:$(dirname "$PWD")/out/riscv64 ./" \
+  | sudo tee /etc/apt/sources.list.d/pve-riscv64-local.list
+
 sudo apt update
 ```
 
-HTTP 源：
+Serve the repository over HTTP for a target machine.
 
 ```bash
-cd "$(dirname "$PWD")/out/arm64"
+cd "$(dirname "$PWD")/out/riscv64"
 python3 -m http.server 8080
 ```
 
-目标机添加：
+Add the HTTP repository on the target machine. Replace the architecture and URL
+as needed.
 
 ```bash
-echo 'deb [trusted=yes arch=arm64] http://BUILD_HOST:8080 ./' \
-  | sudo tee /etc/apt/sources.list.d/pve-arm64-local.list
+echo 'deb [trusted=yes arch=riscv64] http://BUILD_HOST:8080 ./' \
+  | sudo tee /etc/apt/sources.list.d/pve-riscv64-local.list
 sudo apt update
 ```
 
-## 安装
+## Install
 
-请确保当前系统：
-
-- 为或基于 debian trixie
-- 使用 ifupdown2 管理网络（不能使用 systemd-networkd/NetworkManager/netplan）
-- 能够将主机名解析为 127.0.0.1 之外的地址（如内网地址或 127.0.1.1）
+The target system should be Debian trixie or based on Debian trixie. Networking
+should be managed by `ifupdown2`, not `systemd-networkd`, NetworkManager or
+netplan. The host name should resolve to a non-loopback address or to
+`127.0.1.1`.
 
 ```bash
 sudo apt install proxmox-ve
 ```
 
-## 说明
+If a package was rebuilt with the same version, clear apt's cache before
+reinstalling.
 
-- Debian trixie 和 Proxmox devel trixie 源使用 ZJU mirror。
-- `proxmox-ve`、`pve-manager`、`libpve-storage-perl` 中的 kernel/zfs/ceph/librados 相关依赖已按当前 arm64 无内核组件方案放宽。
-- 若后续真的使用 Ceph/RBD/CephFS，需要额外安装对应 Ceph 包。
-- 重新构建前可删除 `out/arm64` 和 `logs/pve-arm64` 做 clean rebuild。
+```bash
+sudo apt clean
+sudo apt update
+sudo apt install --reinstall qemu-server lxc-pve pve-manager
+```
+
+## Notes
+
+- `proxmox-ve`, `pve-manager` and `libpve-storage-perl` dependency metadata is
+  relaxed for the no-kernel/no-ZFS/no-Ceph build.
+- Ceph/RBD/CephFS paths are kept optional. Install the relevant Ceph packages if
+  those features are required.
+- `pve-qemu-kvm` for `riscv64` includes the `qemu-system-riscv64` target.
+- `lxc-pve` must be built with AppArmor support; the scripts pin the cross
+  `libapparmor-dev` dependency to match the native build architecture package.
+
+## Clean Rebuild
+
+Remove outputs and logs before a clean rebuild.
+
+```bash
+rm -rf ../out/arm64 ../logs/pve-arm64
+rm -rf ../out/riscv64 ../logs/pve-riscv64
+```
