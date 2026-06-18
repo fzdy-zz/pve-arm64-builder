@@ -3,12 +3,11 @@ FROM --platform=linux/amd64 debian:trixie-slim
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
 
 ARG DEBIAN_FRONTEND=noninteractive
-# === 使用官方源（GitHub Actions 更快、更稳定）===
+# 使用官方源（GitHub Actions 更快）
 ARG DEBIAN_MIRROR=http://deb.debian.org/debian
 ARG DEBIAN_SECURITY_MIRROR=http://security.debian.org/debian-security
 ARG PROXMOX_MIRROR=https://enterprise.proxmox.com/debian
 ARG PROXMOX_SUITE=trixie
-ARG PROXMOX_KEYRING_VERSION=4.0
 ARG INSTALL_ALL_PROXMOX_DEVEL_PACKAGES=true
 ARG USERNAME=pve
 ARG USER_UID=1000
@@ -16,7 +15,7 @@ ARG USER_GID=1000
 
 ENV LANG=C.UTF-8
 
-# Debian 官方源
+# Debian 官方源（保持最小改动）
 RUN printf '%s\n' \
         'Types: deb' \
         "URIs: ${DEBIAN_MIRROR}" \
@@ -38,13 +37,9 @@ RUN apt-get update \
         gzip \
     && rm -rf /var/lib/apt/lists/*
 
-# Proxmox keyring（官方地址）
-RUN keyring_deb="/tmp/proxmox-archive-keyring_${PROXMOX_KEYRING_VERSION}_all.deb" \
-    && curl -fsSL \
-        "${PROXMOX_MIRROR}/debian/devel/dists/${PROXMOX_SUITE}/main/binary-amd64/proxmox-archive-keyring_${PROXMOX_KEYRING_VERSION}_all.deb" \
-        -o "${keyring_deb}" \
-    && dpkg -i "${keyring_deb}" \
-    && rm -f "${keyring_deb}"
+# === Proxmox keyring（Trixie 正确方式）===
+RUN curl -fsSL https://enterprise.proxmox.com/debian/proxmox-archive-keyring-trixie.gpg \
+        -o /usr/share/keyrings/proxmox-archive-keyring.gpg
 
 # Proxmox devel 源
 RUN printf '%s\n' \
