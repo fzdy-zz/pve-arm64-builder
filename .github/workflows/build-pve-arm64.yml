@@ -36,12 +36,13 @@ jobs:
             -v ${{ github.workspace }}:/workspaces/pve \
             -w /workspaces/pve \
             -e OUT_DIR=/workspaces/pve/out/arm64 \
-            -e LOG_DIR=/workspaces/pve/logs/pve-arm64 \
+            -e LOG_DIR=/workspaces/pve/logs \
             -e RESUME_BUILT=1 \
             -e MAX_PASSES=3 \
-            -e JOBS=4 \   # GitHub runner CPU 限制，调低防 OOM
+            -e JOBS=4 \
+            -e INSTALL_ALL_PROXMOX_DEVEL_PACKAGES=false \   # 关键
             pve-arm64-builder:trixie \
-            bash -lc '/workspaces/pve/pve-arm64-builder/build_pve_arm64.sh'
+            bash -lc '/workspaces/pve/build_pve_arm64.sh'
 
       - name: Prepare repo structure for GitHub Pages
         run: |
