@@ -3,6 +3,11 @@ FROM --platform=linux/amd64 debian:trixie-slim
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
 
 ARG DEBIAN_FRONTEND=noninteractive
+ARG DEBIAN_MIRROR=http://chinanet.mirrors.ustc.edu.cn/debian
+ARG DEBIAN_SECURITY_MIRROR=http://chinanet.mirrors.ustc.edu.cn/debian-security
+ARG PROXMOX_MIRROR=https://chinanet.mirrors.ustc.edu.cn/proxmox
+ARG PROXMOX_SUITE=trixie
+ARG PROXMOX_KEYRING_VERSION=4.0
 ARG INSTALL_ALL_PROXMOX_DEVEL_PACKAGES=true
 ARG USERNAME=pve
 ARG USER_UID=1000
@@ -10,35 +15,34 @@ ARG USER_GID=1000
 
 ENV LANG=C.UTF-8
 
-# 1. 优先使用原生基本源，安装 apt-transport-https 与 ca-certificates
+RUN printf '%s\n' \
+        'Types: deb' \
+        "URIs: ${DEBIAN_MIRROR}" \
+        "Suites: ${PROXMOX_SUITE} ${PROXMOX_SUITE}-updates" \
+        'Components: main' \
+        'Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg' \
+        '' \
+        'Types: deb' \
+        "URIs: ${DEBIAN_SECURITY_MIRROR}" \
+        "Suites: ${PROXMOX_SUITE}-security" \
+        'Components: main' \
+        'Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg' \
+        > /etc/apt/sources.list.d/debian.sources
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        apt-transport-https \
         ca-certificates \
         curl \
         gzip \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. 此时系统已具备全量 HTTPS 校验能力，将所有源变更为强制 HTTPS 协议
-RUN printf '%s\n' \
-        'Types: deb' \
-        'URIs: https://debian.org' \
-        'Suites: trixie trixie-updates' \
-        'Components: main contrib non-free-firmware' \
-        'Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg' \
-        '' \
-        'Types: deb' \
-        'URIs: https://debian.org' \
-        'Suites: trixie-security' \
-        'Components: main contrib non-free-firmware' \
-        'Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg' \
-        > /etc/apt/sources.list.d/debian.sources
+RUN keyring_deb="/tmp/proxmox-archive-keyring_${PROXMOX_KEYRING_VERSION}_all.deb" \
+    && curl -fsSL \
+        "${PROXMOX_MIRROR}/debian/devel/dists/${PROXMOX_SUITE}/main/binary-amd64/proxmox-archive-keyring_${PROXMOX_KEYRING_VERSION}_all.deb" \
+        -o "${keyring_deb}" \
+    && dpkg -i "${keyring_deb}" \
+    && rm -f "${keyring_deb}"
 
-# 3. 通过安全的 HTTPS 链路下载 Proxmox 官方 GPG 密钥
-RUN curl -fsSL https://proxmox.com \
-        -o /usr/share/keyrings/proxmox-archive-keyring.gpg
-
-# 4. 配置 Proxmox 官方开发源与无订阅源，并强制全部走 HTTPS 链接
 RUN printf '%s\n' \
         'Package: *' \
         'Pin: release o=Proxmox' \
@@ -46,19 +50,12 @@ RUN printf '%s\n' \
         > /etc/apt/preferences.d/proxmox-devel \
     && printf '%s\n' \
         'Types: deb' \
-        'URIs: https://proxmox.com' \
-        'Suites: trixie' \
-        'Components: pve-no-subscription' \
-        'Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg' \
-        '' \
-        'Types: deb' \
-        'URIs: https://proxmox.com' \
-        'Suites: trixie' \
+        "URIs: ${PROXMOX_MIRROR}/debian/devel/" \
+        "Suites: ${PROXMOX_SUITE}" \
         'Components: main' \
         'Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg' \
-        > /etc/apt/sources.list.d/proxmox.sources
+        > /etc/apt/sources.list.d/proxmox-devel.sources
 
-# 5. 更新 HTTPS 软件源并安装编译开发环境，根据参数自动解析并下载所有 Proxmox 研发包
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         apt-utils \
@@ -81,8 +78,8 @@ RUN apt-get update \
         rsync \
         sudo \
         vim-tiny \
-    && if [ "${INSTALL_ALL_PROXMOX_DEVEL_PACKAGES}" = "true" ]; then \
-        curl -fsSL "https://proxmox.com/dists/trixie/main/binary-amd64/Packages.gz" \
+    && if [[ "${INSTALL_ALL_PROXMOX_DEVEL_PACKAGES}" == "true" ]]; then \
+        curl -fsSL "${PROXMOX_MIRROR}/debian/devel/dists/${PROXMOX_SUITE}/main/binary-amd64/Packages.gz" \
             | gzip -dc \
             | awk '/^Package: / { print $2 }' \
             | sort -u \
@@ -92,7 +89,6 @@ RUN apt-get update \
     fi \
     && rm -rf /var/lib/apt/lists/*
 
-# 6. 配置普通开发用户与 sudo 免密权限
 RUN groupadd --gid "${USER_GID}" "${USERNAME}" \
     && useradd --uid "${USER_UID}" --gid "${USER_GID}" --create-home --shell /bin/bash "${USERNAME}" \
     && printf '%s ALL=(ALL) NOPASSWD:ALL\n' "${USERNAME}" > "/etc/sudoers.d/${USERNAME}" \
