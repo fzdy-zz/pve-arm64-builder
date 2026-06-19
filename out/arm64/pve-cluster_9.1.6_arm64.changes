@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Sun, 24 May 2026 01:53:29 +0200
+Source: pve-cluster
+Binary: libpve-cluster-api-perl libpve-cluster-perl libpve-notify-perl pve-cluster pve-cluster-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: all arm64
+Version: 9.1.6
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libpve-cluster-api-perl - Proxmox Virtual Environment cluster Perl API modules.
+ libpve-cluster-perl - Proxmox Virtual Environment cluster Perl modules.
+ libpve-notify-perl - Notify helper module.
+ pve-cluster - "pmxcfs" distributed cluster filesystem for Proxmox Virtual Envir
+Changes:
+ pve-cluster (9.1.6) trixie; urgency=medium
+ .
+   * datacenter config: ignore an empty 'crs' setting instead of crashing the
+     HA cluster resource manager on it; the empty value is dropped with a
+     warning on read and stripped on the next write, so a broken config heals
+     on the next save.
+Checksums-Sha1:
+ e550dabf57c3be246ae99ee87b330411968d837f 25832 libpve-cluster-api-perl_9.1.6_all.deb
+ 74b5bf80e704b9cc1478c45cbb15f8575832def1 22800 libpve-cluster-perl_9.1.6_all.deb
+ 1fd672db416be280a81326ea9a3162a762080f96 9852 libpve-notify-perl_9.1.6_all.deb
+ 101412050091da5750b68703fafa9506a01a4e32 380016 pve-cluster-dbgsym_9.1.6_arm64.deb
+ 45d530072d3047f51109d3a470b33fe37d7e1955 9081 pve-cluster_9.1.6_arm64.buildinfo
+ 7d53a7a3e5131e76b6803f709d88a0e4c16de875 104176 pve-cluster_9.1.6_arm64.deb
+Checksums-Sha256:
+ 75988d6a3a33a23e8b655cad4d350f2a0c790edbc41493dddd8eeef2afd97dd9 25832 libpve-cluster-api-perl_9.1.6_all.deb
+ 8a8d749f3b4f3e92460466b4c89c1ca26e878b9ab2b17f62ce42b795c72cc540 22800 libpve-cluster-perl_9.1.6_all.deb
+ fb0c92fa3ae79d696fad7f007e1ac99d65aae9fab00df3e2b2045f146300f47f 9852 libpve-notify-perl_9.1.6_all.deb
+ 33bb3a90e39caf8eff8dc2bd942616231a429bb5710d86fbe544dddba276dbf1 380016 pve-cluster-dbgsym_9.1.6_arm64.deb
+ 2cbbcb3cc3c91920301658241a6df1743bcf4d40cd541a45fa7da5d5fda9faa0 9081 pve-cluster_9.1.6_arm64.buildinfo
+ 147d3d7588c8312688625af75ff7c0b454cda2f1dc8ebc3457b84b286c268b1c 104176 pve-cluster_9.1.6_arm64.deb
+Files:
+ 74b69f71f6c60d74f975e5a67b3b262e 25832 admin optional libpve-cluster-api-perl_9.1.6_all.deb
+ 2e0e3ca03ed18aadd4b8f16a899ac2a8 22800 admin optional libpve-cluster-perl_9.1.6_all.deb
+ 71690fef9da7e49b804e91888293bc26 9852 admin optional libpve-notify-perl_9.1.6_all.deb
+ 45fb1fc9f9768a7d2faab30394e2d7fe 380016 debug optional pve-cluster-dbgsym_9.1.6_arm64.deb
+ bb291cb9002f53332c6289c539ef95d8 9081 admin optional pve-cluster_9.1.6_arm64.buildinfo
+ 34bc5ac0bb2b087f6b20e905b4cc930a 104176 admin optional pve-cluster_9.1.6_arm64.deb

@@ -1,0 +1,183 @@
+HEAD is now at 680dfc7 bump version to 7.0.0-2
+Removing lxc-pve-7.0.0/
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libapparmor1:arm64 is already the newest version (4.1.0-1).
+libapparmor-dev:arm64 is already the newest version (4.1.0-1).
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpython3-all-dev:arm64 libpython3-dev:arm64
+  libpython3.13:arm64 libpython3.13-dev:arm64 libpython3.13-minimal:arm64
+  libpython3.13-stdlib:arm64 libsm-dev:arm64 libsm6:arm64 libtcl8.6:arm64
+  libthai-dev:arm64 libxcb-render0-dev:arm64 libxcb-shm0-dev:arm64
+  libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64 libxml2-dev:arm64
+  libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+dpkg-buildpackage: info: source package lxc-pve-cross-build-deps-depends
+dpkg-buildpackage: info: source version 7.0.0-2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ debian/rules clean
+dh clean
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_clean
+ debian/rules binary
+dh binary
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/lxc-pve-cross-build-deps-depends/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'lxc-pve-cross-build-deps-depends' in '../lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.deb'.
+ dpkg-genbuildinfo --build=binary -O../lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+(Reading database ... 167248 files and directories currently installed.)
+Preparing to unpack lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.deb ...
+Unpacking lxc-pve-cross-build-deps-depends:arm64 (7.0.0-2) over (7.0.0-2) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpython3-all-dev:arm64 libpython3-dev:arm64
+  libpython3.13:arm64 libpython3.13-dev:arm64 libpython3.13-minimal:arm64
+  libpython3.13-stdlib:arm64 libsm-dev:arm64 libsm6:arm64 libtcl8.6:arm64
+  libthai-dev:arm64 libxcb-render0-dev:arm64 libxcb-shm0-dev:arm64
+  libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64 libxml2-dev:arm64
+  libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+1 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Setting up lxc-pve-cross-build-deps-depends:arm64 (7.0.0-2) ...
+test -f "lxc/debian/changelog" || git submodule update --init
+rm -rf lxc-pve-7.0.0
+cp -a lxc lxc-pve-7.0.0
+cp -a debian lxc-pve-7.0.0/debian
+mkdir lxc-pve-7.0.0/debian/config
+for i in config/*.conf.in; do \
+  sed -e 's|@LXCTEMPLATECONFIG@|/usr/share/lxc/config|g' $i > lxc-pve-7.0.0/debian/${i%.in} ; \
+done
+echo "git clone git://git.proxmox.com/git/lxc.git\\ngit checkout 680dfc7595269dff54d7d262f3cb7dc4b5297f3d" > lxc-pve-7.0.0/debian/SOURCE
+rm -f *.deb
+cd lxc-pve-7.0.0; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package lxc-pve
+dpkg-buildpackage: info: source version 7.0.0-2
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying apparmor/0001-apparmor-allow-lxc-start-to-create-user-namespaces.patch
+dpkg-source: info: applying apparmor/0002-apparmor-use-abi-directive-in-apparmor-profiles.patch
+dpkg-source: info: applying pve/0001-PVE-Config-deny-rw-mounting-of-sys-and-proc.patch
+dpkg-source: info: applying pve/0002-PVE-Config-attach-always-use-getent.patch
+dpkg-source: info: applying pve/0003-dhclient-script-set-RFC3442-classless-routes.patch
+dpkg-source: info: applying cgroupv1-warnings/0001-PVE-Revert-lxc-conf-drop-cgroup1-config-options-lxc..patch
+dpkg-source: info: applying cgroupv1-warnings/0002-PVE-ignore-cgroupv1-settings-with-a-warning.patch
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+dh clean
+   debian/rules override_dh_auto_clean
+make[2]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+rm -fr build
+make[2]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   debian/rules override_dh_auto_configure
+make[2]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+mkdir -p build
+cd build && meson .. --prefix=/usr \
+	-Dinit-script=systemd \
+	-Dapparmor=true \
+	-Dseccomp=true \
+	-Dselinux=false \
+	-Dman=true \
+	-Dexamples=false \
+	-Dcgroup-pattern='lxc/%n'
+The Meson build system
+Version: 1.7.0
+Source dir: /workspaces/src/lxc/lxc-pve-7.0.0
+Build dir: /workspaces/src/lxc/lxc-pve-7.0.0/build
+Build type: native build
+Project name: lxc
+Project version: 7.0.0
+
+../meson.build:4:0: ERROR: Could not invoke sanity test executable: [Errno 8] Exec format error: '/workspaces/src/lxc/lxc-pve-7.0.0/build/meson-private/sanitycheckc.exe'.
+
+A full log can be found at /workspaces/src/lxc/lxc-pve-7.0.0/build/meson-logs/meson-log.txt
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+make[2]: *** [debian/rules:18: override_dh_auto_configure] Error 1
+make[2]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+make[1]: *** [debian/rules:11: binary] Error 2
+make[1]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
+dpkg-buildpackage: error: debian/rules binary subprocess returned exit status 2
+make: *** [Makefile:39: lxc-pve_7.0.0-2_arm64.deb] Error 2

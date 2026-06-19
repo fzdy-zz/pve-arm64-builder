@@ -1,0 +1,6 @@
+lvm2
+lxcfs
+lxc-pve
+rust-proxmox-backup
+pve-qemu-kvm
+rust-proxmox-offline-mirror

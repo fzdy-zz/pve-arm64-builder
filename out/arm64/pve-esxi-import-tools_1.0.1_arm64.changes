@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 22 Jul 2025 17:25:46 +0200
+Source: pve-esxi-import-tools
+Binary: pve-esxi-import-tools pve-esxi-import-tools-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64
+Version: 1.0.1
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pve-esxi-import-tools - Tools to allow importing VMs from ESXi hosts
+Changes:
+ pve-esxi-import-tools (1.0.1) trixie; urgency=medium
+ .
+   * skip VMs we cannot parse or are in a bad state gradually instead of
+     failing the whole list VM invocation.
+ .
+   * require proxmox-http >= 1.0.1 to ensure we got HTTP2 support available.
+Checksums-Sha1:
+ e0f747a8ef4766fdd4c8af2ebe2833bf9487b693 14127752 pve-esxi-import-tools-dbgsym_1.0.1_arm64.deb
+ 127c26fa078a8b5fa7088b948bbe0d2d9235a8f1 19477 pve-esxi-import-tools_1.0.1_arm64.buildinfo
+ 1af599ebdfe720b2ec428da0cb22676d920bdfab 1159344 pve-esxi-import-tools_1.0.1_arm64.deb
+Checksums-Sha256:
+ 2fab2435ad459e32200fd4942c54c783952c19bcb4c82234eeeb6ca846388f94 14127752 pve-esxi-import-tools-dbgsym_1.0.1_arm64.deb
+ 90a2aad859ac72ffea937a1c22aa0c5e9e5c80974df6f47176d6abfed32f9f6b 19477 pve-esxi-import-tools_1.0.1_arm64.buildinfo
+ 9d6d439db7415f655b5e317af72dde07d43ca3088f885fecad8e78a6c3a3aa72 1159344 pve-esxi-import-tools_1.0.1_arm64.deb
+Files:
+ 5280ff06b5f64f4dded77d1d3ad3a395 14127752 debug optional pve-esxi-import-tools-dbgsym_1.0.1_arm64.deb
+ fd33fadc8a85b7949bfaae7dc13b9bed 19477 admin optional pve-esxi-import-tools_1.0.1_arm64.buildinfo
+ b081b2e299381282076b1c0e85e746f6 1159344 admin optional pve-esxi-import-tools_1.0.1_arm64.deb

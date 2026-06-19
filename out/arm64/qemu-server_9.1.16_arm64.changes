@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Sun, 24 May 2026 02:01:31 +0200
+Source: qemu-server
+Binary: qemu-server qemu-server-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64
+Version: 9.1.16
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ qemu-server - Qemu Server Tools
+Changes:
+ qemu-server (9.1.16) trixie; urgency=medium
+ .
+   * api schema: vm resume: add description for the nocheck parameter.
+Checksums-Sha1:
+ 0898a49e0f81cbfadabb46723e3fdb54685c21ee 25968 qemu-server-dbgsym_9.1.16_arm64.deb
+ 8776e5dad132ead4ee7ab1283a6abcadec493f83 13768 qemu-server_9.1.16_arm64.buildinfo
+ bd5054b76f5a069de1ed7afd3a291f9011727b7b 269624 qemu-server_9.1.16_arm64.deb
+Checksums-Sha256:
+ 3463c06a53033012b19c66f439db5ced0a8fbcc2045c96c0f01e8e9b2da6d0bb 25968 qemu-server-dbgsym_9.1.16_arm64.deb
+ 2960cd90d853bd9e39f647decfd6fc31e155e21c66c5fe6af6c878995429172a 13768 qemu-server_9.1.16_arm64.buildinfo
+ 4f4c6d9d91bf87dad9b9354cd69d5f413e8681fba84ac4ffda7149d62beabbee 269624 qemu-server_9.1.16_arm64.deb
+Files:
+ 8bde85567934569ed4d3a2cfac30dc21 25968 debug optional qemu-server-dbgsym_9.1.16_arm64.deb
+ c26235c4f85f670a3b02dbd619667f9d 13768 admin optional qemu-server_9.1.16_arm64.buildinfo
+ 48bfb9e3545e8b825de8b71cd6a88019 269624 admin optional qemu-server_9.1.16_arm64.deb

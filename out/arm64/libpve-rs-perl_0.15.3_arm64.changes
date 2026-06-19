@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Thu, 21 May 2026 11:30:35 +0200
+Source: libpve-rs-perl
+Binary: libpve-rs-perl libpve-rs-perl-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64
+Version: 0.15.3
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libpve-rs-perl - PVE parts which have been ported to Rust - Rust source code
+Changes:
+ libpve-rs-perl (0.15.3) trixie; urgency=medium
+ .
+   * rebuild against proxmox-ve-config 0.10.3, which reverts the WireGuard
+     endpoint schema change from 0.10.2; internal node and peer endpoints store
+     only the host again, with the connect port derived from the referenced
+     interface's listen_port at config-generation time.
+ .
+   * Raise the build dependency on proxmox-network-types to 1.1.2 so the
+     stricter HostnameOrIpAddr parsing that the reverted endpoint schema
+     relies on for rejecting accidental host:port input is guaranteed to be
+     present at build time.
+Checksums-Sha1:
+ 776ebb41f75f87bce835bc396d1f7a9b6997b3e9 57422968 libpve-rs-perl-dbgsym_0.15.3_arm64.deb
+ 3d237518dcdbdbf2ef6d03b805b9f1e5ff66a006 40511 libpve-rs-perl_0.15.3_arm64.buildinfo
+ da0b6b8066c507ca0f40b3c9b86404432d02779a 3930948 libpve-rs-perl_0.15.3_arm64.deb
+Checksums-Sha256:
+ 6fb69e61d0aaf1da5a574acb67259004134535872a5863f5a768f36ae7e651e5 57422968 libpve-rs-perl-dbgsym_0.15.3_arm64.deb
+ 2f9600a7d1a5d1bedd75d5871da95e61b35f69ae7f59285013539ac0220def1e 40511 libpve-rs-perl_0.15.3_arm64.buildinfo
+ b081b6aa84147c55d67cc11fe6e7b00c18b7eafae0710b9bd8c6fd2a4f56f4da 3930948 libpve-rs-perl_0.15.3_arm64.deb
+Files:
+ 6d6d4c3418b2f2fc69716d460fd89d58 57422968 debug optional libpve-rs-perl-dbgsym_0.15.3_arm64.deb
+ 087c11a2eeaac1ad033a9aef67a83d58 40511 perl optional libpve-rs-perl_0.15.3_arm64.buildinfo
+ 9ff765a32b1019a6748e90add501399f 3930948 perl optional libpve-rs-perl_0.15.3_arm64.deb

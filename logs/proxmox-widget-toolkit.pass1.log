@@ -1,0 +1,238 @@
+HEAD is now at fcd560b fix #5076: ui: dc: add an optional "audiences" field for open id realms
+dpkg-buildpackage: info: source package proxmox-widget-toolkit-build-deps
+dpkg-buildpackage: info: source version 5.2.5
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/proxmox-widget-toolkit-build-deps/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'proxmox-widget-toolkit-build-deps' in '../proxmox-widget-toolkit-build-deps_5.2.5_all.deb'.
+ dpkg-genbuildinfo --build=binary -O../proxmox-widget-toolkit-build-deps_5.2.5_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../proxmox-widget-toolkit-build-deps_5.2.5_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package proxmox-widget-toolkit-build-deps.
+(Reading database ... 93842 files and directories currently installed.)
+Preparing to unpack proxmox-widget-toolkit-build-deps_5.2.5_all.deb ...
+Unpacking proxmox-widget-toolkit-build-deps (5.2.5) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
+  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
+  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
+  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libjs-marked libsass1 proxmox-biome sassc
+Recommended packages:
+  javascript-common
+The following NEW packages will be installed:
+  libjs-marked libsass1 proxmox-biome sassc
+0 upgraded, 4 newly installed, 0 to remove and 5 not upgraded.
+1 not fully installed or removed.
+Need to get 12.6 MB of archives.
+After this operation, 54.8 MB of additional disk space will be used.
+Get:1 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libjs-marked all 4.2.3+ds+~4.0.7-4 [34.7 kB]
+Get:2 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libsass1 amd64 3.6.5+20231221-3+b1 [638 kB]
+Get:3 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie/main amd64 proxmox-biome amd64 2.4.6-1 [11.9 MB]
+Get:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 sassc amd64 3.6.1+20201027-2+b1 [11.0 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 12.6 MB in 5s (2702 kB/s)
+Selecting previously unselected package libjs-marked.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93846 files and directories currently installed.)
+Preparing to unpack .../libjs-marked_4.2.3+ds+~4.0.7-4_all.deb ...
+Unpacking libjs-marked (4.2.3+ds+~4.0.7-4) ...
+Selecting previously unselected package proxmox-biome.
+Preparing to unpack .../proxmox-biome_2.4.6-1_amd64.deb ...
+Unpacking proxmox-biome (2.4.6-1) ...
+Selecting previously unselected package libsass1:amd64.
+Preparing to unpack .../libsass1_3.6.5+20231221-3+b1_amd64.deb ...
+Unpacking libsass1:amd64 (3.6.5+20231221-3+b1) ...
+Selecting previously unselected package sassc.
+Preparing to unpack .../sassc_3.6.1+20201027-2+b1_amd64.deb ...
+Unpacking sassc (3.6.1+20201027-2+b1) ...
+Setting up proxmox-biome (2.4.6-1) ...
+Setting up libsass1:amd64 (3.6.5+20231221-3+b1) ...
+Setting up sassc (3.6.1+20201027-2+b1) ...
+Setting up libjs-marked (4.2.3+ds+~4.0.7-4) ...
+Setting up proxmox-widget-toolkit-build-deps (5.2.5) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+rm -rf proxmox-widget-toolkit-5.2.5 proxmox-widget-toolkit-5.2.5.tmp
+cp -a src/ proxmox-widget-toolkit-5.2.5.tmp
+cp -a debian proxmox-widget-toolkit-5.2.5.tmp/
+echo "git clone git://git.proxmox.com/git/proxmox-widget-toolkit.git\\ngit checkout fcd560b54d080a67b617e4bb7e057ff83edaf85d" >  proxmox-widget-toolkit-5.2.5.tmp/debian/SOURCE
+mv proxmox-widget-toolkit-5.2.5.tmp/ proxmox-widget-toolkit-5.2.5
+cd proxmox-widget-toolkit-5.2.5; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package proxmox-widget-toolkit
+dpkg-buildpackage: info: source version 5.2.5
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+dh clean
+   dh_auto_clean
+	make -j4 clean
+make[2]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+make -C proxmox-dark clean
+make[3]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/proxmox-dark'
+rm -rf theme-proxmox-dark.css
+make[3]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/proxmox-dark'
+rm -f proxmoxlib.js* proxmoxlib.min.js* .lint-incremental
+make[2]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+set -e && for i in css images proxmox-dark; do make -C $i; done
+make[3]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/css'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/css'
+make[3]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/images'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/images'
+make[3]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/proxmox-dark'
+sassc -t compressed scss/ProxmoxDark.scss theme-proxmox-dark.css.tmp
+mv theme-proxmox-dark.css.tmp theme-proxmox-dark.css
+make[3]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/proxmox-dark'
+make[2]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install
+	make -j4 install DESTDIR=/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+proxmox-biome lint Utils.js Schema.js Toolkit.js Logo.js Parser.js mixin/CBind.js data/reader/JsonObject.js data/ProxmoxProxy.js data/UpdateStore.js data/DiffStore.js data/ObjectStore.js data/RRDStore.js data/TimezoneStore.js data/model/NotificationConfig.js data/model/Realm.js data/model/Certificates.js data/model/ACME.js form/BandwidthSelector.js form/DisplayEdit.js form/ExpireDate.js form/IntegerField.js form/TextField.js form/TextAreaField.js form/VlanField.js form/DateTimeField.js form/Checkbox.js form/KVComboBox.js form/LanguageSelector.js form/ComboGrid.js form/RRDTypeSelector.js form/BondModeSelector.js form/NetworkSelector.js form/RealmComboBox.js form/PruneKeepField.js form/RoleSelector.js form/DiskSelector.js form/MultiDiskSelector.js form/TaskTypeSelector.js form/ACME.js form/UserSelector.js form/ThemeSelector.js form/FingerprintField.js button/Button.js button/AltText.js button/HelpButton.js grid/ObjectGrid.js grid/PendingObjectGrid.js panel/AuthView.js panel/DiskList.js panel/EOLNotice.js panel/InputPanel.js panel/InfoWidget.js panel/LogView.js panel/NodeInfoRepoStatus.js panel/NotificationConfigView.js panel/JournalView.js panel/PermissionView.js panel/PruneKeepPanel.js panel/RRDChart.js panel/GaugeWidget.js panel/GotifyEditPanel.js panel/Certificates.js panel/ACMEAccount.js panel/ACMEPlugin.js panel/ACMEDomains.js panel/EmailRecipientPanel.js panel/SendmailEditPanel.js panel/SmtpEditPanel.js panel/StatusView.js panel/TfaView.js panel/NotesView.js panel/WebhookEditPanel.js window/Edit.js window/PasswordEdit.js window/ConfirmRemoveDialog.js window/SafeDestroy.js window/PackageVersions.js window/TaskViewer.js window/LanguageEdit.js window/DiskSmart.js window/ZFSDetail.js window/Certificates.js window/ConsentModal.js window/ACMEAccount.js window/ACMEPluginEdit.js window/ACMEDomains.js window/EndpointEditBase.js window/NotificationMatcherEdit.js window/FileBrowser.js window/AuthEditBase.js window/AuthEditOpenId.js window/AuthEditLDAP.js window/AuthEditAD.js window/AuthEditSimple.js window/TfaWindow.js window/AddTfaRecovery.js window/AddTotp.js window/AddWebauthn.js window/AddYubico.js window/TfaEdit.js window/NotesEdit.js window/LocationEdit.js window/ThemeEdit.js window/SyncWindow.js node/APT.js node/APTRepositories.js node/NetworkEdit.js node/NetworkView.js node/DNSEdit.js node/HostsView.js node/DNSView.js node/Tasks.js node/ServiceView.js node/TimeEdit.js node/TimeView.js
+Checked 115 files in 102ms. No fixes applied.
+touch ".lint-incremental"
+# add the version as comment in the file
+echo "// v5.2.5-t1781112919" > proxmoxlib.js.tmp
+cat Utils.js Schema.js Toolkit.js Logo.js Parser.js mixin/CBind.js data/reader/JsonObject.js data/ProxmoxProxy.js data/UpdateStore.js data/DiffStore.js data/ObjectStore.js data/RRDStore.js data/TimezoneStore.js data/model/NotificationConfig.js data/model/Realm.js data/model/Certificates.js data/model/ACME.js form/BandwidthSelector.js form/DisplayEdit.js form/ExpireDate.js form/IntegerField.js form/TextField.js form/TextAreaField.js form/VlanField.js form/DateTimeField.js form/Checkbox.js form/KVComboBox.js form/LanguageSelector.js form/ComboGrid.js form/RRDTypeSelector.js form/BondModeSelector.js form/NetworkSelector.js form/RealmComboBox.js form/PruneKeepField.js form/RoleSelector.js form/DiskSelector.js form/MultiDiskSelector.js form/TaskTypeSelector.js form/ACME.js form/UserSelector.js form/ThemeSelector.js form/FingerprintField.js button/Button.js button/AltText.js button/HelpButton.js grid/ObjectGrid.js grid/PendingObjectGrid.js panel/AuthView.js panel/DiskList.js panel/EOLNotice.js panel/InputPanel.js panel/InfoWidget.js panel/LogView.js panel/NodeInfoRepoStatus.js panel/NotificationConfigView.js panel/JournalView.js panel/PermissionView.js panel/PruneKeepPanel.js panel/RRDChart.js panel/GaugeWidget.js panel/GotifyEditPanel.js panel/Certificates.js panel/ACMEAccount.js panel/ACMEPlugin.js panel/ACMEDomains.js panel/EmailRecipientPanel.js panel/SendmailEditPanel.js panel/SmtpEditPanel.js panel/StatusView.js panel/TfaView.js panel/NotesView.js panel/WebhookEditPanel.js window/Edit.js window/PasswordEdit.js window/ConfirmRemoveDialog.js window/SafeDestroy.js window/PackageVersions.js window/TaskViewer.js window/LanguageEdit.js window/DiskSmart.js window/ZFSDetail.js window/Certificates.js window/ConsentModal.js window/ACMEAccount.js window/ACMEPluginEdit.js window/ACMEDomains.js window/EndpointEditBase.js window/NotificationMatcherEdit.js window/FileBrowser.js window/AuthEditBase.js window/AuthEditOpenId.js window/AuthEditLDAP.js window/AuthEditAD.js window/AuthEditSimple.js window/TfaWindow.js window/AddTfaRecovery.js window/AddTotp.js window/AddWebauthn.js window/AddYubico.js window/TfaEdit.js window/NotesEdit.js window/LocationEdit.js window/ThemeEdit.js window/SyncWindow.js node/APT.js node/APTRepositories.js node/NetworkEdit.js node/NetworkView.js node/DNSEdit.js node/HostsView.js node/DNSView.js node/Tasks.js node/ServiceView.js node/TimeEdit.js node/TimeView.js /usr/share/javascript/marked/marked.js  >> proxmoxlib.js.tmp
+mv proxmoxlib.js.tmp proxmoxlib.js
+uglifyjs proxmoxlib.js -c -m -o proxmoxlib.min.js.tmp
+mv proxmoxlib.min.js.tmp proxmoxlib.min.js
+install -d -m 755 /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit
+install -m 0644 proxmoxlib.js proxmoxlib.min.js /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit
+set -e && for i in css images proxmox-dark; do make -C $i install; done
+make[3]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/css'
+install -d /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit/css
+for i in ext6-pmx.css; do install -m 0644 $i /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit/css/$i; done
+make[3]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/css'
+make[3]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/images'
+install -d /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit/images
+for i in pmx-clear-trigger.svg openid-icon.svg icon-cpu.svg icon-ram.svg debian-swirl-openlogo.svg proxmox_logo.svg proxmox-symbol-x.svg spinner.svg ; do install -m 0644 $i /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit/images/$i; done
+make[3]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/images'
+make[3]: Entering directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/proxmox-dark'
+install -d /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit/themes/
+install -m 0664 theme-proxmox-dark.css /workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/debian/tmp/usr/share/javascript/proxmox-widget-toolkit/themes/
+make[3]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5/proxmox-dark'
+make[2]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'proxmox-widget-toolkit' in '../proxmox-widget-toolkit_5.2.5_all.deb'.
+dpkg-deb: building package 'proxmox-widget-toolkit-dev' in '../proxmox-widget-toolkit-dev_5.2.5_all.deb'.
+make[1]: Leaving directory '/workspaces/src/proxmox-widget-toolkit/proxmox-widget-toolkit-5.2.5'
+ dpkg-genbuildinfo --build=binary -O../proxmox-widget-toolkit_5.2.5_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../proxmox-widget-toolkit_5.2.5_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-i18n pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+dpkg-scanpackages: info: Wrote 100 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [23.3 kB]
+Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

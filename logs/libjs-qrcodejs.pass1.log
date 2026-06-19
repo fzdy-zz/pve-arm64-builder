@@ -1,0 +1,238 @@
+HEAD is now at a9906bd d/source: override some false-positive lintian warning/errors
+dpkg-buildpackage: info: source package libjs-qrcodejs-build-deps
+dpkg-buildpackage: info: source version 1.20230525-pve1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/libjs-qrcodejs-build-deps/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libjs-qrcodejs-build-deps' in '../libjs-qrcodejs-build-deps_1.20230525-pve1_all.deb'.
+ dpkg-genbuildinfo --build=binary -O../libjs-qrcodejs-build-deps_1.20230525-pve1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../libjs-qrcodejs-build-deps_1.20230525-pve1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package libjs-qrcodejs-build-deps.
+(Reading database ... 84990 files and directories currently installed.)
+Preparing to unpack libjs-qrcodejs-build-deps_1.20230525-pve1_all.deb ...
+Unpacking libjs-qrcodejs-build-deps (1.20230525-pve1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following additional packages will be installed:
+  libcares2 libicu76 libnode115 node-acorn node-balanced-match
+  node-brace-expansion node-cjs-module-lexer node-corepack node-minimatch
+  node-uglify-js node-undici node-xtend nodejs uglifyjs
+Suggested packages:
+  npm
+Recommended packages:
+  nodejs-doc
+The following NEW packages will be installed:
+  libcares2 libicu76 libnode115 node-acorn node-balanced-match
+  node-brace-expansion node-cjs-module-lexer node-corepack node-minimatch
+  node-uglify-js node-undici node-xtend nodejs uglifyjs
+0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
+Need to get 23.8 MB of archives.
+After this operation, 105 MB of additional disk space will be used.
+Get:1 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-uglify-js all 3.17.4-2 [203 kB]
+Get:2 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libcares2 amd64 1.34.5-1+deb13u1 [98.3 kB]
+Get:3 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libicu76 amd64 76.1-4 [9722 kB]
+Get:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-xtend all 4.0.2-3 [3932 B]
+Get:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-acorn all 8.8.1+ds+~cs25.17.7-2 [128 kB]
+Get:6 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-cjs-module-lexer all 1.2.3+dfsg-1 [30.6 kB]
+Get:7 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-balanced-match all 2.0.0-1 [4872 B]
+Get:8 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-brace-expansion all 2.0.1+~1.1.0-2 [8012 B]
+Get:9 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-minimatch all 9.0.3-6 [76.8 kB]
+Get:10 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-undici all 7.3.0+dfsg1+~cs24.12.11-1 [333 kB]
+Get:11 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libnode115 amd64 20.19.2+dfsg-1+deb13u2 [12.1 MB]
+Get:12 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 node-corepack all 0.24.0-5 [712 kB]
+Get:13 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 nodejs amd64 20.19.2+dfsg-1+deb13u2 [353 kB]
+Get:14 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 uglifyjs all 3.17.4-2 [12.1 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 23.8 MB in 7s (3400 kB/s)
+Selecting previously unselected package node-uglify-js.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84994 files and directories currently installed.)
+Preparing to unpack .../00-node-uglify-js_3.17.4-2_all.deb ...
+Unpacking node-uglify-js (3.17.4-2) ...
+Selecting previously unselected package libcares2:amd64.
+Preparing to unpack .../01-libcares2_1.34.5-1+deb13u1_amd64.deb ...
+Unpacking libcares2:amd64 (1.34.5-1+deb13u1) ...
+Selecting previously unselected package libicu76:amd64.
+Preparing to unpack .../02-libicu76_76.1-4_amd64.deb ...
+Unpacking libicu76:amd64 (76.1-4) ...
+Selecting previously unselected package node-xtend.
+Preparing to unpack .../03-node-xtend_4.0.2-3_all.deb ...
+Unpacking node-xtend (4.0.2-3) ...
+Selecting previously unselected package node-acorn.
+Preparing to unpack .../04-node-acorn_8.8.1+ds+~cs25.17.7-2_all.deb ...
+Unpacking node-acorn (8.8.1+ds+~cs25.17.7-2) ...
+Selecting previously unselected package node-cjs-module-lexer.
+Preparing to unpack .../05-node-cjs-module-lexer_1.2.3+dfsg-1_all.deb ...
+Unpacking node-cjs-module-lexer (1.2.3+dfsg-1) ...
+Selecting previously unselected package node-balanced-match.
+Preparing to unpack .../06-node-balanced-match_2.0.0-1_all.deb ...
+Unpacking node-balanced-match (2.0.0-1) ...
+Selecting previously unselected package node-brace-expansion.
+Preparing to unpack .../07-node-brace-expansion_2.0.1+~1.1.0-2_all.deb ...
+Unpacking node-brace-expansion (2.0.1+~1.1.0-2) ...
+Selecting previously unselected package node-minimatch.
+Preparing to unpack .../08-node-minimatch_9.0.3-6_all.deb ...
+Unpacking node-minimatch (9.0.3-6) ...
+Selecting previously unselected package node-undici.
+Preparing to unpack .../09-node-undici_7.3.0+dfsg1+~cs24.12.11-1_all.deb ...
+Unpacking node-undici (7.3.0+dfsg1+~cs24.12.11-1) ...
+Selecting previously unselected package libnode115:amd64.
+Preparing to unpack .../10-libnode115_20.19.2+dfsg-1+deb13u2_amd64.deb ...
+Unpacking libnode115:amd64 (20.19.2+dfsg-1+deb13u2) ...
+Selecting previously unselected package node-corepack.
+Preparing to unpack .../11-node-corepack_0.24.0-5_all.deb ...
+Unpacking node-corepack (0.24.0-5) ...
+Selecting previously unselected package nodejs.
+Preparing to unpack .../12-nodejs_20.19.2+dfsg-1+deb13u2_amd64.deb ...
+Unpacking nodejs (20.19.2+dfsg-1+deb13u2) ...
+Selecting previously unselected package uglifyjs.
+Preparing to unpack .../13-uglifyjs_3.17.4-2_all.deb ...
+Unpacking uglifyjs (3.17.4-2) ...
+Setting up node-uglify-js (3.17.4-2) ...
+Setting up node-cjs-module-lexer (1.2.3+dfsg-1) ...
+Setting up node-balanced-match (2.0.0-1) ...
+Setting up node-brace-expansion (2.0.1+~1.1.0-2) ...
+Setting up libcares2:amd64 (1.34.5-1+deb13u1) ...
+Setting up node-undici (7.3.0+dfsg1+~cs24.12.11-1) ...
+Setting up libicu76:amd64 (76.1-4) ...
+Setting up node-minimatch (9.0.3-6) ...
+Setting up node-xtend (4.0.2-3) ...
+Setting up node-acorn (8.8.1+ds+~cs25.17.7-2) ...
+Setting up node-corepack (0.24.0-5) ...
+Setting up libnode115:amd64 (20.19.2+dfsg-1+deb13u2) ...
+Setting up nodejs (20.19.2+dfsg-1+deb13u2) ...
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+Setting up uglifyjs (3.17.4-2) ...
+Setting up libjs-qrcodejs-build-deps (1.20230525-pve1) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+rm -rf libjs-qrcodejs-1.20230525-pve1.tmp
+cp -a src libjs-qrcodejs-1.20230525-pve1.tmp
+cp -a debian libjs-qrcodejs-1.20230525-pve1.tmp/
+echo "git clone git://git.proxmox.com/git/libjs-qrcodejs.git\\ngit checkout a9906bd488b5c2045ea4aa8b014d97fdccad63b9" >  libjs-qrcodejs-1.20230525-pve1.tmp/debian/SOURCE
+mv libjs-qrcodejs-1.20230525-pve1.tmp/ libjs-qrcodejs-1.20230525-pve1
+cd libjs-qrcodejs-1.20230525-pve1; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package libjs-qrcodejs
+dpkg-buildpackage: info: source version 1.20230525-pve1
+dpkg-buildpackage: info: source distribution stable
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+dh clean
+   dh_auto_clean
+	make -j4 clean
+make[2]: Entering directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+rm -f qrcode.min.js qrcode.min.js.tmp
+make[2]: Leaving directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+uglifyjs -m -c -o qrcode.min.js.tmp qrcode.js
+mv qrcode.min.js.tmp qrcode.min.js
+make[2]: Leaving directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/libjs-qrcodejs/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libjs-qrcodejs' in '../libjs-qrcodejs_1.20230525-pve1_all.deb'.
+make[1]: Leaving directory '/workspaces/src/libjs-qrcodejs/libjs-qrcodejs-1.20230525-pve1'
+ dpkg-genbuildinfo --build=binary -O../libjs-qrcodejs_1.20230525-pve1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../libjs-qrcodejs_1.20230525-pve1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   fonts-font-logos libjs-qrcodejs proxmox-archive-keyring
+dpkg-scanpackages: info: Wrote 3 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [955 B]
+Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

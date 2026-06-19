@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Fri, 14 Nov 2025 18:56:09 +0100
+Source: libpve-apiclient-perl
+Binary: libpve-apiclient-perl
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 3.4.2
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libpve-apiclient-perl - Proxmox VE API client library
+Changes:
+ libpve-apiclient-perl (3.4.2) trixie; urgency=medium
+ .
+   * constructor: transparently add API token name in Authorization
+     header and allow one to override through new api_token_name parameter
+ .
+   * constructor: accept api_token parameter name as alternative to apitoken
+     one.
+Checksums-Sha1:
+ 2a658e9b5f08742fbe6753370ae0f6558db4c92d 8960 libpve-apiclient-perl_3.4.2_all.deb
+ 620fa4b4ed252ea6dd4b910057c08f89fa000db2 5128 libpve-apiclient-perl_3.4.2_amd64.buildinfo
+Checksums-Sha256:
+ d7c7333238440b7373a8281de998f44b6e5eb05192cf398d3d6340238d4f1822 8960 libpve-apiclient-perl_3.4.2_all.deb
+ 349665997135fa352fb7018b7bf6bfb7b65f94495e41dd3f442c7025efc57e56 5128 libpve-apiclient-perl_3.4.2_amd64.buildinfo
+Files:
+ 208fe00ea7c32c1dbf2bd3464280a00e 8960 perl optional libpve-apiclient-perl_3.4.2_all.deb
+ 635799ee9fcddd2bac989bd7effb1a1f 5128 perl optional libpve-apiclient-perl_3.4.2_amd64.buildinfo

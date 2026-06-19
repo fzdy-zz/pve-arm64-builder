@@ -1,0 +1,163 @@
+HEAD is now at e669fde bump version to 0.3.1
+dpkg-buildpackage: info: source package pve-nvidia-vgpu-helper-build-deps
+dpkg-buildpackage: info: source version 0.3.1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/pve-nvidia-vgpu-helper-build-deps/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'pve-nvidia-vgpu-helper-build-deps' in '../pve-nvidia-vgpu-helper-build-deps_0.3.1_all.deb'.
+ dpkg-genbuildinfo --build=binary -O../pve-nvidia-vgpu-helper-build-deps_0.3.1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../pve-nvidia-vgpu-helper-build-deps_0.3.1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package pve-nvidia-vgpu-helper-build-deps.
+(Reading database ... 120247 files and directories currently installed.)
+Preparing to unpack pve-nvidia-vgpu-helper-build-deps_0.3.1_all.deb ...
+Unpacking pve-nvidia-vgpu-helper-build-deps (0.3.1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpython3-all-dev:arm64 libpython3-dev:arm64
+  libpython3.13:arm64 libpython3.13-dev:arm64 libpython3.13-minimal:arm64
+  libpython3.13-stdlib:arm64 libsm-dev:arm64 libsm6:arm64 libtcl8.6:arm64
+  libthai-dev:arm64 libxcb-render0-dev:arm64 libxcb-shm0-dev:arm64
+  libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64 libxml2-dev:arm64
+  libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+1 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Setting up pve-nvidia-vgpu-helper-build-deps (0.3.1) ...
+rm -rf pve-nvidia-vgpu-helper-0.3.1 pve-nvidia-vgpu-helper-0.3.1.tmp; mkdir pve-nvidia-vgpu-helper-0.3.1.tmp
+cp -a -t pve-nvidia-vgpu-helper-0.3.1.tmp src/ debian/ Makefile
+echo "git clone git://git.proxmox.com/git/pve-vgpu-helper.git\\ngit checkout e669fde30b8b9260b3b7fed986ecbcad9235395d" > pve-nvidia-vgpu-helper-0.3.1.tmp/debian/SOURCE
+mv pve-nvidia-vgpu-helper-0.3.1.tmp pve-nvidia-vgpu-helper-0.3.1
+cd pve-nvidia-vgpu-helper-0.3.1; dpkg-buildpackage -d -b -uc -us
+dpkg-buildpackage: info: source package pve-nvidia-vgpu-helper
+dpkg-buildpackage: info: source version 0.3.1
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+dh clean
+   dh_auto_clean
+	make -j4 distclean
+make[2]: Entering directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+rm -rf *~ pve-nvidia-vgpu-helper-[0-9]*/ pve-nvidia-vgpu-helper*.tar.* *.deb *.dsc *.changes *.build *.buildinfo
+make[2]: Leaving directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/pve-nvidia-vgpu-helper/
+	make -j4 install DESTDIR=/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1/debian/pve-nvidia-vgpu-helper AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+make -C src install
+make[3]: Entering directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1/src'
+install -d /workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1/debian/pve-nvidia-vgpu-helper/usr/bin
+install -m 0755 pve-nvidia-vgpu-helper /workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1/debian/pve-nvidia-vgpu-helper/usr/bin
+make[3]: Leaving directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1/src'
+make[2]: Leaving directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+   dh_installdocs
+   dh_installchangelogs
+   debian/rules override_dh_installsystemd
+make[2]: Entering directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+dh_installsystemd --no-start --no-enable --name pve-nvidia-sriov@ pve-nvidia-sriov@.service
+make[2]: Leaving directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: package pve-nvidia-vgpu-helper: substitution variable ${perl:Depends} unused, but is defined
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'pve-nvidia-vgpu-helper' in '../pve-nvidia-vgpu-helper_0.3.1_all.deb'.
+make[1]: Leaving directory '/workspaces/src/pve-vgpu-helper/pve-nvidia-vgpu-helper-0.3.1'
+ dpkg-genbuildinfo --build=binary -O../pve-nvidia-vgpu-helper_0.3.1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../pve-nvidia-vgpu-helper_0.3.1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libproxmox-acme-perl libproxmox-acme-plugins libproxmox-backup-qemu0 libproxmox-backup-qemu0-dbgsym libproxmox-backup-qemu0-dev libproxmox-rs-perl libpve-access-control libpve-apiclient-perl libpve-cluster-api-perl libpve-cluster-perl libpve-common-perl libpve-guest-common-perl libpve-http-server-perl libpve-network-api-perl libpve-network-perl libpve-notify-perl libpve-rs-perl libpve-rs-perl-dbgsym libpve-storage-perl libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym novnc-pve pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-firewall proxmox-firewall-dbgsym proxmox-mail-forward proxmox-mail-forward-dbgsym proxmox-mini-journalreader proxmox-mini-journalreader-dbgsym proxmox-termproxy proxmox-termproxy-dbgsym proxmox-websocket-tunnel proxmox-websocket-tunnel-dbgsym proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-cluster pve-cluster-dbgsym pve-container pve-edk2-firmware pve-edk2-firmware-aarch64 pve-edk2-firmware-legacy pve-edk2-firmware-ovmf pve-edk2-firmware-riscv pve-esxi-import-tools pve-esxi-import-tools-dbgsym pve-firewall pve-firewall-dbgsym pve-ha-manager pve-ha-manager-dbgsym pve-ha-simulator pve-i18n pve-lxc-syscalld pve-lxc-syscalld-dbgsym pve-nvidia-vgpu-helper pve-xtermjs pve-yew-mobile-gui pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym qemu-server qemu-server-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym spiceterm spiceterm-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym vncterm vncterm-dbgsym
+dpkg-scanpackages: info: Wrote 156 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [36.1 kB]
+Hit:4 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:7 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Mon, 23 Jun 2025 13:12:36 +0200
+Source: libtpms
+Binary: libtpms-dev libtpms0 libtpms0-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64
+Version: 0.9.7+pve2
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libtpms-dev - libtpms header files and man pages
+ libtpms0   - TPM emulation library
+Changes:
+ libtpms (0.9.7+pve2) trixie; urgency=medium
+ .
+   * re-build for Debian Trixie based Proxmox VE 9 release.
+Checksums-Sha1:
+ 141df06c4681a43dbf431884ca97f3a1f1066dfe 404328 libtpms-dev_0.9.7+pve2_arm64.deb
+ eb4e2902c5c82ffd41833d35d10ade68284a3e0a 1225500 libtpms0-dbgsym_0.9.7+pve2_arm64.deb
+ f781e684970a39900600f45bc45fb1c7535af22e 285124 libtpms0_0.9.7+pve2_arm64.deb
+ c78640ae7b73950afc2f8861d6f69e644e1707f7 5877 libtpms_0.9.7+pve2_arm64.buildinfo
+Checksums-Sha256:
+ ee5abbde54e30490942f58f83709447fc86f3f125330394744fb3956c71dee86 404328 libtpms-dev_0.9.7+pve2_arm64.deb
+ 27798178c14c2aba10ba960cda946612823bc5e4e961718b955f7d66bbf89a29 1225500 libtpms0-dbgsym_0.9.7+pve2_arm64.deb
+ 7883a4a65e9a3a719038a0e084a98566a38ab71870be68345f2c7978aaafddf5 285124 libtpms0_0.9.7+pve2_arm64.deb
+ 180544754bb3b12a47fdf3a63e963b8ab34dae0bbc8e75512ec32341a668444b 5877 libtpms_0.9.7+pve2_arm64.buildinfo
+Files:
+ 6ba896bc2709ff08e111669be8403d1f 404328 libdevel optional libtpms-dev_0.9.7+pve2_arm64.deb
+ 60e071fc06a65a4841384061bdafddc7 1225500 debug optional libtpms0-dbgsym_0.9.7+pve2_arm64.deb
+ 65a46a0a76c164da7ba50dea3aa1340d 285124 libs optional libtpms0_0.9.7+pve2_arm64.deb
+ e4d11086f4d82783a792027cd91a1502 5877 libs optional libtpms_0.9.7+pve2_arm64.buildinfo

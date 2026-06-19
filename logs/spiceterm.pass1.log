@@ -1,0 +1,262 @@
+HEAD is now at ed0cf40 d/copyright: update years
+dpkg-buildpackage: info: source package spiceterm-cross-build-deps-depends
+dpkg-buildpackage: info: source version 3.4.2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ debian/rules clean
+dh clean
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_clean
+ debian/rules binary
+dh binary
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/spiceterm-cross-build-deps-depends/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'spiceterm-cross-build-deps-depends' in '../spiceterm-cross-build-deps-depends_3.4.2_arm64.deb'.
+ dpkg-genbuildinfo --build=binary -O../spiceterm-cross-build-deps-depends_3.4.2_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../spiceterm-cross-build-deps-depends_3.4.2_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package spiceterm-cross-build-deps-depends:arm64.
+(Reading database ... 109232 files and directories currently installed.)
+Preparing to unpack spiceterm-cross-build-deps-depends_3.4.2_arm64.deb ...
+Unpacking spiceterm-cross-build-deps-depends:arm64 (3.4.2) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
+  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
+  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
+  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libgstreamer-plugins-base1.0-0:arm64 libgstreamer1.0-0:arm64
+  libjpeg62-turbo:arm64 libopus0:arm64 liborc-0.4-0t64:arm64
+  libspice-protocol-dev libspice-server-dev:arm64 libspice-server1:arm64
+Suggested packages:
+  libvisual-0.4-plugins:arm64 gstreamer1.0-tools:arm64 opus-tools:arm64
+  gstreamer1.0-plugins-ugly:arm64
+Recommended packages:
+  gstreamer1.0-plugins-base:arm64 gstreamer1.0-libav:arm64
+  gstreamer1.0-plugins-good:arm64
+The following NEW packages will be installed:
+  libgstreamer-plugins-base1.0-0:arm64 libgstreamer1.0-0:arm64
+  libjpeg62-turbo:arm64 libopus0:arm64 liborc-0.4-0t64:arm64
+  libspice-protocol-dev libspice-server-dev:arm64 libspice-server1:arm64
+0 upgraded, 8 newly installed, 0 to remove and 5 not upgraded.
+1 not fully installed or removed.
+Need to get 5707 kB of archives.
+After this operation, 16.0 MB of additional disk space will be used.
+Get:1 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libspice-protocol-dev all 0.14.3-1 [25.0 kB]
+Get:2 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libgstreamer1.0-0 arm64 1.26.2-2 [1294 kB]
+Get:3 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 liborc-0.4-0t64 arm64 1:0.4.41-1 [171 kB]
+Get:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libgstreamer-plugins-base1.0-0 arm64 1.26.2-1+deb13u1 [897 kB]
+Get:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libjpeg62-turbo arm64 1:2.1.5-4 [173 kB]
+Get:6 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libopus0 arm64 1.5.2-2 [2813 kB]
+Get:7 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libspice-server1 arm64 0.15.2-1+b1 [312 kB]
+Get:8 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libspice-server-dev arm64 0.15.2-1+b1 [21.7 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 5707 kB in 6s (1012 kB/s)
+Selecting previously unselected package libspice-protocol-dev.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109236 files and directories currently installed.)
+Preparing to unpack .../0-libspice-protocol-dev_0.14.3-1_all.deb ...
+Unpacking libspice-protocol-dev (0.14.3-1) ...
+Selecting previously unselected package libgstreamer1.0-0:arm64.
+Preparing to unpack .../1-libgstreamer1.0-0_1.26.2-2_arm64.deb ...
+Unpacking libgstreamer1.0-0:arm64 (1.26.2-2) ...
+Selecting previously unselected package liborc-0.4-0t64:arm64.
+Preparing to unpack .../2-liborc-0.4-0t64_1%3a0.4.41-1_arm64.deb ...
+Unpacking liborc-0.4-0t64:arm64 (1:0.4.41-1) ...
+Selecting previously unselected package libgstreamer-plugins-base1.0-0:arm64.
+Preparing to unpack .../3-libgstreamer-plugins-base1.0-0_1.26.2-1+deb13u1_arm64.deb ...
+Unpacking libgstreamer-plugins-base1.0-0:arm64 (1.26.2-1+deb13u1) ...
+Selecting previously unselected package libjpeg62-turbo:arm64.
+Preparing to unpack .../4-libjpeg62-turbo_1%3a2.1.5-4_arm64.deb ...
+Unpacking libjpeg62-turbo:arm64 (1:2.1.5-4) ...
+Selecting previously unselected package libopus0:arm64.
+Preparing to unpack .../5-libopus0_1.5.2-2_arm64.deb ...
+Unpacking libopus0:arm64 (1.5.2-2) ...
+Selecting previously unselected package libspice-server1:arm64.
+Preparing to unpack .../6-libspice-server1_0.15.2-1+b1_arm64.deb ...
+Unpacking libspice-server1:arm64 (0.15.2-1+b1) ...
+Selecting previously unselected package libspice-server-dev:arm64.
+Preparing to unpack .../7-libspice-server-dev_0.15.2-1+b1_arm64.deb ...
+Unpacking libspice-server-dev:arm64 (0.15.2-1+b1) ...
+Setting up libspice-protocol-dev (0.14.3-1) ...
+Setting up liborc-0.4-0t64:arm64 (1:0.4.41-1) ...
+Setting up libjpeg62-turbo:arm64 (1:2.1.5-4) ...
+Setting up libopus0:arm64 (1.5.2-2) ...
+Setting up libgstreamer1.0-0:arm64 (1.26.2-2) ...
+Setcap worked! gst-ptp-helper is not suid!
+Setting up libgstreamer-plugins-base1.0-0:arm64 (1.26.2-1+deb13u1) ...
+Setting up libspice-server1:arm64 (0.15.2-1+b1) ...
+Setting up libspice-server-dev:arm64 (0.15.2-1+b1) ...
+Setting up spiceterm-cross-build-deps-depends:arm64 (3.4.2) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+rm -rf spiceterm-3.4.2
+rsync -a src/ debian spiceterm-3.4.2
+echo "git clone git://git.proxmox.com/git/spiceterm.git\\ngit checkout ed0cf40080ad190adf9b396c07fd33d50340cdc6" > spiceterm-3.4.2/debian/SOURCE
+cd spiceterm-3.4.2; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package spiceterm
+dpkg-buildpackage: info: source version 3.4.2
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+dpkg-buildpackage: warning: debian/rules is not executable; fixing that
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+dh clean 
+   dh_auto_clean
+	make -j4 distclean
+make[2]: Entering directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+rm -rf *~ *.deb genfont spiceterm spiceterm.1
+make[2]: Leaving directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+dh binary 
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true" PKG_CONFIG=aarch64-linux-gnu-pkg-config CXX=aarch64-linux-gnu-g\+\+ CC=aarch64-linux-gnu-gcc
+make[2]: Entering directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+aarch64-linux-gnu-gcc -Werror -Wall -Wl,-z,relro -Wtype-limits screen.c event_loop.c input.c spiceterm.c auth-pve.c -g -O2 -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/workspaces/src/spiceterm/spiceterm-3.4.2=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security `aarch64-linux-gnu-pkg-config --cflags glib-2.0 spice-protocol spice-server` -o spiceterm -lutil `aarch64-linux-gnu-pkg-config --libs glib-2.0 spice-protocol spice-server`
+make[2]: Leaving directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+dh: command-omitted: The call to "debian/rules override_dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/spiceterm/
+	make -j4 install DESTDIR=/workspaces/src/spiceterm/spiceterm-3.4.2/debian/spiceterm AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+rm -f spiceterm.1
+pod2man -n spiceterm.pod -s 1 -r 3.4.2 <spiceterm.pod >spiceterm.1
+mkdir -p /workspaces/src/spiceterm/spiceterm-3.4.2/debian/spiceterm/usr/share/man/man1
+install -m 0644 spiceterm.1 /workspaces/src/spiceterm/spiceterm-3.4.2/debian/spiceterm/usr/share/man/man1
+mkdir -p /workspaces/src/spiceterm/spiceterm-3.4.2/debian/spiceterm/usr/bin
+install -m 0755 spiceterm /workspaces/src/spiceterm/spiceterm-3.4.2/debian/spiceterm/usr/bin
+make[2]: Leaving directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz -a
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+dpkg-shlibdeps: warning: diversions involved - output may be incorrect
+ diversion by libc6 from: /lib/ld-linux-aarch64.so.1
+dpkg-shlibdeps: warning: diversions involved - output may be incorrect
+ diversion by libc6 to: /lib/ld-linux-aarch64.so.1.usr-is-merged
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'spiceterm' in '../spiceterm_3.4.2_arm64.deb'.
+dpkg-deb: building package 'spiceterm-dbgsym' in '../spiceterm-dbgsym_3.4.2_arm64.deb'.
+make[1]: Leaving directory '/workspaces/src/spiceterm/spiceterm-3.4.2'
+ dpkg-genbuildinfo --build=binary -O../spiceterm_3.4.2_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../spiceterm_3.4.2_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libproxmox-acme-perl libproxmox-acme-plugins libproxmox-rs-perl libpve-access-control libpve-apiclient-perl libpve-cluster-api-perl libpve-cluster-perl libpve-common-perl libpve-guest-common-perl libpve-http-server-perl libpve-network-api-perl libpve-network-perl libpve-notify-perl libpve-rs-perl libpve-rs-perl-dbgsym libpve-storage-perl libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym novnc-pve pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-cluster pve-cluster-dbgsym pve-container pve-esxi-import-tools pve-esxi-import-tools-dbgsym pve-firewall pve-firewall-dbgsym pve-ha-manager pve-ha-manager-dbgsym pve-ha-simulator pve-i18n pve-lxc-syscalld pve-lxc-syscalld-dbgsym pve-xtermjs pve-yew-mobile-gui pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym spiceterm spiceterm-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+dpkg-scanpackages: info: Wrote 133 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [31.1 kB]
+Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

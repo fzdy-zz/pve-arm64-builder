@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Wed, 10 Jun 2026 19:35:19 +0200
+Source: proxmox-widget-toolkit
+Binary: proxmox-widget-toolkit proxmox-widget-toolkit-dev
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 5.2.5
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ proxmox-widget-toolkit - Core Widgets and ExtJS Helper Classes for Proxmox Web UIs
+ proxmox-widget-toolkit-dev - ExtJS based widgets and utilities for development
+Changes:
+ proxmox-widget-toolkit (5.2.5) trixie; urgency=medium
+ .
+   * utils: response error: gather detail lines of multi-line messages.
+Checksums-Sha1:
+ 0127d5949ce27e7cd7b221fc6612b4bb2d5b2c45 31544 proxmox-widget-toolkit-dev_5.2.5_all.deb
+ bdd28b98d6708411c5397eceb5f17b0ca1edeb88 229884 proxmox-widget-toolkit_5.2.5_all.deb
+ 185a00f06bcf43b6ecd4779b4dc7a2b1001412a2 6141 proxmox-widget-toolkit_5.2.5_amd64.buildinfo
+Checksums-Sha256:
+ 2c468183c82afb4b287eb415cb01a08e733dcd655ae4974cc010e69e630e5e6f 31544 proxmox-widget-toolkit-dev_5.2.5_all.deb
+ af54bd9921a532557452390b69485812fa73e60b422746227ce169cfc841b329 229884 proxmox-widget-toolkit_5.2.5_all.deb
+ 98dac2f69be283aeff402c887cea04a7d2dd277e1decd82cf6fd27f4d03d2937 6141 proxmox-widget-toolkit_5.2.5_amd64.buildinfo
+Files:
+ 32fc8eb0db210b3500592b59a37b2c6b 31544 web optional proxmox-widget-toolkit-dev_5.2.5_all.deb
+ fea50fdb1de377098e7ec11747f3037c 229884 web optional proxmox-widget-toolkit_5.2.5_all.deb
+ c7eba84c8237a21db1fae31e040803ca 6141 web optional proxmox-widget-toolkit_5.2.5_amd64.buildinfo

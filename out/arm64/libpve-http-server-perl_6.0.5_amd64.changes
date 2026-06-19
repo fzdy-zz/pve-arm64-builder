@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Tue, 21 Oct 2025 18:48:47 +0200
+Source: libpve-http-server-perl
+Binary: libpve-http-server-perl
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 6.0.5
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libpve-http-server-perl - Proxmox Asynchrounous HTTP Server Implementation
+Changes:
+ libpve-http-server-perl (6.0.5) trixie; urgency=medium
+ .
+   * server: add timestamps as prefix to debug logs.
+Checksums-Sha1:
+ f51cabf4e83e3a1d887b631ccc201ee6c7ad4082 28128 libpve-http-server-perl_6.0.5_all.deb
+ d8dc4375d329d755e5c8fdd14bc353f4619764b8 5141 libpve-http-server-perl_6.0.5_amd64.buildinfo
+Checksums-Sha256:
+ a7f0a2a732e7436621eee441fe179634a17460a86ba5967fabb5f350242c9f50 28128 libpve-http-server-perl_6.0.5_all.deb
+ 79533e9c68caef9659de2d0ca2cbb3ed6ef67b00120e3d4acfd2479d90743937 5141 libpve-http-server-perl_6.0.5_amd64.buildinfo
+Files:
+ 252f1271aba385e61f1805eac1cceb75 28128 perl optional libpve-http-server-perl_6.0.5_all.deb
+ b7d87c1af7956f2e20e9248cdd3b8470 5141 perl optional libpve-http-server-perl_6.0.5_amd64.buildinfo

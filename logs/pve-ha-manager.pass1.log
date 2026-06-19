@@ -1,0 +1,487 @@
+HEAD is now at ecaa033 bump version to 5.2.4
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libproxmox-acme-perl libproxmox-acme-plugins libproxmox-rs-perl libpve-access-control libpve-apiclient-perl libpve-cluster-api-perl libpve-cluster-perl libpve-common-perl libpve-guest-common-perl libpve-http-server-perl libpve-network-api-perl libpve-network-perl libpve-notify-perl libpve-rs-perl libpve-rs-perl-dbgsym libpve-storage-perl libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-cluster pve-cluster-dbgsym pve-container pve-esxi-import-tools pve-esxi-import-tools-dbgsym pve-firewall pve-firewall-dbgsym pve-i18n pve-lxc-syscalld pve-lxc-syscalld-dbgsym pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+dpkg-scanpackages: info: Wrote 125 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [29.4 kB]
+Hit:4 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:7 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
+  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
+  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
+  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libconvert-asn1-perl libcrypt-openssl-bignum-perl
+  libcrypt-openssl-random-perl libcrypt-openssl-rsa-perl libdbus-1-3
+  libio-stringy-perl libmime-base32-perl libnet-dbus-perl libnet-ldap-perl
+  libproxmox-acme-perl libxml-twig-perl
+Suggested packages:
+  libauthen-sasl-perl libdigest-hmac-perl libtext-soundex-perl
+  libunicode-map8-perl libunicode-string-perl xml-twig-tools
+Recommended packages:
+  dbus libgssapi-perl libproxmox-acme-plugins libtext-iconv-perl
+  libtie-ixhash-perl libxml-xpathengine-perl | libxml-xpath-perl
+The following NEW packages will be installed:
+  libconvert-asn1-perl libcrypt-openssl-bignum-perl
+  libcrypt-openssl-random-perl libcrypt-openssl-rsa-perl libdbus-1-3
+  libio-stringy-perl libmime-base32-perl libnet-dbus-perl libnet-ldap-perl
+  libproxmox-acme-perl libpve-common-perl libxml-twig-perl
+0 upgraded, 12 newly installed, 0 to remove and 5 not upgraded.
+Need to get 1058 kB/1198 kB of archives.
+After this operation, 3902 kB of additional disk space will be used.
+Get:1 file:/workspaces/pve/out/arm64 ./ libpve-common-perl 9.1.16 [128 kB]
+Get:2 file:/workspaces/pve/out/arm64 ./ libproxmox-acme-perl 1.7.1 [11.6 kB]
+Get:3 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libconvert-asn1-perl all 0.34-1 [44.5 kB]
+Get:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libcrypt-openssl-bignum-perl amd64 0.09-2+b4 [23.5 kB]
+Get:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libcrypt-openssl-random-perl amd64 0.17-1+b1 [10.6 kB]
+Get:6 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libcrypt-openssl-rsa-perl amd64 0.35-1 [26.3 kB]
+Get:7 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libdbus-1-3 amd64 1.16.2-2 [178 kB]
+Get:8 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libio-stringy-perl all 2.113-2 [48.3 kB]
+Get:9 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libmime-base32-perl all 1.303-3 [7524 B]
+Get:10 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libxml-twig-perl all 1:3.52-3 [177 kB]
+Get:11 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libnet-dbus-perl amd64 1.2.0-2+b3 [168 kB]
+Get:12 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libnet-ldap-perl all 1:0.6800+dfsg-1 [375 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 1058 kB in 4s (275 kB/s)
+Selecting previously unselected package libconvert-asn1-perl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 103792 files and directories currently installed.)
+Preparing to unpack .../00-libconvert-asn1-perl_0.34-1_all.deb ...
+Unpacking libconvert-asn1-perl (0.34-1) ...
+Selecting previously unselected package libcrypt-openssl-bignum-perl.
+Preparing to unpack .../01-libcrypt-openssl-bignum-perl_0.09-2+b4_amd64.deb ...
+Unpacking libcrypt-openssl-bignum-perl (0.09-2+b4) ...
+Selecting previously unselected package libcrypt-openssl-random-perl:amd64.
+Preparing to unpack .../02-libcrypt-openssl-random-perl_0.17-1+b1_amd64.deb ...
+Unpacking libcrypt-openssl-random-perl:amd64 (0.17-1+b1) ...
+Selecting previously unselected package libcrypt-openssl-rsa-perl:amd64.
+Preparing to unpack .../03-libcrypt-openssl-rsa-perl_0.35-1_amd64.deb ...
+Unpacking libcrypt-openssl-rsa-perl:amd64 (0.35-1) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../04-libdbus-1-3_1.16.2-2_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.16.2-2) ...
+Selecting previously unselected package libio-stringy-perl.
+Preparing to unpack .../05-libio-stringy-perl_2.113-2_all.deb ...
+Unpacking libio-stringy-perl (2.113-2) ...
+Selecting previously unselected package libmime-base32-perl.
+Preparing to unpack .../06-libmime-base32-perl_1.303-3_all.deb ...
+Unpacking libmime-base32-perl (1.303-3) ...
+Selecting previously unselected package libxml-twig-perl.
+Preparing to unpack .../07-libxml-twig-perl_1%3a3.52-3_all.deb ...
+Unpacking libxml-twig-perl (1:3.52-3) ...
+Selecting previously unselected package libnet-dbus-perl.
+Preparing to unpack .../08-libnet-dbus-perl_1.2.0-2+b3_amd64.deb ...
+Unpacking libnet-dbus-perl (1.2.0-2+b3) ...
+Selecting previously unselected package libnet-ldap-perl.
+Preparing to unpack .../09-libnet-ldap-perl_1%3a0.6800+dfsg-1_all.deb ...
+Unpacking libnet-ldap-perl (1:0.6800+dfsg-1) ...
+Selecting previously unselected package libpve-common-perl.
+Preparing to unpack .../10-libpve-common-perl_9.1.16_all.deb ...
+Unpacking libpve-common-perl (9.1.16) ...
+Selecting previously unselected package libproxmox-acme-perl.
+Preparing to unpack .../11-libproxmox-acme-perl_1.7.1_all.deb ...
+Unpacking libproxmox-acme-perl (1.7.1) ...
+Setting up libio-stringy-perl (2.113-2) ...
+Setting up libxml-twig-perl (1:3.52-3) ...
+Setting up libcrypt-openssl-bignum-perl (0.09-2+b4) ...
+Setting up libdbus-1-3:amd64 (1.16.2-2) ...
+Setting up libcrypt-openssl-random-perl:amd64 (0.17-1+b1) ...
+Setting up libcrypt-openssl-rsa-perl:amd64 (0.35-1) ...
+Setting up libconvert-asn1-perl (0.34-1) ...
+Setting up libmime-base32-perl (1.303-3) ...
+Setting up libnet-ldap-perl (1:0.6800+dfsg-1) ...
+Setting up libnet-dbus-perl (1.2.0-2+b3) ...
+Setting up libpve-common-perl (9.1.16) ...
+Setting up libproxmox-acme-perl (1.7.1) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+dpkg-buildpackage: info: source package pve-ha-manager-cross-build-deps-depends
+dpkg-buildpackage: info: source version 5.2.4
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ debian/rules clean
+dh clean
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_clean
+ debian/rules binary
+dh binary
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/pve-ha-manager-cross-build-deps-depends/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'pve-ha-manager-cross-build-deps-depends' in '../pve-ha-manager-cross-build-deps-depends_5.2.4_arm64.deb'.
+ dpkg-genbuildinfo --build=binary -O../pve-ha-manager-cross-build-deps-depends_5.2.4_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../pve-ha-manager-cross-build-deps-depends_5.2.4_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package pve-ha-manager-cross-build-deps-depends:arm64.
+(Reading database ... 104179 files and directories currently installed.)
+Preparing to unpack pve-ha-manager-cross-build-deps-depends_5.2.4_arm64.deb ...
+Unpacking pve-ha-manager-cross-build-deps-depends:arm64 (5.2.4) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 1
+Starting 2 pkgProblemResolver with broken count: 1
+Investigating (0) pve-ha-manager-cross-build-deps-depends:arm64 < 5.2.4 @iU K Nb Ib >
+Broken pve-ha-manager-cross-build-deps-depends:arm64 Depends on libglib-perl:arm64 < none @un H >
+  Considering libglib-perl:arm64 1 as a solution to pve-ha-manager-cross-build-deps-depends:arm64 -2
+  Removing pve-ha-manager-cross-build-deps-depends:arm64 rather than change libglib-perl:arm64
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
+  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
+  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
+  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+The following packages will be REMOVED:
+  pve-ha-manager-cross-build-deps-depends:arm64
+0 upgraded, 0 newly installed, 1 to remove and 5 not upgraded.
+1 not fully installed or removed.
+After this operation, 9216 B disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 104182 files and directories currently installed.)
+Removing pve-ha-manager-cross-build-deps-depends:arm64 (5.2.4) ...
+mk-build-deps: Unable to install pve-ha-manager-cross-build-deps-depends at /usr/bin/mk-build-deps line 460.
+mk-build-deps: Unable to install all build-dep packages
+rm -rf pve-ha-manager-5.2.4 pve-ha-manager-5.2.4.tmp
+cp -a src/ pve-ha-manager-5.2.4.tmp
+cp -a debian pve-ha-manager-5.2.4.tmp/
+echo "git clone git://git.proxmox.com/git/pve-ha-manager.git\\ngit checkout ecaa0330ee6ab576856082c7f944feef4a14a3e0" > pve-ha-manager-5.2.4.tmp/debian/SOURCE
+mv pve-ha-manager-5.2.4.tmp pve-ha-manager-5.2.4
+cd pve-ha-manager-5.2.4; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package pve-ha-manager
+dpkg-buildpackage: info: source version 5.2.4
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+dh clean
+   dh_auto_clean
+	make -j4 distclean
+make[2]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+make cleanup-docgen
+make[3]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+rm -f *.xml.tmp *.1 *.5 *.8 *.adoc docinfo.xml
+rm -rf generated
+make[3]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+make -C test clean
+make[3]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/test'
+rm -rf *~ test-*/log  test-*/*~ test-*/status \
+fence_cfgs/*.cfg.commands fence_cfgs/*.write \
+rules_cfgs/*.cfg.output
+make[3]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/test'
+rm -rf watchdog-mux *.1.pod *.1.gz *.bash-completion *.zsh-completion *.tmp
+make[2]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true" PKG_CONFIG=aarch64-linux-gnu-pkg-config CXX=aarch64-linux-gnu-g\+\+ CC=aarch64-linux-gnu-gcc
+make[2]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+aarch64-linux-gnu-gcc watchdog-mux.c -o watchdog-mux -Wall -Wl,-z,relro
+make[2]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install
+	make -j4 install DESTDIR=/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+printf ".TH ha-manager 1\n.SH NAME\nha-manager\n" > ha-manager.1
+printf ".TH pve-ha-crm 8\n.SH NAME\npve-ha-crm\n" > pve-ha-crm.8
+printf ".TH pve-ha-lrm 8\n.SH NAME\npve-ha-lrm\n" > pve-ha-lrm.8
+: > ha-manager.bash-completion
+: > pve-ha-lrm.bash-completion
+: > pve-ha-crm.bash-completion
+: > ha-manager.zsh-completion
+: > pve-ha-lrm.zsh-completion
+: > pve-ha-crm.zsh-completion
+:
+:
+:
+install -d /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/sbin
+install -m 0755 pve-ha-crm /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/sbin
+install -m 0755 pve-ha-lrm /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/sbin
+install -m 0755 ha-manager /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/sbin
+install -m 0755 watchdog-mux /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/sbin
+install -d /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/bin
+install -m 0755 pve-ha-simulator /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/bin
+install -m 0644 -D pve-ha-crm.bash-completion /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/bash-completion/completions//pve-ha-crm
+install -m 0644 -D pve-ha-lrm.bash-completion /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/bash-completion/completions//pve-ha-lrm
+install -m 0644 -D ha-manager.bash-completion /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/bash-completion/completions//ha-manager
+install -m 0644 -D pve-ha-crm.zsh-completion /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/zsh/vendor-completions//_pve-ha-crm
+install -m 0644 -D pve-ha-lrm.zsh-completion /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/zsh/vendor-completions//_pve-ha-lrm
+install -m 0644 -D ha-manager.zsh-completion /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/zsh/vendor-completions//_ha-manager
+make -C PVE install
+make[3]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE
+make -C HA install
+make[4]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA
+for i in CRM.pm Env.pm Groups.pm HashTools.pm Helpers.pm Rules.pm Resources.pm LRM.pm Manager.pm NodeStatus.pm Tools.pm FenceConfig.pm Fence.pm Usage.pm Config.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/$i; done
+make -C Resources install
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Resources'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/Resources
+for i in PVEVM.pm PVECT.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/Resources/$i; done
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Resources'
+make -C Rules install
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Rules'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/Rules
+for i in Helpers.pm NodeAffinity.pm ResourceAffinity.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/Rules/$i; done
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Rules'
+make -C Usage install
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Usage'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/Usage
+for i in Basic.pm Static.pm Dynamic.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/Usage/$i; done
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Usage'
+make -C Env install
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Env'
+install -D -m 0644 PVE2.pm /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/HA/Env/PVE2.pm
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Env'
+make[4]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA'
+make -C API2 install
+make[4]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/API2'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/API2
+make -C HA install
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/API2/HA'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/API2/HA
+for i in Resources.pm Groups.pm Rules.pm Status.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/API2/HA/$i; done
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/API2/HA'
+make[4]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/API2'
+make -C CLI install
+make[4]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/CLI'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/CLI
+for i in ha_manager.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/CLI/$i; done
+make[4]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/CLI'
+make -C Service install
+make[4]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/Service'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/Service
+for i in pve_ha_lrm.pm pve_ha_crm.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/perl5/PVE/Service/$i; done
+make[4]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/Service'
+make[3]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE'
+make -C PVE PERLDIR=/usr/share/pve-ha-simulator installsim
+make[3]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE
+make -C HA installsim
+make[4]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA
+for i in CRM.pm Env.pm Groups.pm HashTools.pm Helpers.pm Rules.pm Resources.pm LRM.pm Manager.pm NodeStatus.pm Tools.pm FenceConfig.pm Fence.pm Usage.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/$i; done
+make -C Sim install
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Sim'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Sim
+for i in Env.pm Hardware.pm TestEnv.pm TestHardware.pm RTEnv.pm RTHardware.pm Resources.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Sim/$i; done
+for i in Cluster.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/$i; done
+make -C Resources install
+make[6]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Sim/Resources'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Sim/Resources
+for i in VirtVM.pm VirtCT.pm VirtFail.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Sim/Resources/$i; done
+make[6]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Sim/Resources'
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Sim'
+make -C Rules installsim
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Rules'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Rules
+for i in Helpers.pm NodeAffinity.pm ResourceAffinity.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Rules/$i; done
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Rules'
+make -C Usage installsim
+make[5]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Usage'
+install -d -m 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Usage
+for i in Basic.pm; do install -D -m 0644 $i /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-ha-simulator/PVE/HA/Usage/$i; done
+make[5]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA/Usage'
+make[4]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE/HA'
+make[3]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/PVE'
+install -d /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man8/
+install -m 0644 pve-ha-crm.8 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man8/
+gzip -9 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man8//pve-ha-crm.8
+install -m 0644 pve-ha-lrm.8 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man8/
+gzip -9 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man8//pve-ha-lrm.8
+install -d /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man1/
+install -m 0644 ha-manager.1 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man1/
+gzip -9 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp//usr/share/man/man1//ha-manager.1
+make -C templates install
+make[3]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/templates'
+install -dm 0755 /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-manager/templates/default
+install -m644 default/fencing-subject.txt.hbs /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-manager/templates/default/fencing-subject.txt.hbs ;  install -m644 default/fencing-body.txt.hbs /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-manager/templates/default/fencing-body.txt.hbs ;  install -m644 default/fencing-body.html.hbs /workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/debian/tmp/usr/share/pve-manager/templates/default/fencing-body.html.hbs ;
+make[3]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4/templates'
+make[2]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+   debian/rules override_dh_install
+make[2]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+# embed copies of libpve-common-perl files needed by simulator
+install -d -m 0755 debian/tmp/usr/share/pve-ha-simulator/PVE
+install -m 0644 \
+	/usr/share/perl5/PVE/Exception.pm \
+	/usr/share/perl5/PVE/File.pm \
+	/usr/share/perl5/PVE/JSONSchema.pm \
+	/usr/share/perl5/PVE/ProcFSTools.pm \
+	/usr/share/perl5/PVE/SafeSyslog.pm \
+	/usr/share/perl5/PVE/SectionConfig.pm \
+	/usr/share/perl5/PVE/Syscall.pm \
+	/usr/share/perl5/PVE/Tools.pm \
+	/usr/share/perl5/PVE/UPID.pm \
+	debian/tmp/usr/share/pve-ha-simulator/PVE/
+dh_install
+make[2]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_installinit
+   debian/rules override_dh_installsystemd
+make[2]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+dh_installsystemd -ppve-ha-manager --name watchdog-mux --no-restart-after-upgrade --no-stop-on-upgrade watchdog-mux.service
+# restart LRM first, else single-node clusters with configured HA will deadlock
+dh_installsystemd -ppve-ha-manager --name pve-ha-lrm pve-ha-lrm.service
+dh_installsystemd -ppve-ha-manager --name pve-ha-crm pve-ha-crm.service
+make[2]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+   dh_lintian
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   debian/rules override_dh_missing
+make[2]: Entering directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+dh_missing --fail-missing
+make[2]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+   dh_dwz -a
+dwz: debian/pve-ha-manager/usr/sbin/watchdog-mux: .debug_info section not present
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'pve-ha-simulator' in '../pve-ha-simulator_5.2.4_all.deb'.
+dpkg-deb: building package 'pve-ha-manager' in '../pve-ha-manager_5.2.4_arm64.deb'.
+dpkg-deb: building package 'pve-ha-manager-dbgsym' in '../pve-ha-manager-dbgsym_5.2.4_arm64.deb'.
+make[1]: Leaving directory '/workspaces/src/pve-ha-manager/pve-ha-manager-5.2.4'
+ dpkg-genbuildinfo --build=binary -O../pve-ha-manager_5.2.4_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../pve-ha-manager_5.2.4_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+: # lintian disabled for cross build
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libproxmox-acme-perl libproxmox-acme-plugins libproxmox-rs-perl libpve-access-control libpve-apiclient-perl libpve-cluster-api-perl libpve-cluster-perl libpve-common-perl libpve-guest-common-perl libpve-http-server-perl libpve-network-api-perl libpve-network-perl libpve-notify-perl libpve-rs-perl libpve-rs-perl-dbgsym libpve-storage-perl libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-cluster pve-cluster-dbgsym pve-container pve-esxi-import-tools pve-esxi-import-tools-dbgsym pve-firewall pve-firewall-dbgsym pve-ha-manager pve-ha-manager-dbgsym pve-ha-simulator pve-i18n pve-lxc-syscalld pve-lxc-syscalld-dbgsym pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+dpkg-scanpackages: info: Wrote 128 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [30.0 kB]
+Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

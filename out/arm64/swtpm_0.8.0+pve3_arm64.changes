@@ -1,0 +1,48 @@
+Format: 1.8
+Date: Fri, 14 Nov 2025 00:04:04 +0100
+Source: swtpm
+Binary: swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64
+Version: 0.8.0+pve3
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ swtpm      - Libtpms-based TPM emulator
+ swtpm-dev  - Include files for the TPM emulator's CUSE interface
+ swtpm-libs - Common libraries for TPM emulators
+ swtpm-tools - Tools for the TPM emulator
+Changes:
+ swtpm (0.8.0+pve3) trixie; urgency=medium
+ .
+   * swtpm setup: file: always just clear header rather than unlinking to
+     support FUSE export as target file
+Checksums-Sha1:
+ f564c54ad73c2c98e890c15bda115b13226f44cf 20064 swtpm-dbgsym_0.8.0+pve3_arm64.deb
+ 1255c3311410ca073b7e21a16c358beb11be0dd0 48052 swtpm-dev_0.8.0+pve3_arm64.deb
+ 0925a73451dd8608ee57f394555aa4cd06054bc7 112796 swtpm-libs-dbgsym_0.8.0+pve3_arm64.deb
+ 8b6847357a559c715c7147a305f1b42e065bf583 34832 swtpm-libs_0.8.0+pve3_arm64.deb
+ b2f0b5a3b7dfe7d4a10017c59ac61a0cdb9ca35b 195964 swtpm-tools-dbgsym_0.8.0+pve3_arm64.deb
+ 981e8731a3f6a4cb0eb1142677227fb23838fcb4 85612 swtpm-tools_0.8.0+pve3_arm64.deb
+ 0111b98209976b7a37d9b3191c6bbd3f476b9469 9732 swtpm_0.8.0+pve3_arm64.buildinfo
+ 75c457e86c84939f6e202da4c9d4bec6e787bdac 19644 swtpm_0.8.0+pve3_arm64.deb
+Checksums-Sha256:
+ 6464bd5ae5c505d88984537bb34a04562c829a653d51faa286a4109960299baa 20064 swtpm-dbgsym_0.8.0+pve3_arm64.deb
+ 6fe83533f6ffa42d9831daaea8e894f1944ef231da169e6339b90d37aeea3aaa 48052 swtpm-dev_0.8.0+pve3_arm64.deb
+ 6eb4ab0b3a0e183e668ab1ae9fc5682a86e65edeef5462c94c85813190e810aa 112796 swtpm-libs-dbgsym_0.8.0+pve3_arm64.deb
+ 64f1e8c15b62b4b2f4915014ab2b57a9c5753182d0e12fa3356a750d51023569 34832 swtpm-libs_0.8.0+pve3_arm64.deb
+ 2755204f937501f6540be00456a8f57d145959492679bc445c52dccc1c2c3143 195964 swtpm-tools-dbgsym_0.8.0+pve3_arm64.deb
+ 61291545ca37879ff16758c0c46033429f8d7de48a77588ac09787bc968f1aa2 85612 swtpm-tools_0.8.0+pve3_arm64.deb
+ 4e187e887e3905e504f2e53de2ccfd6c2dc4dc51a38eb3f7a57e6c02abf127d8 9732 swtpm_0.8.0+pve3_arm64.buildinfo
+ ce6934e5453b56983abc6ed2d36d6a832e699be6b455fb30ea19ad405cb409fd 19644 swtpm_0.8.0+pve3_arm64.deb
+Files:
+ 7467c12cfd57a7655668dbe9cac27c3e 20064 debug optional swtpm-dbgsym_0.8.0+pve3_arm64.deb
+ d78bc719951488fcf7821a694c43902c 48052 misc optional swtpm-dev_0.8.0+pve3_arm64.deb
+ c22a4f579cb70a39b89beb935413f7f5 112796 debug optional swtpm-libs-dbgsym_0.8.0+pve3_arm64.deb
+ 1bae9d42792c00cb92f3dbe0cf8996d0 34832 misc optional swtpm-libs_0.8.0+pve3_arm64.deb
+ 79da6364c8ad305af6ed145834adffb9 195964 debug optional swtpm-tools-dbgsym_0.8.0+pve3_arm64.deb
+ 268c291877a830b9c3a260d7061397f8 85612 misc optional swtpm-tools_0.8.0+pve3_arm64.deb
+ fcc4d8c3506289c4f769e8c56c0fb7b3 9732 misc optional swtpm_0.8.0+pve3_arm64.buildinfo
+ ad28e256c91d9bb68f3303a3ca5023c0 19644 misc optional swtpm_0.8.0+pve3_arm64.deb

@@ -1,0 +1,49 @@
+Format: 1.8
+Date: Tue, 03 Jun 2025 10:40:13 +0200
+Source: kronosnet
+Binary: libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64 all
+Version: 1.31-pve1
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libknet-dev - kronosnet core switching implementation (developer files)
+ libknet-doc - kronosnet core API documentation
+ libknet1t64 - kronosnet core switching implementation
+ libnozzle-dev - userland wrapper around kernel tap devices (developer files)
+ libnozzle1t64 - userland wrapper around kernel tap devices
+Changes:
+ kronosnet (1.31-pve1) trixie; urgency=medium
+ .
+   * update to kronosnet 1.31
+   * sync packaging with Debian Trixie
+Checksums-Sha1:
+ f4f76c8a19606b48a48e0c5ff27c5ea6f32fe259 8110 kronosnet_1.31-pve1_arm64.buildinfo
+ 75985a45b8d135b8f32416b17971d18e1aa8f5dc 20256 libknet-dev_1.31-pve1_arm64.deb
+ 1cd5d8d78f3b7e28c5be4b8233782fdf93451fc8 92268 libknet-doc_1.31-pve1_all.deb
+ 9b20844c38ae9e87a13563722445d86ccdbf569f 570032 libknet1t64-dbgsym_1.31-pve1_arm64.deb
+ afa95aefbbc07e6642a19c70e1ea29693887010c 69188 libknet1t64_1.31-pve1_arm64.deb
+ b08ea612ef6355273e4c60082d95d9e3095e3c78 6680 libnozzle-dev_1.31-pve1_arm64.deb
+ 8a51d3222fe0504a5ba708ba69afe2c45002bd75 98360 libnozzle1t64-dbgsym_1.31-pve1_arm64.deb
+ 5209c2e7598c43208de445838f84571ec483ca6e 11512 libnozzle1t64_1.31-pve1_arm64.deb
+Checksums-Sha256:
+ 4d70c2aad0fb25b0b0b2ba7114784d29a3055c15ffa37b8e6a790487fa7ab479 8110 kronosnet_1.31-pve1_arm64.buildinfo
+ 0edda3d9fb98bfff20d4bf194598bac8c463c68518012f20c74ff69301fc1ad6 20256 libknet-dev_1.31-pve1_arm64.deb
+ 3d1c330304632f3858adfc36a23bf08a4e6f110dffde7f7bf506121340fa5b9b 92268 libknet-doc_1.31-pve1_all.deb
+ a5d61a2f926a6a3318c0e521df59e337af4f1ddd597020e30a4b1e2eb5499285 570032 libknet1t64-dbgsym_1.31-pve1_arm64.deb
+ a1f6eeadfdcbc63a872d66c57b8c33fbebe0a7401f8c614318981d31b983e49f 69188 libknet1t64_1.31-pve1_arm64.deb
+ 10716c625464a56abbe39a88d922fa44a3b670ee0fdcad87e22fe9186e163242 6680 libnozzle-dev_1.31-pve1_arm64.deb
+ 370985a43f1309885aa1ad360c39878f1f0b6b1374b916d11f311f466ecbe10e 98360 libnozzle1t64-dbgsym_1.31-pve1_arm64.deb
+ f518fd6d0f790b83f79a9f88b4d0c55cb734e11936be5f760171fd18806f5192 11512 libnozzle1t64_1.31-pve1_arm64.deb
+Files:
+ 6f8e989445eee3c36533da1e9d3a0f98 8110 admin optional kronosnet_1.31-pve1_arm64.buildinfo
+ ed3a221658f018490889fc8c506f202b 20256 libdevel optional libknet-dev_1.31-pve1_arm64.deb
+ b2d1970c9d81253fb6b8a8cc69edb6c2 92268 doc optional libknet-doc_1.31-pve1_all.deb
+ d438b9b408c32e62044221e0bdcdfad7 570032 debug optional libknet1t64-dbgsym_1.31-pve1_arm64.deb
+ 3a425ed0e25ae49f01baa210b0b52dfb 69188 libs optional libknet1t64_1.31-pve1_arm64.deb
+ 7c68738d9e3f7f265f857793eeb264b2 6680 libdevel optional libnozzle-dev_1.31-pve1_arm64.deb
+ 090f5e0d28bc9fd213f8f43768c8bb1c 98360 debug optional libnozzle1t64-dbgsym_1.31-pve1_arm64.deb
+ f0a32002aa05f73bce406a4281b186bd 11512 libs optional libnozzle1t64_1.31-pve1_arm64.deb

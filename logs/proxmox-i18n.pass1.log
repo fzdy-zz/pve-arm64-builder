@@ -1,0 +1,1128 @@
+HEAD is now at 599f80b update German translation
+dpkg-buildpackage: info: source package proxmox-i18n-build-deps
+dpkg-buildpackage: info: source version 3.8.0
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/proxmox-i18n-build-deps/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'proxmox-i18n-build-deps' in '../proxmox-i18n-build-deps_3.8.0_all.deb'.
+ dpkg-genbuildinfo --build=binary -O../proxmox-i18n-build-deps_3.8.0_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../proxmox-i18n-build-deps_3.8.0_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package proxmox-i18n-build-deps.
+(Reading database ... 93820 files and directories currently installed.)
+Preparing to unpack proxmox-i18n-build-deps_3.8.0_all.deb ...
+Unpacking proxmox-i18n-build-deps (3.8.0) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
+  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
+  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
+  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libfile-slurp-perl liblocale-po-perl xtr
+The following NEW packages will be installed:
+  libfile-slurp-perl liblocale-po-perl xtr
+0 upgraded, 3 newly installed, 0 to remove and 5 not upgraded.
+1 not fully installed or removed.
+Need to get 809 kB of archives.
+After this operation, 2915 kB of additional disk space will be used.
+Get:1 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libfile-slurp-perl all 9999.32-2 [26.7 kB]
+Get:2 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 liblocale-po-perl all 0.27-2 [14.5 kB]
+Get:3 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie/main amd64 xtr amd64 0.1.9-1~bpo13+pve1 [768 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 809 kB in 3s (308 kB/s)
+Selecting previously unselected package libfile-slurp-perl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93824 files and directories currently installed.)
+Preparing to unpack .../libfile-slurp-perl_9999.32-2_all.deb ...
+Unpacking libfile-slurp-perl (9999.32-2) ...
+Selecting previously unselected package liblocale-po-perl.
+Preparing to unpack .../liblocale-po-perl_0.27-2_all.deb ...
+Unpacking liblocale-po-perl (0.27-2) ...
+Selecting previously unselected package xtr.
+Preparing to unpack .../xtr_0.1.9-1~bpo13+pve1_amd64.deb ...
+Unpacking xtr (0.1.9-1~bpo13+pve1) ...
+Setting up libfile-slurp-perl (9999.32-2) ...
+Setting up liblocale-po-perl (0.27-2) ...
+Setting up xtr (0.1.9-1~bpo13+pve1) ...
+Setting up proxmox-i18n-build-deps (3.8.0) ...
+Processing triggers for man-db (2.13.1-1) ...
+test  -f pmg-gui/Makefile \
+  -a -f pve-yew-mobile-gui/Makefile \
+  -a -f pmg-yew-quarantine-gui/Makefile \
+  -a -f proxmox-datacenter-manager/Makefile \
+  -a -f proxmox-backup/Makefile \
+  -a -f proxmox-yew-widget-toolkit/Makefile \
+  -a -f pve-manager/Makefile \
+  -a -f pve-manager/Makefile \
+    || git submodule update --init
+rm -rf proxmox-i18n-3.8.0 proxmox-i18n-3.8.0.tmp
+rsync -a * proxmox-i18n-3.8.0.tmp
+mv proxmox-i18n-3.8.0.tmp proxmox-i18n-3.8.0
+cd proxmox-i18n-3.8.0; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package proxmox-i18n
+dpkg-buildpackage: info: source version 3.8.0
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+dh clean
+   dh_auto_clean
+	make -j4 distclean
+make[2]: Entering directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+rm -rf proxmox-i18n-[0-9]*/ *.po.tmp *.js.tmp *.deb *.dsc *.tar.* *.build *.buildinfo *.changes *.js messages.pot
+make[2]: Leaving directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install
+	make -j4 install DESTDIR=/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-ar.js ar.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-bg.js bg.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-ca.js ca.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-cs.js cs.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23433.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23433.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23463.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23463.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22946.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22946.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22965.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22965.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22997.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22997.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23495.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23495.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23536.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23536.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23331.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23331.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-da.js da.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-de.js de.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-es.js es.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-eu.js eu.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24214.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24214.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24231.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24231.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23235.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23235.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23251.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23251.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23227.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23227.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23300.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23300.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23280.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23280.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23806.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23806.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-fa.js fa.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-fr.js fr.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-gl.js gl.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-he.js he.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24309.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24309.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24330.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24330.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23428.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23428.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23473.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23473.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24378.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24378.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-hr.js hr.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24403.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24403.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24294.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24294.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24325.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24325.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-hu.js hu.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-it.js it.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-ja.js ja.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23533.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23533.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24143.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24143.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22615.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22615.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22642.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22642.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-ka.js ka.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-ko.js ko.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-nb.js nb.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-nl.js nl.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23092.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23092.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22626.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22626.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24412.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-nn.js nn.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23743.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23743.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-pl.js pl.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-pt_BR.js pt_BR.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-ru.js ru.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24388.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24388.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24413.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24413.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23368.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23368.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23422.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23422.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-sl.js sl.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24135.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24135.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23265.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23265.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23299.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23299.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-sv.js sv.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-tr.js tr.po
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-ukr.js ukr.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23876.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23876.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23902.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23902.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23867.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23867.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23887.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23887.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23241.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23241.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23260.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23260.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-zh_CN.js zh_CN.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23262.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23262.
+./po2js.pl -t pmg -v "3.8.0" -o pmg-lang-zh_TW.js zh_TW.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-ar.js ar.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-bg.js bg.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22825.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22825.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22862.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22862.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-ca.js ca.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23495.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23495.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23536.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23536.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23331.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23331.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-cs.js cs.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-da.js da.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-de.js de.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23433.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23433.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23463.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23463.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22946.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22946.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22965.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22965.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22997.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22997.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-es.js es.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24214.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24214.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24231.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24231.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23227.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23227.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23280.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23280.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-eu.js eu.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-fa.js fa.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-fr.js fr.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23235.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23235.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23251.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23251.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23300.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23300.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23806.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23806.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24309.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24309.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24330.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24330.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-gl.js gl.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-he.js he.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-hr.js hr.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23428.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23428.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23473.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23473.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-hu.js hu.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24378.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24378.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24403.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24403.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24294.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24294.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24325.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24325.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23533.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23533.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-it.js it.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-ja.js ja.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-ka.js ka.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24143.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24143.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22615.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22615.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22642.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22642.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-ko.js ko.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23092.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23092.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-nb.js nb.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-nl.js nl.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-nn.js nn.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22626.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22626.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23743.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23743.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-pl.js pl.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-pt_BR.js pt_BR.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24388.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24388.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24413.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24413.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-ru.js ru.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-sl.js sl.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23368.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23368.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23422.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23422.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24135.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24135.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23265.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23265.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23299.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23299.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23876.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23876.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23902.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23902.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-sv.js sv.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-tr.js tr.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-ukr.js ukr.po
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-zh_CN.js zh_CN.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23241.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23241.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23260.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23260.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23867.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23867.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23887.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23887.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23262.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23262.
+./po2js.pl -t pve -v "3.8.0" -o pve-lang-zh_TW.js zh_TW.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-ar.js ar.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-bg.js bg.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-ca.js ca.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22825.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22825.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22862.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22862.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23495.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23495.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23536.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23536.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23331.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23331.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-cs.js cs.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23433.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23433.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23463.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23463.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-da.js da.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-de.js de.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-es.js es.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22946.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22946.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22965.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22965.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22997.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22997.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24214.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24214.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24231.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24231.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23227.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23227.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23280.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23280.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-eu.js eu.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-fa.js fa.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23235.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23235.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23251.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23251.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23300.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23300.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-fr.js fr.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-gl.js gl.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23806.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23806.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24309.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24309.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24330.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24330.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-he.js he.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-hr.js hr.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23428.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23428.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23473.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23473.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24378.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24378.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24403.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24403.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-hu.js hu.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-it.js it.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24294.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24294.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24325.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24325.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23533.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23533.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-ja.js ja.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-ka.js ka.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24143.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24143.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22615.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22615.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22642.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22642.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-ko.js ko.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-nb.js nb.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23092.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23092.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-nl.js nl.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22626.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22626.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-nn.js nn.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24412.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24412.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-pl.js pl.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-pt_BR.js pt_BR.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23743.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23743.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24388.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24388.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24413.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24413.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-ru.js ru.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-sl.js sl.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23368.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23368.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23387.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23422.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23422.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24113.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24135.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 24135.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-sv.js sv.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-tr.js tr.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23876.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23876.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23902.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23902.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23265.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23265.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23299.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23299.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-ukr.js ukr.po
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-zh_CN.js zh_CN.po
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23241.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23241.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23260.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23260.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23867.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23867.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23887.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23887.
+./po2js.pl -t pbs -v "3.8.0" -o pbs-lang-zh_TW.js zh_TW.po
+msgmerge ar.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-ar.mo ar.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23262.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 23262.
+2580 translated messages, 787 fuzzy translations, 562 untranslated messages.
+msgmerge bg.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-bg.mo bg.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge ca.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-ca.mo ca.po;
+msgmerge cs.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-cs.mo cs.po;
+2564 translated messages, 824 fuzzy translations, 541 untranslated messages.
+msgmerge da.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-da.mo da.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22825.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22825.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22862.
+Use of uninitialized value in pattern match (m//) at /usr/share/perl5/Locale/PO.pm line 590, <IN> line 22862.
+189 translated messages, 1722 fuzzy translations, 2018 untranslated messages.
+1620 translated messages, 979 fuzzy translations, 1330 untranslated messages.
+msgmerge de.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-de.mo de.po;
+msgmerge es.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-es.mo es.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+3310 translated messages, 362 fuzzy translations, 257 untranslated messages.
+msgmerge eu.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-eu.mo eu.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge fa.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-fa.mo fa.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+3929 translated messages.
+msgmerge fr.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-fr.mo fr.po;
+3921 translated messages, 8 untranslated messages.
+msgmerge gl.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-gl.mo gl.po;
+1018 translated messages, 1202 fuzzy translations, 1709 untranslated messages.
+msgmerge he.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-he.mo he.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+280 translated messages, 1764 fuzzy translations, 1885 untranslated messages.
+msgmerge hr.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-hr.mo hr.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+358 translated messages, 1793 fuzzy translations, 1778 untranslated messages.
+msgmerge hu.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-hu.mo hu.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+982 translated messages, 1700 fuzzy translations, 1247 untranslated messages.
+msgmerge it.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-it.mo it.po;
+3929 translated messages.
+msgmerge ja.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-ja.mo ja.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+2172 translated messages, 1033 fuzzy translations, 724 untranslated messages.
+msgmerge ka.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-ka.mo ka.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+752 translated messages, 1523 fuzzy translations, 1654 untranslated messages.
+msgmerge ko.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-ko.mo ko.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+2662 translated messages, 1267 untranslated messages.
+msgmerge nb.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-nb.mo nb.po;
+3683 translated messages, 7 fuzzy translations, 239 untranslated messages.
+msgmerge nl.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-nl.mo nl.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+2960 translated messages, 551 fuzzy translations, 418 untranslated messages.
+msgmerge nn.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-nn.mo nn.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+3886 translated messages, 18 fuzzy translations, 25 untranslated messages.
+msgmerge pl.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-pl.mo pl.po;
+394 translated messages, 1785 fuzzy translations, 1750 untranslated messages.
+msgmerge pt_BR.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-pt_BR.mo pt_BR.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+1942 translated messages, 1159 fuzzy translations, 828 untranslated messages.
+msgmerge ru.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-ru.mo ru.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+394 translated messages, 1785 fuzzy translations, 1750 untranslated messages.
+msgmerge sl.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-sl.mo sl.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+3256 translated messages, 393 fuzzy translations, 280 untranslated messages.
+msgmerge sv.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-sv.mo sv.po;
+1700 translated messages, 1320 fuzzy translations, 909 untranslated messages.
+msgmerge tr.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-tr.mo tr.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+3310 translated messages, 364 fuzzy translations, 255 untranslated messages.
+msgmerge ukr.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-ukr.mo ukr.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+2009 translated messages, 1117 fuzzy translations, 803 untranslated messages.
+msgmerge zh_CN.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-zh_CN.mo zh_CN.po;
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+1484 translated messages, 1161 fuzzy translations, 1284 untranslated messages.
+3310 translated messages, 363 fuzzy translations, 256 untranslated messages.
+msgmerge zh_TW.po | msgattrib --no-fuzzy --no-obsolete | msgfmt --verbose --output-file catalog-zh_TW.mo zh_TW.po;
+xgettext pve-yew-mobile-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot --output pve-yew-mobile-all.pot
+msgmerge: exactly 2 input files required
+Try 'msgmerge --help' for more information.
+2984 translated messages, 575 fuzzy translations, 370 untranslated messages.
+xgettext pmg-yew-quarantine-gui.pot proxmox-yew-comp.pot proxmox-yew-widget-toolkit.pot --output pmg-yew-quarantine-all.pot
+msgmerge ar.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-ar.mo.tmp
+msgmerge bg.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-bg.mo.tmp
+3392 translated messages, 306 fuzzy translations, 231 untranslated messages.
+msgmerge ca.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-ca.mo.tmp
+3929 translated messages.
+msgmerge cs.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-cs.mo.tmp
+....................................................................................... done.
+..................................................................................... done.
+...................................................................................... done.
+........................................................................................ done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-ar.mo pve-yew-mobile-catalog-ar.mo.tmp;
+msgfmt --verbose --output-file pve-yew-mobile-catalog-ca.mo pve-yew-mobile-catalog-ca.mo.tmp;
+577 translated messages, 90 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-ar.mo.tmp
+msgmerge da.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-da.mo.tmp
+461 translated messages, 200 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-ca.mo.tmp
+msgmerge de.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-de.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-bg.mo pve-yew-mobile-catalog-bg.mo.tmp;
+575 translated messages, 89 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-bg.mo.tmp
+msgmerge es.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-es.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-cs.mo pve-yew-mobile-catalog-cs.mo.tmp;
+837 translated messages, 5 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-cs.mo.tmp
+msgmerge eu.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-eu.mo.tmp
+............................................................................................... done.
+..................................................................................... done.
+....................................................................................... done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-da.mo pve-yew-mobile-catalog-da.mo.tmp;
+115 translated messages, 375 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-da.mo.tmp
+msgmerge fa.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-fa.mo.tmp
+...................................................................................... done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-de.mo pve-yew-mobile-catalog-de.mo.tmp;
+847 translated messages.
+rm -rf  pve-yew-mobile-catalog-de.mo.tmp
+msgmerge fr.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-fr.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-es.mo pve-yew-mobile-catalog-es.mo.tmp;
+msgfmt --verbose --output-file pve-yew-mobile-catalog-eu.mo pve-yew-mobile-catalog-eu.mo.tmp;
+......................................................................................847 translated messages.
+rm -rf  pve-yew-mobile-catalog-es.mo.tmp
+msgmerge gl.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-gl.mo.tmp
+.. done.
+340 translated messages, 293 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-eu.mo.tmp
+msgmerge he.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-he.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-fa.mo pve-yew-mobile-catalog-fa.mo.tmp;
+....................................................................................... done.
+172 translated messages, 322 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-fa.mo.tmp
+msgmerge hr.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-hr.mo.tmp
+................................................................................................................................................................................... done.
+ done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-he.mo pve-yew-mobile-catalog-he.mo.tmp;
+341 translated messages, 210 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-he.mo.tmp
+msgmerge hu.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-hu.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-gl.mo pve-yew-mobile-catalog-gl.mo.tmp;
+217 translated messages, 282 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-gl.mo.tmp
+msgmerge it.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-it.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-fr.mo pve-yew-mobile-catalog-fr.mo.tmp;
+.........................................................................................847 translated messages.
+rm -rf  pve-yew-mobile-catalog-fr.mo.tmp
+msgmerge ja.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-ja.mo.tmp
+. done.
+.......................................................................................... done.
+................msgfmt --verbose --output-file pve-yew-mobile-catalog-hr.mo pve-yew-mobile-catalog-hr.mo.tmp;
+....................................................................... done.
+....................................................................................... done.
+545 translated messages, 110 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-hr.mo.tmp
+msgmerge ka.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-ka.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-it.mo pve-yew-mobile-catalog-it.mo.tmp;
+msgfmt --verbose --output-file pve-yew-mobile-catalog-hu.mo pve-yew-mobile-catalog-hu.mo.tmp;
+645 translated messages, 202 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-it.mo.tmp
+msgmerge ko.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-ko.mo.tmp
+307 translated messages, 269 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-hu.mo.tmp
+msgmerge nb.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-nb.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-ja.mo pve-yew-mobile-catalog-ja.mo.tmp;
+842 translated messages, 5 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-ja.mo.tmp
+msgmerge nl.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-nl.mo.tmp
+....................................................................................... done.
+............................................................................................................................................................................. done.
+ done.
+...................................................................................... done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-nb.mo pve-yew-mobile-catalog-nb.mo.tmp;
+234 translated messages, 275 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-nb.mo.tmp
+msgmerge nn.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-nn.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-ka.mo pve-yew-mobile-catalog-ka.mo.tmp;
+msgfmt --verbose --output-file pve-yew-mobile-catalog-ko.mo pve-yew-mobile-catalog-ko.mo.tmp;
+736 translated messages, 39 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-ka.mo.tmp
+msgmerge pl.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-pl.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-nl.mo pve-yew-mobile-catalog-nl.mo.tmp;
+847 translated messages.
+rm -rf  pve-yew-mobile-catalog-ko.mo.tmp
+msgmerge pt_BR.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-pt_BR.mo.tmp
+524 translated messages, 123 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-nl.mo.tmp
+msgmerge ru.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-ru.mo.tmp
+......................................................................................... done.
+..................................................................................... done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-nn.mo pve-yew-mobile-catalog-nn.mo.tmp;
+.....................................................................................234 translated messages, 275 untranslated messages.
+. done.
+......................................................................................rm -rf  pve-yew-mobile-catalog-nn.mo.tmp
+msgmerge sl.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-sl.mo.tmp
+ done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-pl.mo pve-yew-mobile-catalog-pl.mo.tmp;
+msgfmt --verbose --output-file pve-yew-mobile-catalog-pt_BR.mo pve-yew-mobile-catalog-pt_BR.mo.tmp;
+811 translated messages, 15 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-pl.mo.tmp
+msgmerge sv.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-sv.mo.tmp
+472 translated messages, 152 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-pt_BR.mo.tmp
+msgmerge tr.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-tr.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-ru.mo pve-yew-mobile-catalog-ru.mo.tmp;
+....................................................................................... done.
+837 translated messages, 5 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-ru.mo.tmp
+msgmerge ukr.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-ukr.mo.tmp
+....................................................................................... done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-sl.mo pve-yew-mobile-catalog-sl.mo.tmp;
+..................................................................................... done.
+504 translated messages, 140 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-sl.mo.tmp
+msgmerge zh_CN.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-zh_CN.mo.tmp
+...................................................................................... done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-tr.mo pve-yew-mobile-catalog-tr.mo.tmp;
+419 translated messages, 230 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-tr.mo.tmp
+msgmerge zh_TW.po pve-yew-mobile-all.pot| msgattrib --no-fuzzy --no-obsolete > pve-yew-mobile-catalog-zh_TW.mo.tmp
+msgfmt --verbose --output-file pve-yew-mobile-catalog-sv.mo pve-yew-mobile-catalog-sv.mo.tmp;
+837 translated messages, 5 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-sv.mo.tmp
+msgmerge ar.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-ar.mo.tmp
+....................................................................................... done.
+msgfmt --verbose --output-file pve-yew-mobile-catalog-ukr.mo pve-yew-mobile-catalog-ukr.mo.tmp;
+722 translated messages, 40 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-ukr.mo.tmp
+msgmerge bg.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-bg.mo.tmp
+..................................................................................... done.
+.....................................................................................msgfmt --verbose --output-file pve-yew-mobile-catalog-zh_CN.mo pve-yew-mobile-catalog-zh_CN.mo.tmp;
+.. done.
+839 translated messages, 4 untranslated messages.
+rm -rf  pve-yew-mobile-catalog-zh_CN.mo.tmp
+msgmerge ca.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-ca.mo.tmp
+..................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-ar.mo pmg-yew-quarantine-catalog-ar.mo.tmp;
+msgfmt --verbose --output-file pve-yew-mobile-catalog-zh_TW.mo pve-yew-mobile-catalog-zh_TW.mo.tmp;
+560 translated messages, 86 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-ar.mo.tmp
+msgmerge cs.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-cs.mo.tmp
+847 translated messages.
+rm -rf  pve-yew-mobile-catalog-zh_TW.mo.tmp
+msgmerge da.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-da.mo.tmp
+................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-bg.mo pmg-yew-quarantine-catalog-bg.mo.tmp;
+558 translated messages, 85 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-bg.mo.tmp
+msgmerge de.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-de.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-ca.mo pmg-yew-quarantine-catalog-ca.mo.tmp;
+444 translated messages, 197 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-ca.mo.tmp
+.................................................................................................msgmerge es.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-es.mo.tmp
+.......................................................................... done.
+ done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-da.mo pmg-yew-quarantine-catalog-da.mo.tmp;
+....................................................................................... done.
+103 translated messages, 374 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-da.mo.tmp
+msgmerge eu.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-eu.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-cs.mo pmg-yew-quarantine-catalog-cs.mo.tmp;
+811 translated messages, 6 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-cs.mo.tmp
+msgmerge fa.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-fa.mo.tmp
+..................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-de.mo pmg-yew-quarantine-catalog-de.mo.tmp;
+823 translated messages.
+rm -rf  pmg-yew-quarantine-catalog-de.mo.tmp
+msgmerge fr.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-fr.mo.tmp
+...................................................................................................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-es.mo pmg-yew-quarantine-catalog-es.mo.tmp;
+ done.
+823 translated messages.
+rm -rf  pmg-yew-quarantine-catalog-es.mo.tmp
+msgmerge gl.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-gl.mo.tmp
+.......msgfmt --verbose --output-file pmg-yew-quarantine-catalog-eu.mo pmg-yew-quarantine-catalog-eu.mo.tmp;
+.............................................................................msgfmt --verbose --output-file pmg-yew-quarantine-catalog-fa.mo pmg-yew-quarantine-catalog-fa.mo.tmp;
+ done.
+158 translated messages, 319 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-fa.mo.tmp
+msgmerge he.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-he.mo.tmp
+322 translated messages, 292 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-eu.mo.tmp
+msgmerge hr.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-hr.mo.tmp
+......................................................................................... done.
+.....................................................................................msgfmt --verbose --output-file pmg-yew-quarantine-catalog-gl.mo pmg-yew-quarantine-catalog-gl.mo.tmp;
+ done.
+..................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-fr.mo pmg-yew-quarantine-catalog-fr.mo.tmp;
+201 translated messages, 281 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-gl.mo.tmp
+msgmerge hu.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-hu.mo.tmp
+823 translated messages.
+rm -rf  pmg-yew-quarantine-catalog-fr.mo.tmp
+msgmerge it.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-it.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-hr.mo pmg-yew-quarantine-catalog-hr.mo.tmp;
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-he.mo pmg-yew-quarantine-catalog-he.mo.tmp;
+529 translated messages, 105 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-hr.mo.tmp
+msgmerge ja.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-ja.mo.tmp
+322 translated messages, 208 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-he.mo.tmp
+msgmerge ka.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-ka.mo.tmp
+..................................................................................... done.
+.................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-hu.mo pmg-yew-quarantine-catalog-hu.mo.tmp;
+289 translated messages, 267 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-hu.mo.tmp
+msgmerge ko.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-ko.mo.tmp
+...................................................................................................................................................................................................... done.
+.. done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-it.mo pmg-yew-quarantine-catalog-it.mo.tmp;
+626 translated messages, 197 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-it.mo.tmp
+msgmerge nb.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-nb.mo.tmp
+......................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-ja.mo pmg-yew-quarantine-catalog-ja.mo.tmp;
+816 translated messages, 7 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-ja.mo.tmp
+msgmerge nl.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-nl.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-ka.mo pmg-yew-quarantine-catalog-ka.mo.tmp;
+.................................................................................... done.
+715 translated messages, 38 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-ka.mo.tmp
+msgmerge nn.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-nn.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-ko.mo pmg-yew-quarantine-catalog-ko.mo.tmp;
+819 translated messages, 3 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-ko.mo.tmp
+msgmerge pl.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-pl.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-nb.mo pmg-yew-quarantine-catalog-nb.mo.tmp;
+..................................................................................... done.
+218 translated messages, 275 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-nb.mo.tmp
+msgmerge pt_BR.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-pt_BR.mo.tmp
+.................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-nl.mo pmg-yew-quarantine-catalog-nl.mo.tmp;
+............................................................................................. done.
+507 translated messages, 119 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-nl.mo.tmp
+msgmerge ru.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-ru.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-nn.mo pmg-yew-quarantine-catalog-nn.mo.tmp;
+218 translated messages, 275 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-nn.mo.tmp
+msgmerge sl.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-sl.mo.tmp
+..................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-pl.mo pmg-yew-quarantine-catalog-pl.mo.tmp;
+787 translated messages, 15 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-pl.mo.tmp
+msgmerge sv.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-sv.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-pt_BR.mo pmg-yew-quarantine-catalog-pt_BR.mo.tmp;
+..................................................................................... done.
+455 translated messages, 148 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-pt_BR.mo.tmp
+msgmerge tr.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-tr.mo.tmp
+................................................................................... done.
+...................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-sl.mo pmg-yew-quarantine-catalog-sl.mo.tmp;
+487 translated messages, 136 untranslated messages.
+.................................................................rm -rf  pmg-yew-quarantine-catalog-sl.mo.tmp
+......................msgmerge ukr.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-ukr.mo.tmp
+. done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-ru.mo pmg-yew-quarantine-catalog-ru.mo.tmp;
+811 translated messages, 6 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-ru.mo.tmp
+msgmerge zh_CN.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-zh_CN.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-tr.mo pmg-yew-quarantine-catalog-tr.mo.tmp;
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-sv.mo pmg-yew-quarantine-catalog-sv.mo.tmp;
+402 translated messages, 226 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-tr.mo.tmp
+msgmerge zh_TW.po pmg-yew-quarantine-all.pot| msgattrib --no-fuzzy --no-obsolete > pmg-yew-quarantine-catalog-zh_TW.mo.tmp
+811 translated messages, 6 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-sv.mo.tmp
+...................................................................................... done.
+..................................................................................... done.
+................................................................................... done.
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-ukr.mo pmg-yew-quarantine-catalog-ukr.mo.tmp;
+699 translated messages, 40 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-ukr.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-zh_CN.mo pmg-yew-quarantine-catalog-zh_CN.mo.tmp;
+812 translated messages, 6 untranslated messages.
+rm -rf  pmg-yew-quarantine-catalog-zh_CN.mo.tmp
+msgfmt --verbose --output-file pmg-yew-quarantine-catalog-zh_TW.mo pmg-yew-quarantine-catalog-zh_TW.mo.tmp;
+823 translated messages.
+rm -rf  pmg-yew-quarantine-catalog-zh_TW.mo.tmp
+install -d /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pmg-i18n
+install -m 0644  pmg-lang-ar.js  pmg-lang-bg.js  pmg-lang-ca.js  pmg-lang-cs.js  pmg-lang-da.js  pmg-lang-de.js  pmg-lang-es.js  pmg-lang-eu.js  pmg-lang-fa.js  pmg-lang-fr.js  pmg-lang-gl.js  pmg-lang-he.js  pmg-lang-hr.js  pmg-lang-hu.js  pmg-lang-it.js  pmg-lang-ja.js  pmg-lang-ka.js  pmg-lang-ko.js  pmg-lang-nb.js  pmg-lang-nl.js  pmg-lang-nn.js  pmg-lang-pl.js  pmg-lang-pt_BR.js  pmg-lang-ru.js  pmg-lang-sl.js  pmg-lang-sv.js  pmg-lang-tr.js  pmg-lang-ukr.js  pmg-lang-zh_CN.js  pmg-lang-zh_TW.js /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pmg-i18n
+install -d /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pve-i18n
+install -m 0644  pve-lang-ar.js  pve-lang-bg.js  pve-lang-ca.js  pve-lang-cs.js  pve-lang-da.js  pve-lang-de.js  pve-lang-es.js  pve-lang-eu.js  pve-lang-fa.js  pve-lang-fr.js  pve-lang-gl.js  pve-lang-he.js  pve-lang-hr.js  pve-lang-hu.js  pve-lang-it.js  pve-lang-ja.js  pve-lang-ka.js  pve-lang-ko.js  pve-lang-nb.js  pve-lang-nl.js  pve-lang-nn.js  pve-lang-pl.js  pve-lang-pt_BR.js  pve-lang-ru.js  pve-lang-sl.js  pve-lang-sv.js  pve-lang-tr.js  pve-lang-ukr.js  pve-lang-zh_CN.js  pve-lang-zh_TW.js /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pve-i18n
+install -d /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pbs-i18n
+install -m 0644  pbs-lang-ar.js  pbs-lang-bg.js  pbs-lang-ca.js  pbs-lang-cs.js  pbs-lang-da.js  pbs-lang-de.js  pbs-lang-es.js  pbs-lang-eu.js  pbs-lang-fa.js  pbs-lang-fr.js  pbs-lang-gl.js  pbs-lang-he.js  pbs-lang-hr.js  pbs-lang-hu.js  pbs-lang-it.js  pbs-lang-ja.js  pbs-lang-ka.js  pbs-lang-ko.js  pbs-lang-nb.js  pbs-lang-nl.js  pbs-lang-nn.js  pbs-lang-pl.js  pbs-lang-pt_BR.js  pbs-lang-ru.js  pbs-lang-sl.js  pbs-lang-sv.js  pbs-lang-tr.js  pbs-lang-ukr.js  pbs-lang-zh_CN.js  pbs-lang-zh_TW.js /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pbs-i18n
+install -d /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pdm-i18n
+install -m 0644  catalog-ar.mo  catalog-bg.mo  catalog-ca.mo  catalog-cs.mo  catalog-da.mo  catalog-de.mo  catalog-es.mo  catalog-eu.mo  catalog-fa.mo  catalog-fr.mo  catalog-gl.mo  catalog-he.mo  catalog-hr.mo  catalog-hu.mo  catalog-it.mo  catalog-ja.mo  catalog-ka.mo  catalog-ko.mo  catalog-nb.mo  catalog-nl.mo  catalog-nn.mo  catalog-pl.mo  catalog-pt_BR.mo  catalog-ru.mo  catalog-sl.mo  catalog-sv.mo  catalog-tr.mo  catalog-ukr.mo  catalog-zh_CN.mo  catalog-zh_TW.mo /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pdm-i18n
+install -d /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pve-yew-mobile-i18n
+install -m 0644  pve-yew-mobile-catalog-ar.mo  pve-yew-mobile-catalog-bg.mo  pve-yew-mobile-catalog-ca.mo  pve-yew-mobile-catalog-cs.mo  pve-yew-mobile-catalog-da.mo  pve-yew-mobile-catalog-de.mo  pve-yew-mobile-catalog-es.mo  pve-yew-mobile-catalog-eu.mo  pve-yew-mobile-catalog-fa.mo  pve-yew-mobile-catalog-fr.mo  pve-yew-mobile-catalog-gl.mo  pve-yew-mobile-catalog-he.mo  pve-yew-mobile-catalog-hr.mo  pve-yew-mobile-catalog-hu.mo  pve-yew-mobile-catalog-it.mo  pve-yew-mobile-catalog-ja.mo  pve-yew-mobile-catalog-ka.mo  pve-yew-mobile-catalog-ko.mo  pve-yew-mobile-catalog-nb.mo  pve-yew-mobile-catalog-nl.mo  pve-yew-mobile-catalog-nn.mo  pve-yew-mobile-catalog-pl.mo  pve-yew-mobile-catalog-pt_BR.mo  pve-yew-mobile-catalog-ru.mo  pve-yew-mobile-catalog-sl.mo  pve-yew-mobile-catalog-sv.mo  pve-yew-mobile-catalog-tr.mo  pve-yew-mobile-catalog-ukr.mo  pve-yew-mobile-catalog-zh_CN.mo  pve-yew-mobile-catalog-zh_TW.mo /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pve-yew-mobile-i18n
+install -d /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pmg-yew-quarantine-i18n
+install -m 0644  pmg-yew-quarantine-catalog-ar.mo  pmg-yew-quarantine-catalog-bg.mo  pmg-yew-quarantine-catalog-ca.mo  pmg-yew-quarantine-catalog-cs.mo  pmg-yew-quarantine-catalog-da.mo  pmg-yew-quarantine-catalog-de.mo  pmg-yew-quarantine-catalog-es.mo  pmg-yew-quarantine-catalog-eu.mo  pmg-yew-quarantine-catalog-fa.mo  pmg-yew-quarantine-catalog-fr.mo  pmg-yew-quarantine-catalog-gl.mo  pmg-yew-quarantine-catalog-he.mo  pmg-yew-quarantine-catalog-hr.mo  pmg-yew-quarantine-catalog-hu.mo  pmg-yew-quarantine-catalog-it.mo  pmg-yew-quarantine-catalog-ja.mo  pmg-yew-quarantine-catalog-ka.mo  pmg-yew-quarantine-catalog-ko.mo  pmg-yew-quarantine-catalog-nb.mo  pmg-yew-quarantine-catalog-nl.mo  pmg-yew-quarantine-catalog-nn.mo  pmg-yew-quarantine-catalog-pl.mo  pmg-yew-quarantine-catalog-pt_BR.mo  pmg-yew-quarantine-catalog-ru.mo  pmg-yew-quarantine-catalog-sl.mo  pmg-yew-quarantine-catalog-sv.mo  pmg-yew-quarantine-catalog-tr.mo  pmg-yew-quarantine-catalog-ukr.mo  pmg-yew-quarantine-catalog-zh_CN.mo  pmg-yew-quarantine-catalog-zh_TW.mo /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pmg-yew-quarantine-i18n
+ln -s pmg-lang-ko.js /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pmg-i18n/pmg-lang-kr.js
+ln -s pve-lang-ko.js /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pve-i18n/pve-lang-kr.js
+ln -s pbs-lang-ko.js /workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0/debian/tmp/usr/share/pbs-i18n/pbs-lang-kr.js
+rm pmg-yew-quarantine-all.pot pve-yew-mobile-all.pot
+make[2]: Leaving directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-eu.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-bg.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-it.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-ar.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-gl.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-hr.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-da.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-pt_BR.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-ca.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-nn.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-sv.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-ka.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-ko.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-ru.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-zh_CN.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-fa.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-nb.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-hu.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-tr.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-cs.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-sl.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-nl.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-ukr.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-pl.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-he.mo
+	Normalized debian/pdm-i18n/usr/share/pdm-i18n/catalog-zh_TW.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-bg.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-sv.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-tr.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-nn.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-ar.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-fa.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-sl.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-ru.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-zh_TW.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-da.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-cs.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-pt_BR.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-ca.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-ko.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-nb.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-he.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-ukr.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-eu.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-hr.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-pl.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-hu.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-nl.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-ka.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-zh_CN.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-it.mo
+	Normalized debian/pve-yew-mobile-i18n/usr/share/pve-yew-mobile-i18n/pve-yew-mobile-catalog-gl.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-pt_BR.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-ru.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-ukr.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-nl.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-cs.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-ca.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-nn.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-hu.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-da.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-zh_CN.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-nb.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-he.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-ko.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-sv.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-sl.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-ar.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-hr.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-tr.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-gl.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-it.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-zh_TW.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-bg.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-fa.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-eu.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-pl.mo
+	Normalized debian/pmg-yew-quarantine-i18n/usr/share/pmg-yew-quarantine-i18n/pmg-yew-quarantine-catalog-ka.mo
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'pve-yew-mobile-i18n' in '../pve-yew-mobile-i18n_3.8.0_all.deb'.
+dpkg-deb: building package 'pmg-i18n' in '../pmg-i18n_3.8.0_all.deb'.
+dpkg-deb: building package 'pve-i18n' in '../pve-i18n_3.8.0_all.deb'.
+dpkg-deb: building package 'pmg-yew-quarantine-i18n' in '../pmg-yew-quarantine-i18n_3.8.0_all.deb'.
+dpkg-deb: building package 'pbs-i18n' in '../pbs-i18n_3.8.0_all.deb'.
+dpkg-deb: building package 'pdm-i18n' in '../pdm-i18n_3.8.0_all.deb'.
+make[1]: Leaving directory '/workspaces/src/proxmox-i18n/proxmox-i18n-3.8.0'
+ dpkg-genbuildinfo --build=binary -O../proxmox-i18n_3.8.0_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../proxmox-i18n_3.8.0_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+touch "build-debs"
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring pve-i18n pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+dpkg-scanpackages: info: Wrote 98 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [22.9 kB]
+Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

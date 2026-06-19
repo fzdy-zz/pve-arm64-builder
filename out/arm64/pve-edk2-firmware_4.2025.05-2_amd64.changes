@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Thu, 13 Nov 2025 11:17:01 +0100
+Source: pve-edk2-firmware
+Binary: pve-edk2-firmware pve-edk2-firmware-aarch64 pve-edk2-firmware-legacy pve-edk2-firmware-ovmf pve-edk2-firmware-riscv
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 4.2025.05-2
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pve-edk2-firmware - edk2 based UEFI firmware modules for virtual machines
+ pve-edk2-firmware-aarch64 - edk2 based ARM64 UEFI firmware modules for virtual machines
+ pve-edk2-firmware-legacy - edk2 based legacy 2MB UEFI firmware modules for virtual machines
+ pve-edk2-firmware-ovmf - edk2 based UEFI firmware modules for virtual machines
+ pve-edk2-firmware-riscv - edk2 based RISC-V UEFI firmware modules for virtual machines
+Changes:
+ pve-edk2-firmware (4.2025.05-2) trixie; urgency=medium
+ .
+   * add image for Intel TDX support.
+Checksums-Sha1:
+ ea5881ec992978cd1b800f3674cb1ff7330a1a19 2690160 pve-edk2-firmware-aarch64_4.2025.05-2_all.deb
+ f902e0e6f42cc79adc1018c4afb3e4f0d2f43a7e 3102028 pve-edk2-firmware-legacy_4.2025.05-2_all.deb
+ 7c4bef4a87b9c702a55dea1fb64197da88338064 8370688 pve-edk2-firmware-ovmf_4.2025.05-2_all.deb
+ cfe0cee4c9ea0f361a0bbec4abec3c1ed5571b59 1519976 pve-edk2-firmware-riscv_4.2025.05-2_all.deb
+ 4512da709e8e9120b737e27cccd9b106c488e646 7608 pve-edk2-firmware_4.2025.05-2_all.deb
+ 2de61c5767fd22022048d6369a98331c8021fbd1 10845 pve-edk2-firmware_4.2025.05-2_amd64.buildinfo
+Checksums-Sha256:
+ 401f7709a06d90ce4d19fadc97ebaff7de8dd5ed62648b959ec61c32433fdaea 2690160 pve-edk2-firmware-aarch64_4.2025.05-2_all.deb
+ 85bb5c93e07d0ac057a50b005c68c430fa32479dfdb8a7c371ed7e4219251ea5 3102028 pve-edk2-firmware-legacy_4.2025.05-2_all.deb
+ 8c4d7e8f4064217f4580aebcb6abd74399a412cfb79a8227f07a73bb02bcf1fb 8370688 pve-edk2-firmware-ovmf_4.2025.05-2_all.deb
+ 578bb6f132de24acf2bb6302722c8db15709b7a679ca633b7281d4437b224ec2 1519976 pve-edk2-firmware-riscv_4.2025.05-2_all.deb
+ d0e240809bfa651d3923bec55f0f4f764ba7a91e3e2ac86c07aa4e0d0b4781aa 7608 pve-edk2-firmware_4.2025.05-2_all.deb
+ fe11b2c1798ede38766fa296a93cb9baa1150c36491ed654bea79207691d3925 10845 pve-edk2-firmware_4.2025.05-2_amd64.buildinfo
+Files:
+ 3e17bf696f000094dd72b1c68c1741c8 2690160 misc optional pve-edk2-firmware-aarch64_4.2025.05-2_all.deb
+ 24ee67a80596f286ba9c2d6a5246e6f7 3102028 misc optional pve-edk2-firmware-legacy_4.2025.05-2_all.deb
+ ff740884909e878ef953323baa5ede9c 8370688 misc optional pve-edk2-firmware-ovmf_4.2025.05-2_all.deb
+ 42bacb5f35d6c5ed8797e93787f48a6c 1519976 misc optional pve-edk2-firmware-riscv_4.2025.05-2_all.deb
+ 00af1633cdb33cb6c571638bdff3b17d 7608 misc optional pve-edk2-firmware_4.2025.05-2_all.deb
+ 2fe1245717e62e733b1493ae31141a66 10845 misc optional pve-edk2-firmware_4.2025.05-2_amd64.buildinfo

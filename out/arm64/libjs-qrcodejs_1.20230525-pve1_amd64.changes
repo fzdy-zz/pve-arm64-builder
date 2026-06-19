@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Thu, 25 May 2023 12:58:22 +0200
+Source: libjs-qrcodejs
+Binary: libjs-qrcodejs
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 1.20230525-pve1
+Distribution: stable
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libjs-qrcodejs - Cross-Browser JavaScript library for making QRCodes
+Changes:
+ libjs-qrcodejs (1.20230525-pve1) stable; urgency=medium
+ .
+   * minfiy on build and other packaging cleanups
+ .
+   * pull in latest master (still from 2015) with a few small fixes compared to
+     previous minified version
+Checksums-Sha1:
+ ef6742333ba2353ebe1363ca100ff19b022fe003 8492 libjs-qrcodejs_1.20230525-pve1_all.deb
+ 9ace7ad1fc0b5ac1a8f65481eb857738103ffaa6 5585 libjs-qrcodejs_1.20230525-pve1_amd64.buildinfo
+Checksums-Sha256:
+ 37a91167437d7b1136e1c2491accf82f252a416e3effd68ea081704c5ef59c60 8492 libjs-qrcodejs_1.20230525-pve1_all.deb
+ f2e00e02a16d5e92695ff570caa7c3553208a7c8dc543c68011182efd009ff5f 5585 libjs-qrcodejs_1.20230525-pve1_amd64.buildinfo
+Files:
+ 488e9f44adc5900d6b8a0a472f40bc5c 8492 web optional libjs-qrcodejs_1.20230525-pve1_all.deb
+ 74769a4bfa95cccb5a74562c16f0268d 5585 web optional libjs-qrcodejs_1.20230525-pve1_amd64.buildinfo

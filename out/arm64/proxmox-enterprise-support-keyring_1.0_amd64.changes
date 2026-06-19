@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Mon, 18 May 2026 11:01:21 +0200
+Source: proxmox-enterprise-support-keyring
+Binary: proxmox-enterprise-support-keyring
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 1.0
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ proxmox-enterprise-support-keyring - Proxmox enterprise SSH support keyring
+Changes:
+ proxmox-enterprise-support-keyring (1.0) trixie; urgency=medium
+ .
+   * initial release with Proxmox Enterprise Support key 2026-1.
+Checksums-Sha1:
+ 8324bbf6bf9d685c7c7cf049e2ff6e7953d08a36 2144 proxmox-enterprise-support-keyring_1.0_all.deb
+ dc5ea1ccd9456763c82a924de34729d6eefda0cc 5426 proxmox-enterprise-support-keyring_1.0_amd64.buildinfo
+Checksums-Sha256:
+ b94faaf3dadd8550889509f7138a68ea1337d36ca11c809d70d24e2387e60d7f 2144 proxmox-enterprise-support-keyring_1.0_all.deb
+ 0dff84197a643da3f543b6b90cd5a38cfe07120f76afcf8a8afe863fcf52334f 5426 proxmox-enterprise-support-keyring_1.0_amd64.buildinfo
+Files:
+ 719e528e66921767d8edb80fb15b4826 2144 misc optional proxmox-enterprise-support-keyring_1.0_all.deb
+ e436e957aeff13ade585b87899239222 5426 misc optional proxmox-enterprise-support-keyring_1.0_amd64.buildinfo

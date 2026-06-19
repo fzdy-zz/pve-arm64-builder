@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 19 May 2026 19:10:48 +0200
+Source: pve-container
+Binary: pve-container
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 6.1.10
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pve-container - Proxmox VE Container management tool
+Changes:
+ pve-container (6.1.10) trixie; urgency=medium
+ .
+   * lxc config: mount /dev/shm as tmpfs for application containers (those with
+     a custom entrypoint, where no init system sets it up), to align with the
+     OCI Runtime Spec defaults.
+ .
+   * fix #7603: config: extend the verbose description of the mountpoint idmap
+     option with examples for range mapping and passthrough.
+Checksums-Sha1:
+ 9d68fa9e618cfd84715be8abba2bdf1cbca68ecd 127204 pve-container_6.1.10_all.deb
+ d694132edadb8207088fa5fc9f5850396866acee 5258 pve-container_6.1.10_amd64.buildinfo
+Checksums-Sha256:
+ 003c99a61a857e85adc932f3cdbdc2d24a8f77cbf968d261e2d857d81b76f1b7 127204 pve-container_6.1.10_all.deb
+ c73b04dd168714f20344a087311296c13172238268a5243cabdf9ce17b8de993 5258 pve-container_6.1.10_amd64.buildinfo
+Files:
+ 4db7c454be4254f7f5babf47bfd9f053 127204 perl optional pve-container_6.1.10_all.deb
+ dd7f227f8cd6e865a11cc0e5521fc7cd 5258 perl extra pve-container_6.1.10_amd64.buildinfo

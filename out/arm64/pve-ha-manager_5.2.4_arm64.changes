@@ -1,0 +1,49 @@
+Format: 1.8
+Date: Tue, 19 May 2026 19:28:52 +0200
+Source: pve-ha-manager
+Binary: pve-ha-manager pve-ha-manager-dbgsym pve-ha-simulator
+Built-For-Profiles: nocheck cross
+Architecture: arm64 all
+Version: 5.2.4
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pve-ha-manager - Proxmox VE HA Manager
+ pve-ha-simulator - Proxmox VE HA Simulator
+Changes:
+ pve-ha-manager (5.2.4) trixie; urgency=medium
+ .
+   * lrm: become active again while disarmed if a HA resource on this node is
+     still in a transient state (migrate, relocate, fence, recovery), drive it
+     through the transition, then go back to idle. Without this, an idle LRM
+     that started up into disarm mode (or restarted into it) never publishes a
+     result for the in-flight transition, so the CRM keeps deferring the disarm
+     forever.
+ .
+   * manager: disarm: freeze non-deferred services on the deferred disarm
+     cycle, instead of waiting until all transient transitions have completed.
+     Otherwise an LRM restart during deferred disarm hangs in 'restart' mode
+     waiting for the active-service count to drop to zero, which only happens
+     once the CRM has frozen the LRM's services.
+ .
+   * manager: default the CRS section in datacenter.cfg to an empty hash to
+     keep the CRM from crashing on misformatted entries. Together with the fix
+     in libpve-cluster-perl 9.1.5 to drop such entries on read, existing
+     affected configs are handled gracefully.
+Checksums-Sha1:
+ f90c0fa4e435fdbca253800f1657f6dca1203595 2956 pve-ha-manager-dbgsym_5.2.4_arm64.deb
+ e21b4611509adf11aeceec01d9f7e6bc4d4e9a27 12515 pve-ha-manager_5.2.4_arm64.buildinfo
+ fc01b0fd964659e02c0e030cdcc72de8a95d24be 74244 pve-ha-manager_5.2.4_arm64.deb
+ f91e30e2d2996ce288b7fa3f4eb694b61c3f7045 111656 pve-ha-simulator_5.2.4_all.deb
+Checksums-Sha256:
+ 2d818b389a4a74af6c0714a03136cd7987397c73fcea94d63512b44790c9dfff 2956 pve-ha-manager-dbgsym_5.2.4_arm64.deb
+ d586a1d4289d34751119dbf5e73b32aaa185ef2743b4d9302747c34f7a102692 12515 pve-ha-manager_5.2.4_arm64.buildinfo
+ f3279440310d346b513210fc4adc3a6bbca5777af979437a09c7d94a0a8bf55c 74244 pve-ha-manager_5.2.4_arm64.deb
+ d214c283c3be4ed09da18c37c3c9c896aca5f09945bb68c62944fad78b24c30e 111656 pve-ha-simulator_5.2.4_all.deb
+Files:
+ a1874a5c2bd9b53612fa1a8c4eb10763 2956 debug optional pve-ha-manager-dbgsym_5.2.4_arm64.deb
+ 7ddeb5fb8b4010192e253a199c232d6b 12515 perl extra pve-ha-manager_5.2.4_arm64.buildinfo
+ 627f622624864219d590df429071c41f 74244 perl optional pve-ha-manager_5.2.4_arm64.deb
+ d037a4366d809b0eace7b2293b1a48e0 111656 perl optional pve-ha-simulator_5.2.4_all.deb

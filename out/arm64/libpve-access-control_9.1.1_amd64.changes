@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Fri, 15 May 2026 16:30:05 +0200
+Source: libpve-access-control
+Binary: libpve-access-control
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 9.1.1
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libpve-access-control - Proxmox VE access control library
+Changes:
+ libpve-access-control (9.1.1) trixie; urgency=medium
+ .
+   * fix #5076: auth: open id: add an optional "audiences" field to realm config
+Checksums-Sha1:
+ 85d889773e68f72847f07bcd4750cec44e655211 55712 libpve-access-control_9.1.1_all.deb
+ e0d0c4fdcbb231f8e23e939931ca034a7ea56536 11144 libpve-access-control_9.1.1_amd64.buildinfo
+Checksums-Sha256:
+ 7adec655567dd404220320bb504199c3dc2c7dc5612ad228301bbe7ba06d256e 55712 libpve-access-control_9.1.1_all.deb
+ fc1f57b5552e722efcb3339f8dc7b7fac1df614d97f5db7134b6c38d5b5f306d 11144 libpve-access-control_9.1.1_amd64.buildinfo
+Files:
+ c1b9162adae952a3dfdf2348b14122ed 55712 perl optional libpve-access-control_9.1.1_all.deb
+ ba0325501ea788972d4c0a0289d4ed1d 11144 perl optional libpve-access-control_9.1.1_amd64.buildinfo

@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 07 Apr 2026 15:12:07 +0200
+Source: pve-nvidia-vgpu-helper
+Binary: pve-nvidia-vgpu-helper
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 0.3.1
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pve-nvidia-vgpu-helper - Proxmox Nvidia vGPU helper script and systemd service
+Changes:
+ pve-nvidia-vgpu-helper (0.3.1) trixie; urgency=medium
+ .
+   * add 'nova' and 'nova_core', which provide the latest open source upstream
+     driver for NVIDIA GPUs, to the (opt-out) modules blocklist.
+Checksums-Sha1:
+ d41cffae18a56b65e89e807a479fb014c77de798 4492 pve-nvidia-vgpu-helper_0.3.1_all.deb
+ 71c1ff02208db7d861448a6754d0764c0bc4fbb6 11294 pve-nvidia-vgpu-helper_0.3.1_amd64.buildinfo
+Checksums-Sha256:
+ 4837f8944d013583d11f17565725e36fdb0536a3ae4c4dc5aee49708cdd2b7e1 4492 pve-nvidia-vgpu-helper_0.3.1_all.deb
+ 171356d9a1214f86bd60277a050d337580a052e29e978558039f0a205ec1f0b2 11294 pve-nvidia-vgpu-helper_0.3.1_amd64.buildinfo
+Files:
+ d4cee3f1a9d03f1b1ce270c96234d67f 4492 admin optional pve-nvidia-vgpu-helper_0.3.1_all.deb
+ 041727889b29e7f28bdb52905c79d323 11294 admin optional pve-nvidia-vgpu-helper_0.3.1_amd64.buildinfo

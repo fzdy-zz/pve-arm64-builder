@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 11 Nov 2025 12:32:55 +0100
+Source: rrdtool
+Binary: librrdp-perl
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 1.7.2-4.2+pve4
+Distribution: trixie
+Urgency: medium
+Maintainer: Debian RRDtool Team <team+rrdtool@tracker.debian.org>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ librrdp-perl - time-series data storage and display system (Perl interface, pipe
+Changes:
+ rrdtool (1.7.2-4.2+pve4) trixie; urgency=medium
+ .
+   * systemd service: replace /var/run symlink with underlying /run in path for
+     socket listen stream to avoid systemd warning.
+Checksums-Sha1:
+ 03121927b7547861f49b169cce014936e99443ce 100912 librrdp-perl_1.7.2-4.2+pve4_all.deb
+ 9366226123b463ac4c2a106c1cf81b6ff9f29166 9177 rrdtool_1.7.2-4.2+pve4_all.buildinfo
+Checksums-Sha256:
+ f9033d7e59efd66e880bd9b137ce21f6aab5803e74520000773edc97b8bb5363 100912 librrdp-perl_1.7.2-4.2+pve4_all.deb
+ 9ce6347a3a8d27ad94ef7f43f511991fdb29c0b4d6e8e174f418bbddb0d5f7be 9177 rrdtool_1.7.2-4.2+pve4_all.buildinfo
+Files:
+ 0684bfa4702985c1e619efa85c683a56 100912 perl optional librrdp-perl_1.7.2-4.2+pve4_all.deb
+ db98e446045652aab1891d50cb5d7d72 9177 utils optional rrdtool_1.7.2-4.2+pve4_all.buildinfo

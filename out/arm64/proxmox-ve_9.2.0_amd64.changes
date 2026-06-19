@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Wed, 20 May 2026 04:51:49 +0200
+Source: proxmox-ve
+Binary: proxmox-ve pve-headers
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 9.2.0
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ proxmox-ve - Proxmox Virtual Environment
+ pve-headers - Default Proxmox Kernel Headers (transitional package)
+Changes:
+ proxmox-ve (9.2.0) trixie; urgency=medium
+ .
+   * bump for Proxmox VE 9.2
+Checksums-Sha1:
+ fb6505e0d3251c60e693b8c815c9a051d9151972 5164 proxmox-ve_9.2.0_all.deb
+ eb9dd68055aeb284ef5216d404c8556e1745b09d 11481 proxmox-ve_9.2.0_amd64.buildinfo
+ 92f4671b8a104cd3164acc933827789f4e2b9019 2952 pve-headers_9.2.0_all.deb
+Checksums-Sha256:
+ 8566cb680a73ec527f0e58b69b5d8e1b43bdc604cac944226943eea079b38fa0 5164 proxmox-ve_9.2.0_all.deb
+ 443e4bd243b7fd361dd11898271c3723dfe05c93e2d323c5cf23f0e4b9035690 11481 proxmox-ve_9.2.0_amd64.buildinfo
+ d758ce39c97a4e5897595f5ad642f9b0bd66b0430b85eda15f6364d428675620 2952 pve-headers_9.2.0_all.deb
+Files:
+ f995a1ecd7e6239c11b5eb0606072c22 5164 admin optional proxmox-ve_9.2.0_all.deb
+ 8b11b8d3d646efef4c3e61961dd5e579 11481 admin optional proxmox-ve_9.2.0_amd64.buildinfo
+ 34db2cc453d5d384c97cfea83837b1bb 2952 oldlibs optional pve-headers_9.2.0_all.deb

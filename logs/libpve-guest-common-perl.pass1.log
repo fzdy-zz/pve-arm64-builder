@@ -1,0 +1,181 @@
+HEAD is now at 0a37537 bump version to 6.0.4
+dpkg-buildpackage: info: source package libpve-guest-common-perl-build-deps
+dpkg-buildpackage: info: source version 6.0.4
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/libpve-guest-common-perl-build-deps/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libpve-guest-common-perl-build-deps' in '../libpve-guest-common-perl-build-deps_6.0.4_all.deb'.
+ dpkg-genbuildinfo --build=binary -O../libpve-guest-common-perl-build-deps_6.0.4_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../libpve-guest-common-perl-build-deps_6.0.4_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package libpve-guest-common-perl-build-deps.
+(Reading database ... 98868 files and directories currently installed.)
+Preparing to unpack libpve-guest-common-perl-build-deps_6.0.4_all.deb ...
+Unpacking libpve-guest-common-perl-build-deps (6.0.4) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 1
+Starting 2 pkgProblemResolver with broken count: 1
+Investigating (0) libpve-guest-common-perl-build-deps:amd64 < 6.0.4 @iU K Nb Ib >
+Broken libpve-guest-common-perl-build-deps:amd64 Depends on libpve-cluster-perl:amd64 < none @un H >
+  Considering libpve-cluster-perl:amd64 1 as a solution to libpve-guest-common-perl-build-deps:amd64 -2
+  Removing libpve-guest-common-perl-build-deps:amd64 rather than change libpve-cluster-perl:amd64
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
+  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
+  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
+  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+The following packages will be REMOVED:
+  libpve-guest-common-perl-build-deps
+0 upgraded, 0 newly installed, 1 to remove and 5 not upgraded.
+1 not fully installed or removed.
+After this operation, 9216 B disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98871 files and directories currently installed.)
+Removing libpve-guest-common-perl-build-deps (6.0.4) ...
+mk-build-deps: Unable to install libpve-guest-common-perl-build-deps at /usr/bin/mk-build-deps line 460.
+mk-build-deps: Unable to install all build-dep packages
+[2026-06-19T05:50:22Z] libpve-guest-common-perl: continuing after build-deps install failure
+rm -rf libpve-guest-common-perl-6.0.4 libpve-guest-common-perl-6.0.4.tmp
+cp -a src libpve-guest-common-perl-6.0.4.tmp
+cp -a debian libpve-guest-common-perl-6.0.4.tmp/
+echo "git clone git://git.proxmox.com/git/pve-guest-common.git\\ngit checkout " > libpve-guest-common-perl-6.0.4.tmp/debian/SOURCE
+mv libpve-guest-common-perl-6.0.4.tmp libpve-guest-common-perl-6.0.4
+cd libpve-guest-common-perl-6.0.4; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package libpve-guest-common-perl
+dpkg-buildpackage: info: source version 6.0.4
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+dh clean
+   dh_auto_clean
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/libpve-guest-common-perl/
+	make -j4 install DESTDIR=/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+install -d /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE
+install -m 0644 PVE/GuestHelpers.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -m 0644 PVE/AbstractConfig.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -m 0644 PVE/AbstractMigrate.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -m 0644 PVE/ReplicationConfig.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -m 0644 PVE/ReplicationState.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -m 0644 PVE/Replication.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -m 0644 PVE/StorageTunnel.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -m 0644 PVE/Tunnel.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/
+install -d /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/Mapping
+install -m 0644 PVE/Mapping/Dir.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/Mapping/
+install -m 0644 PVE/Mapping/PCI.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/Mapping/
+install -m 0644 PVE/Mapping/USB.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/Mapping/
+install -d /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/VZDump
+install -m 0644 PVE/VZDump/Plugin.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/VZDump/
+install -m 0644 PVE/VZDump/Common.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/VZDump/
+install -m 0644 PVE/VZDump/JobBase.pm /workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4/debian/libpve-guest-common-perl/usr/share/perl5/PVE/VZDump/
+make[2]: Leaving directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libpve-guest-common-perl' in '../libpve-guest-common-perl_6.0.4_all.deb'.
+make[1]: Leaving directory '/workspaces/src/pve-guest-common/libpve-guest-common-perl-6.0.4'
+ dpkg-genbuildinfo --build=binary -O../libpve-guest-common-perl_6.0.4_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../libpve-guest-common-perl_6.0.4_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libproxmox-acme-perl libproxmox-acme-plugins libproxmox-rs-perl libpve-access-control libpve-apiclient-perl libpve-cluster-api-perl libpve-cluster-perl libpve-common-perl libpve-guest-common-perl libpve-http-server-perl libpve-notify-perl libpve-rs-perl libpve-rs-perl-dbgsym libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-cluster pve-cluster-dbgsym pve-i18n pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+dpkg-scanpackages: info: Wrote 115 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [27.2 kB]
+Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

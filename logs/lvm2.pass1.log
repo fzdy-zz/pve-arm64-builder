@@ -1,0 +1,1010 @@
+dpkg-buildpackage: info: source package lvm2-cross-build-deps-depends
+dpkg-buildpackage: info: source version 2.03.31-2+pmx1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ debian/rules clean
+dh clean
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_clean
+ debian/rules binary
+dh binary
+dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
+dh: warning: using emulation)
+dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
+dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
+dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
+dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
+dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
+dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/lvm2-cross-build-deps-depends/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'lvm2-cross-build-deps-depends' in '../lvm2-cross-build-deps-depends_2.03.31-2+pmx1_arm64.deb'.
+ dpkg-genbuildinfo --build=binary -O../lvm2-cross-build-deps-depends_2.03.31-2+pmx1_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../lvm2-cross-build-deps-depends_2.03.31-2+pmx1_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package lvm2-cross-build-deps-depends:arm64.
+(Reading database ... 90122 files and directories currently installed.)
+Preparing to unpack lvm2-cross-build-deps-depends_2.03.31-2+pmx1_arm64.deb ...
+Unpacking lvm2-cross-build-deps-depends:arm64 (2.03.31-2+pmx1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libsm-dev:arm64 libsm6:arm64
+  libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libaio-dev:arm64 libaio1t64:arm64 libbsd-dev:arm64 libcmap-dev:arm64
+  libcmap4:arm64 libcorosync-common-dev:arm64 libcorosync-common4:arm64
+  libcpg-dev:arm64 libcpg4:arm64 libdlm-dev:arm64 libdlm3:arm64
+  libdlmcontrol-dev:arm64 libdlmcontrol3:arm64 libedit-dev:arm64
+  libmd-dev:arm64 libquorum-dev:arm64 libquorum5:arm64
+  libsanlock-client1:arm64 libsanlock-dev:arm64 libsanlock1:arm64 systemd-dev
+  thin-provisioning-tools:arm64
+The following NEW packages will be installed:
+  libaio-dev:arm64 libaio1t64:arm64 libbsd-dev:arm64 libcmap-dev:arm64
+  libcmap4:arm64 libcorosync-common-dev:arm64 libcorosync-common4:arm64
+  libcpg-dev:arm64 libcpg4:arm64 libdlm-dev:arm64 libdlm3:arm64
+  libdlmcontrol-dev:arm64 libdlmcontrol3:arm64 libedit-dev:arm64
+  libmd-dev:arm64 libquorum-dev:arm64 libquorum5:arm64
+  libsanlock-client1:arm64 libsanlock-dev:arm64 libsanlock1:arm64 systemd-dev
+  thin-provisioning-tools:arm64
+0 upgraded, 22 newly installed, 0 to remove and 2 not upgraded.
+1 not fully installed or removed.
+Need to get 1576 kB/1729 kB of archives.
+After this operation, 6802 kB of additional disk space will be used.
+Get:1 file:/workspaces/pve/out/arm64 ./ libcorosync-common4 3.1.10-pve2 [6560 B]
+Get:2 file:/workspaces/pve/out/arm64 ./ libcorosync-common-dev 3.1.10-pve2 [6988 B]
+Get:3 file:/workspaces/pve/out/arm64 ./ libcmap4 3.1.10-pve2 [11.3 kB]
+Get:4 file:/workspaces/pve/out/arm64 ./ libcmap-dev 3.1.10-pve2 [38.6 kB]
+Get:5 file:/workspaces/pve/out/arm64 ./ libcpg4 3.1.10-pve2 [12.6 kB]
+Get:6 file:/workspaces/pve/out/arm64 ./ libcpg-dev 3.1.10-pve2 [42.8 kB]
+Get:7 file:/workspaces/pve/out/arm64 ./ libquorum5 3.1.10-pve2 [8256 B]
+Get:8 file:/workspaces/pve/out/arm64 ./ libquorum-dev 3.1.10-pve2 [25.2 kB]
+Get:9 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libaio1t64 arm64 0.3.113-8+b1 [15.0 kB]
+Get:10 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libaio-dev arm64 0.3.113-8+b1 [31.6 kB]
+Get:11 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 systemd-dev all 257.13-1~deb13u1 [74.6 kB]
+Get:12 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libdlm3 arm64 4.3.0-3 [12.7 kB]
+Get:13 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libdlm-dev arm64 4.3.0-3 [13.6 kB]
+Get:14 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libdlmcontrol3 arm64 4.3.0-3 [11.3 kB]
+Get:15 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libdlmcontrol-dev arm64 4.3.0-3 [5528 B]
+Get:16 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libmd-dev arm64 1.1.0-2+b1 [53.3 kB]
+Get:17 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libbsd-dev arm64 0.12.2-2 [257 kB]
+Get:18 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libedit-dev arm64 3.1-20250104-1 [113 kB]
+Get:19 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libsanlock-client1 arm64 3.9.5-1 [16.0 kB]
+Get:20 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libsanlock1 arm64 3.9.5-1 [53.6 kB]
+Get:21 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libsanlock-dev arm64 3.9.5-1 [13.8 kB]
+Get:22 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 thin-provisioning-tools arm64 1.1.0-4+b1 [905 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 1576 kB in 3s (474 kB/s)
+Selecting previously unselected package libaio1t64:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 90126 files and directories currently installed.)
+Preparing to unpack .../00-libaio1t64_0.3.113-8+b1_arm64.deb ...
+Unpacking libaio1t64:arm64 (0.3.113-8+b1) ...
+Selecting previously unselected package libaio-dev:arm64.
+Preparing to unpack .../01-libaio-dev_0.3.113-8+b1_arm64.deb ...
+Unpacking libaio-dev:arm64 (0.3.113-8+b1) ...
+Selecting previously unselected package systemd-dev.
+Preparing to unpack .../02-systemd-dev_257.13-1~deb13u1_all.deb ...
+Unpacking systemd-dev (257.13-1~deb13u1) ...
+Selecting previously unselected package libcorosync-common4:arm64.
+Preparing to unpack .../03-libcorosync-common4_3.1.10-pve2_arm64.deb ...
+Unpacking libcorosync-common4:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libcorosync-common-dev:arm64.
+Preparing to unpack .../04-libcorosync-common-dev_3.1.10-pve2_arm64.deb ...
+Unpacking libcorosync-common-dev:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libcmap4:arm64.
+Preparing to unpack .../05-libcmap4_3.1.10-pve2_arm64.deb ...
+Unpacking libcmap4:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libcmap-dev:arm64.
+Preparing to unpack .../06-libcmap-dev_3.1.10-pve2_arm64.deb ...
+Unpacking libcmap-dev:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libcpg4:arm64.
+Preparing to unpack .../07-libcpg4_3.1.10-pve2_arm64.deb ...
+Unpacking libcpg4:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libcpg-dev:arm64.
+Preparing to unpack .../08-libcpg-dev_3.1.10-pve2_arm64.deb ...
+Unpacking libcpg-dev:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libdlm3:arm64.
+Preparing to unpack .../09-libdlm3_4.3.0-3_arm64.deb ...
+Unpacking libdlm3:arm64 (4.3.0-3) ...
+Selecting previously unselected package libdlm-dev:arm64.
+Preparing to unpack .../10-libdlm-dev_4.3.0-3_arm64.deb ...
+Unpacking libdlm-dev:arm64 (4.3.0-3) ...
+Selecting previously unselected package libdlmcontrol3:arm64.
+Preparing to unpack .../11-libdlmcontrol3_4.3.0-3_arm64.deb ...
+Unpacking libdlmcontrol3:arm64 (4.3.0-3) ...
+Selecting previously unselected package libdlmcontrol-dev:arm64.
+Preparing to unpack .../12-libdlmcontrol-dev_4.3.0-3_arm64.deb ...
+Unpacking libdlmcontrol-dev:arm64 (4.3.0-3) ...
+Selecting previously unselected package libmd-dev:arm64.
+Preparing to unpack .../13-libmd-dev_1.1.0-2+b1_arm64.deb ...
+Unpacking libmd-dev:arm64 (1.1.0-2+b1) ...
+Selecting previously unselected package libbsd-dev:arm64.
+Preparing to unpack .../14-libbsd-dev_0.12.2-2_arm64.deb ...
+Unpacking libbsd-dev:arm64 (0.12.2-2) ...
+Selecting previously unselected package libedit-dev:arm64.
+Preparing to unpack .../15-libedit-dev_3.1-20250104-1_arm64.deb ...
+Unpacking libedit-dev:arm64 (3.1-20250104-1) ...
+Selecting previously unselected package libquorum5:arm64.
+Preparing to unpack .../16-libquorum5_3.1.10-pve2_arm64.deb ...
+Unpacking libquorum5:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libquorum-dev:arm64.
+Preparing to unpack .../17-libquorum-dev_3.1.10-pve2_arm64.deb ...
+Unpacking libquorum-dev:arm64 (3.1.10-pve2) ...
+Selecting previously unselected package libsanlock-client1:arm64.
+Preparing to unpack .../18-libsanlock-client1_3.9.5-1_arm64.deb ...
+Unpacking libsanlock-client1:arm64 (3.9.5-1) ...
+Selecting previously unselected package libsanlock1:arm64.
+Preparing to unpack .../19-libsanlock1_3.9.5-1_arm64.deb ...
+Unpacking libsanlock1:arm64 (3.9.5-1) ...
+Selecting previously unselected package libsanlock-dev:arm64.
+Preparing to unpack .../20-libsanlock-dev_3.9.5-1_arm64.deb ...
+Unpacking libsanlock-dev:arm64 (3.9.5-1) ...
+Selecting previously unselected package thin-provisioning-tools:arm64.
+Preparing to unpack .../21-thin-provisioning-tools_1.1.0-4+b1_arm64.deb ...
+Unpacking thin-provisioning-tools:arm64 (1.1.0-4+b1) ...
+Setting up libsanlock-client1:arm64 (3.9.5-1) ...
+Setting up libcorosync-common4:arm64 (3.1.10-pve2) ...
+Setting up systemd-dev (257.13-1~deb13u1) ...
+Setting up thin-provisioning-tools:arm64 (1.1.0-4+b1) ...
+Setting up libaio1t64:arm64 (0.3.113-8+b1) ...
+Setting up libcorosync-common-dev:arm64 (3.1.10-pve2) ...
+Setting up libmd-dev:arm64 (1.1.0-2+b1) ...
+Setting up libdlm3:arm64 (4.3.0-3) ...
+Setting up libdlmcontrol3:arm64 (4.3.0-3) ...
+Setting up libbsd-dev:arm64 (0.12.2-2) ...
+Setting up libcpg4:arm64 (3.1.10-pve2) ...
+Setting up libcmap4:arm64 (3.1.10-pve2) ...
+Setting up libquorum5:arm64 (3.1.10-pve2) ...
+Setting up libdlmcontrol-dev:arm64 (4.3.0-3) ...
+Setting up libdlm-dev:arm64 (4.3.0-3) ...
+Setting up libaio-dev:arm64 (0.3.113-8+b1) ...
+Setting up libsanlock1:arm64 (3.9.5-1) ...
+Setting up libcmap-dev:arm64 (3.1.10-pve2) ...
+Setting up libcpg-dev:arm64 (3.1.10-pve2) ...
+Setting up libedit-dev:arm64 (3.1-20250104-1) ...
+Setting up libsanlock-dev:arm64 (3.9.5-1) ...
+Setting up libquorum-dev:arm64 (3.1.10-pve2) ...
+Setting up lvm2-cross-build-deps-depends:arm64 (2.03.31-2+pmx1) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+dpkg-buildpackage: info: source package lvm2
+dpkg-buildpackage: info: source version 2.03.31-2+pmx1
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying debian-changes
+ debian/rules clean
+dh clean --parallel
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31'
+rm -rf debian/build
+make[1]: Leaving directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31'
+   dh_clean
+ debian/rules binary-arch
+dh binary-arch --parallel
+   dh_update_autotools_config -a -O--parallel
+   dh_autoreconf -a -O--parallel
+configure.ac:75: warning: The macro 'AC_PROG_GCC_TRADITIONAL' is obsolete.
+configure.ac:75: You should run autoupdate.
+./lib/autoconf/c.m4:1676: AC_PROG_GCC_TRADITIONAL is expanded from...
+configure.ac:75: the top level
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31'
+mkdir -p debian/build/build_deb
+cp -al COPYING COPYING.BSD COPYING.LIB INSTALL Makefile.in README TESTING VERSION VERSION_DM WHATS_NEW WHATS_NEW_DM acinclude.m4 aclocal.m4 autoconf autom4te.cache base conf configure configure.ac configure~ coverity daemons device_mapper doc ikiwiki.setup include lib libdaemon libdm make.tmpl.in man nix po scripts spec test tools udev debian/build/build_deb/
+dh_auto_configure --sourcedirectory=debian/build/build_deb -- \
+	--enable-write_install --prefix=/usr --exec-prefix=/usr --with-usrlibdir=/usr/lib/aarch64-linux-gnu --with-optimisation="-O2" --with-cache=internal --with-device-uid=0 --with-device-gid=6 --with-device-mode=0660 --with-default-pid-dir=/run --with-default-run-dir=/run/lvm --with-default-locking-dir=/run/lock/lvm --with-thin=internal --with-thin-check=/usr/sbin/thin_check --with-thin-dump=/usr/sbin/thin_dump --with-thin-repair=/usr/sbin/thin_repair --enable-applib --enable-blkid_wiping --enable-cmdlib --enable-dmeventd --enable-editline --enable-lvmlockd-dlm --enable-lvmlockd-sanlock --enable-lvmpolld --enable-notify-dbus --enable-pkgconfig --enable-udev_rules --enable-udev_sync --enable-write_install --disable-readline
+	cd debian/build/build_deb && ./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir=\${prefix}/lib/aarch64-linux-gnu --runstatedir=/run --disable-maintainer-mode --disable-dependency-tracking --host=aarch64-linux-gnu --enable-write_install --prefix=/usr --exec-prefix=/usr --with-usrlibdir=/usr/lib/aarch64-linux-gnu --with-optimisation=-O2 --with-cache=internal --with-device-uid=0 --with-device-gid=6 --with-device-mode=0660 --with-default-pid-dir=/run --with-default-run-dir=/run/lvm --with-default-locking-dir=/run/lock/lvm --with-thin=internal --with-thin-check=/usr/sbin/thin_check --with-thin-dump=/usr/sbin/thin_dump --with-thin-repair=/usr/sbin/thin_repair --enable-applib --enable-blkid_wiping --enable-cmdlib --enable-dmeventd --enable-editline --enable-lvmlockd-dlm --enable-lvmlockd-sanlock --enable-lvmpolld --enable-notify-dbus --enable-pkgconfig --enable-udev_rules --enable-udev_sync --enable-write_install --disable-readline
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking target system type... aarch64-unknown-linux-gnu
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for gawk... gawk
+checking for aarch64-linux-gnu-gcc... aarch64-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether aarch64-linux-gnu-gcc accepts -g... yes
+checking for aarch64-linux-gnu-gcc option to enable C11 features... none needed
+checking whether the compiler supports GNU C++... yes
+checking whether aarch64-linux-gnu-g++ accepts -g... yes
+checking for aarch64-linux-gnu-g++ option to enable C++11 features... none needed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether make sets $(MAKE)... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for aarch64-linux-gnu-ranlib... aarch64-linux-gnu-ranlib
+checking for aarch64-linux-gnu-readelf... aarch64-linux-gnu-readelf
+checking for aarch64-linux-gnu-ar... aarch64-linux-gnu-ar
+checking for aarch64-linux-gnu-cflow... no
+checking for cflow... no
+checking for aarch64-linux-gnu-cscope... no
+checking for cscope... no
+checking for aarch64-linux-gnu-chmod... no
+checking for chmod... /usr/bin/chmod
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for aarch64-linux-gnu-wc... no
+checking for wc... /usr/bin/wc
+checking for aarch64-linux-gnu-sort... no
+checking for sort... /usr/bin/sort
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for vfork.h... no
+checking for sys/time.h... yes
+checking for sys/param.h... yes
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... yes
+checking for assert.h... yes
+checking for ctype.h... yes
+checking for dirent.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking for langinfo.h... yes
+checking for libgen.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for paths.h... yes
+checking for signal.h... yes
+checking for stdarg.h... yes
+checking for stddef.h... yes
+checking for stdio.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for syslog.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/resource.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/utsname.h... yes
+checking for sys/wait.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for termios.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/timerfd.h... yes
+checking for sys/vfs.h... yes
+checking for linux/magic.h... yes
+checking for linux/fiemap.h... yes
+checking for libaio.h... yes
+checking for asm/byteorder.h... yes
+checking for linux/fs.h... yes
+checking for malloc.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for struct stat.st_rdev... yes
+checking for ptrdiff_t... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for mode_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for ssize_t... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for __builtin_clz... yes
+checking for __builtin_clzll... yes
+checking for __builtin_ffs... yes
+checking for ftruncate... yes
+checking for gethostname... yes
+checking for getpagesize... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for memchr... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for munmap... yes
+checking for nl_langinfo... yes
+checking for pselect... yes
+checking for realpath... yes
+checking for rmdir... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strndup... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for uname... yes
+checking for ffs... yes
+checking for mallinfo2... yes
+checking for prlimit... yes
+checking for versionsort... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether closedir returns void... no
+checking for working chown... yes
+checking for fork... yes
+checking for vfork... yes
+checking for alarm... yes
+checking for getpagesize... (cached) yes
+checking for vprintf... yes
+checking for working fork... cross
+configure: WARNING: result yes guessed because of cross compilation
+checking for working vfork... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... yes
+checking for GNU libc compatible malloc... yes
+checking for working memcmp... no
+checking for working mktime... no
+checking for working mmap... yes
+checking for GNU libc compatible realloc... yes
+checking whether stat accepts an empty string... yes
+checking for working strtod... no
+checking for pow... no
+checking for pow in -lm... yes
+checking whether to enable dependency tracking... no
+checking whether to build silently... no
+checking whether to use static linking... no
+checking whether to use dynamic linking... yes
+checking whether aarch64-linux-gnu-gcc accepts -pie flag... yes
+checking whether aarch64-linux-gnu-gcc accepts -Wl,-z,relro,-z,now,-z,pack-relative-relocs,--as-needed ld flags... yes
+checking file owner... 
+checking group owner... 
+checking device node uid... 0
+checking device node gid... 6
+checking device node mode... 0660
+checking when to create device nodes... on resume
+checking default for use_devicesfile... 0
+checking default name mangling... auto
+checking default for event_activation... 1
+checking whether to include snapshots... internal
+checking whether to include mirrors... internal
+checking whether to include thin provisioning... internal
+configure: WARNING: /usr/sbin/thin_check: Bad version "" found
+checking for aarch64-linux-gnu-thin_restore... no
+checking for thin_restore... /usr/sbin/thin_restore
+checking whether /usr/sbin/thin_check (.) supports the needs-check flag... no
+checking whether to include cache... internal
+checking for aarch64-linux-gnu-cache_check... no
+checking for cache_check... /usr/sbin/cache_check
+configure: WARNING: /usr/sbin/cache_check: Bad version "" found
+checking for aarch64-linux-gnu-cache_dump... no
+checking for cache_dump... /usr/sbin/cache_dump
+checking for aarch64-linux-gnu-cache_repair... no
+checking for cache_repair... /usr/sbin/cache_repair
+checking for aarch64-linux-gnu-cache_restore... no
+checking for cache_restore... /usr/sbin/cache_restore
+checking whether /usr/sbin/cache_check (..) supports the needs-check flag... no
+checking whether to include vdo... internal
+checking for aarch64-linux-gnu-vdoformat... no
+checking for vdoformat... no
+configure: WARNING: vdoformat not found in path /root/.cargo/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+checking whether to include writecache... internal
+checking whether to include integrity... internal
+checking whether to enable realtime support... yes
+checking whether to enable OCF resource agents... no
+checking for default run directory... /run
+checking whether to build cluster mirror log daemon... no
+checking pkg-config is at least version 0.9.0... yes
+checking whether to enable debugging... no
+checking whether aarch64-linux-gnu-gcc accepts -Wjump-misses-init flag... yes
+checking whether aarch64-linux-gnu-gcc accepts -Wclobbered flag... yes
+checking whether aarch64-linux-gnu-gcc accepts -Wsync-nand flag... yes
+checking for C optimisation flag... -O2
+checking whether to use symbol versioning... gnu
+checking whether to gather gcov profiling data... no
+checking whether to enable valgrind awareness of pools... no
+checking for valgrind... no
+checking whether to use device-mapper... yes
+checking whether to build lvmpolld... yes
+checking whether to build lvmlockdsanlock... yes
+checking for libsanlock_client >= 3.7.0... yes
+checking whether to build lvmlockddlm... yes
+checking for libdlm_lt... yes
+checking whether to build lvmlockddlmcontrol... no
+checking whether to build lvmlockdidm... no
+checking whether to build lvmlockd... yes
+checking defaults for use_lvmlockd... 1
+checking defaults for use_lvmpolld... 1
+checking for systemd/sd-journal.h... yes
+checking whether to log to systemd journal... yes
+checking for systemd/sd-id128.h... yes
+checking whether to support systemd appmachineid... yes
+checking for systemd/sd-daemon.h... yes
+checking whether to enable to sd_notify... yes
+checking for aarch64-linux-gnu-systemd-run... no
+checking for systemd-run... no
+checking for app running udev background service... /usr/bin/systemd-run
+checking for blkid >= 2.24... yes
+checking for blkid.h defines BLKID_SUBLKS_FSINFO.... yes
+checking whether to enable libblkid detection of signatures when wiping... yes
+checking for libnvme >= 1.4... no
+checking whether to use libnvme for alternate WWIDs... no
+checking whether to enable synchronization with udev processing... yes
+checking for libudev >= 143... yes
+checking for udev_device_get_is_initialized in -ludev... yes
+checking whether to enable installation of udev rules required for synchronization... yes
+checking whether to enable executable path detection in udev rules... no
+checking whether udev supports built-in blkid... yes
+checking whether to enable O_DIRECT... yes
+checking whether to include Python D-Bus support... no
+./configure: line 13693: ]: command not found
+checking whether to build notifydbus... yes
+checking for libsystemd... yes
+checking whether to install fsadm... yes
+checking whether to install lvm_import_vdo... yes
+checking whether to install blkdeactivate... yes
+checking whether to use dmeventd... yes
+checking whether to compile liblvm2cmd.so... yes
+checking whether to build dmfilemapd... no
+checking for getline in -lc... yes
+checking for canonicalize_file_name in -lc... yes
+checking for dlopen in -ldl... yes
+checking for log10 in -lm... yes
+checking for pthread_mutex_lock in -lpthread... yes
+checking whether to enable selinux support... yes
+checking for sepol_check_context in -lsepol... yes
+checking for libselinux... yes
+checking for is_selinux_enabled in -lselinux... yes
+checking for selinux/selinux.h... yes
+checking for selinux/label.h... yes
+checking for BLKZEROOUT in sys/ioctl.h.... yes
+checking whether to use BLKZEROOUT for device zeroing... yes
+checking for clock_gettime... yes
+checking for struct stat has st_ctim.... yes
+checking for getopt.h... (cached) yes
+checking for libedit... yes
+checking whether to enable internationalisation... no
+checking for kernel modules directory... /lib/modules
+checking whether to enable readline... no
+checking for editline/readline.h... yes
+checking whether to enable editline... yes
+checking for strtoull... yes
+checking for aarch64-linux-gnu-gcc options needed to detect all undeclared functions... none needed
+checking whether strerror_r is declared... yes
+checking for strpbrk... yes
+checking whether strerror_r returns char *... yes
+checking for arpa/inet.h... yes
+checking for dlfcn.h... yes
+checking for sys/ipc.h... yes
+checking for sys/sem.h... yes
+checking for default lock directory... /run/lock/lvm
+checking for kernel interface choice... ioctl
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating make.tmpl
+config.status: creating libdm/make.tmpl
+config.status: creating daemons/Makefile
+config.status: creating daemons/cmirrord/Makefile
+config.status: creating daemons/dmeventd/Makefile
+config.status: creating daemons/dmeventd/libdevmapper-event.pc
+config.status: creating daemons/dmeventd/plugins/Makefile
+config.status: creating daemons/dmeventd/plugins/lvm2/Makefile
+config.status: creating daemons/dmeventd/plugins/raid/Makefile
+config.status: creating daemons/dmeventd/plugins/mirror/Makefile
+config.status: creating daemons/dmeventd/plugins/snapshot/Makefile
+config.status: creating daemons/dmeventd/plugins/thin/Makefile
+config.status: creating daemons/dmeventd/plugins/vdo/Makefile
+config.status: creating daemons/lvmdbusd/Makefile
+config.status: creating daemons/lvmdbusd/lvmdbusd
+config.status: creating daemons/lvmdbusd/lvmdb.py
+config.status: creating daemons/lvmdbusd/lvm_shell_proxy.py
+config.status: creating daemons/lvmdbusd/path.py
+config.status: creating daemons/lvmpolld/Makefile
+config.status: creating daemons/lvmlockd/Makefile
+config.status: creating conf/Makefile
+config.status: creating conf/example.conf
+config.status: creating conf/lvmlocal.conf
+config.status: creating conf/command_profile_template.profile
+config.status: creating conf/metadata_profile_template.profile
+config.status: creating include/Makefile
+config.status: creating lib/Makefile
+config.status: creating include/lvm-version.h
+config.status: creating libdaemon/Makefile
+config.status: creating libdaemon/client/Makefile
+config.status: creating libdaemon/server/Makefile
+config.status: creating libdm/Makefile
+config.status: creating libdm/dm-tools/Makefile
+config.status: creating libdm/libdevmapper.pc
+config.status: creating man/Makefile
+config.status: creating po/Makefile
+config.status: creating scripts/lvm2-pvscan.service
+config.status: creating scripts/blkdeactivate.sh
+config.status: creating scripts/blk_availability_init_red_hat
+config.status: creating scripts/blk_availability_systemd_red_hat.service
+config.status: creating scripts/cmirrord_init_red_hat
+config.status: creating scripts/com.redhat.lvmdbus1.service
+config.status: creating scripts/dm_event_systemd_red_hat.service
+config.status: creating scripts/dm_event_systemd_red_hat.socket
+config.status: creating scripts/lvm2_cmirrord_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmdbusd_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_init_red_hat
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.socket
+config.status: creating scripts/lvmlockd.service
+config.status: creating scripts/lvmlocks.service
+config.status: creating scripts/lvm2_monitoring_init_red_hat
+config.status: creating scripts/lvm2_monitoring_systemd_red_hat.service
+config.status: creating scripts/lvm2_tmpfiles_red_hat.conf
+config.status: creating scripts/lvmdump.sh
+config.status: creating scripts/Makefile
+config.status: creating test/Makefile
+config.status: creating tools/Makefile
+config.status: creating udev/Makefile
+config.status: creating include/configure.h
+configure: WARNING: You should also install latest thin_check vsn 0.7.0 (or later) for lvm2 thin provisioning
+configure: WARNING: You should install latest cache_check vsn 0.7.0 to use lvm2 cache metadata format 2
+configure: WARNING: Unrecognized 'vdoformat' tool is REQUIRED for VDO logical volume creation!
+mkdir -p debian/build/build_udeb
+cp -al COPYING COPYING.BSD COPYING.LIB INSTALL Makefile.in README TESTING VERSION VERSION_DM WHATS_NEW WHATS_NEW_DM acinclude.m4 aclocal.m4 autoconf autom4te.cache base conf configure configure.ac configure~ coverity daemons device_mapper doc ikiwiki.setup include lib libdaemon libdm make.tmpl.in man nix po scripts spec test tools udev debian/build/build_udeb/
+dh_auto_configure --sourcedirectory=debian/build/build_udeb -- \
+	--enable-write_install --with-optimisation="-Os" --with-lvm1=none --with-pool=none --disable-app-machineid --disable-readline --disable-selinux --disable-systemd-journal
+	cd debian/build/build_udeb && ./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir=\${prefix}/lib/aarch64-linux-gnu --runstatedir=/run --disable-maintainer-mode --disable-dependency-tracking --host=aarch64-linux-gnu --enable-write_install --with-optimisation=-Os --with-lvm1=none --with-pool=none --disable-app-machineid --disable-readline --disable-selinux --disable-systemd-journal
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking target system type... aarch64-unknown-linux-gnu
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for gawk... gawk
+checking for aarch64-linux-gnu-gcc... aarch64-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether aarch64-linux-gnu-gcc accepts -g... yes
+checking for aarch64-linux-gnu-gcc option to enable C11 features... none needed
+checking whether the compiler supports GNU C++... yes
+checking whether aarch64-linux-gnu-g++ accepts -g... yes
+checking for aarch64-linux-gnu-g++ option to enable C++11 features... none needed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether make sets $(MAKE)... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for aarch64-linux-gnu-ranlib... aarch64-linux-gnu-ranlib
+checking for aarch64-linux-gnu-readelf... aarch64-linux-gnu-readelf
+checking for aarch64-linux-gnu-ar... aarch64-linux-gnu-ar
+checking for aarch64-linux-gnu-cflow... no
+checking for cflow... no
+checking for aarch64-linux-gnu-cscope... no
+checking for cscope... no
+checking for aarch64-linux-gnu-chmod... no
+checking for chmod... /usr/bin/chmod
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for aarch64-linux-gnu-wc... no
+checking for wc... /usr/bin/wc
+checking for aarch64-linux-gnu-sort... no
+checking for sort... /usr/bin/sort
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for vfork.h... no
+checking for sys/time.h... yes
+checking for sys/param.h... yes
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... yes
+checking for assert.h... yes
+checking for ctype.h... yes
+checking for dirent.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking for langinfo.h... yes
+checking for libgen.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for paths.h... yes
+checking for signal.h... yes
+checking for stdarg.h... yes
+checking for stddef.h... yes
+checking for stdio.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for syslog.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/resource.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/utsname.h... yes
+checking for sys/wait.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for termios.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/timerfd.h... yes
+checking for sys/vfs.h... yes
+checking for linux/magic.h... yes
+checking for linux/fiemap.h... yes
+checking for libaio.h... yes
+checking for asm/byteorder.h... yes
+checking for linux/fs.h... yes
+checking for malloc.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for struct stat.st_rdev... yes
+checking for ptrdiff_t... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for mode_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for ssize_t... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for __builtin_clz... yes
+checking for __builtin_clzll... yes
+checking for __builtin_ffs... yes
+checking for ftruncate... yes
+checking for gethostname... yes
+checking for getpagesize... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for memchr... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for munmap... yes
+checking for nl_langinfo... yes
+checking for pselect... yes
+checking for realpath... yes
+checking for rmdir... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strndup... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for uname... yes
+checking for ffs... yes
+checking for mallinfo2... yes
+checking for prlimit... yes
+checking for versionsort... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether closedir returns void... no
+checking for working chown... yes
+checking for fork... yes
+checking for vfork... yes
+checking for alarm... yes
+checking for getpagesize... (cached) yes
+checking for vprintf... yes
+checking for working fork... cross
+configure: WARNING: result yes guessed because of cross compilation
+checking for working vfork... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... yes
+checking for GNU libc compatible malloc... yes
+checking for working memcmp... no
+checking for working mktime... no
+checking for working mmap... yes
+checking for GNU libc compatible realloc... yes
+checking whether stat accepts an empty string... yes
+checking for working strtod... no
+checking for pow... no
+checking for pow in -lm... yes
+checking whether to enable dependency tracking... no
+checking whether to build silently... no
+checking whether to use static linking... no
+checking whether to use dynamic linking... yes
+checking whether aarch64-linux-gnu-gcc accepts -pie flag... yes
+checking whether aarch64-linux-gnu-gcc accepts -Wl,-z,relro,-z,now,-z,pack-relative-relocs,--as-needed ld flags... yes
+checking file owner... 
+checking group owner... 
+checking device node uid... 0
+checking device node gid... 0
+checking device node mode... 0600
+checking when to create device nodes... on resume
+checking default for use_devicesfile... 0
+checking default name mangling... auto
+checking default for event_activation... 1
+checking whether to include snapshots... internal
+checking whether to include mirrors... internal
+checking whether to include thin provisioning... internal
+checking for aarch64-linux-gnu-thin_check... no
+checking for thin_check... /usr/sbin/thin_check
+configure: WARNING: /usr/sbin/thin_check: Bad version "" found
+checking for aarch64-linux-gnu-thin_dump... no
+checking for thin_dump... /usr/sbin/thin_dump
+checking for aarch64-linux-gnu-thin_repair... no
+checking for thin_repair... /usr/sbin/thin_repair
+checking for aarch64-linux-gnu-thin_restore... no
+checking for thin_restore... /usr/sbin/thin_restore
+checking whether /usr/sbin/thin_check (.) supports the needs-check flag... no
+checking whether to include cache... internal
+checking for aarch64-linux-gnu-cache_check... no
+checking for cache_check... /usr/sbin/cache_check
+configure: WARNING: /usr/sbin/cache_check: Bad version "" found
+checking for aarch64-linux-gnu-cache_dump... no
+checking for cache_dump... /usr/sbin/cache_dump
+checking for aarch64-linux-gnu-cache_repair... no
+checking for cache_repair... /usr/sbin/cache_repair
+checking for aarch64-linux-gnu-cache_restore... no
+checking for cache_restore... /usr/sbin/cache_restore
+checking whether /usr/sbin/cache_check (..) supports the needs-check flag... no
+checking whether to include vdo... internal
+checking for aarch64-linux-gnu-vdoformat... no
+checking for vdoformat... no
+configure: WARNING: vdoformat not found in path /root/.cargo/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+checking whether to include writecache... internal
+checking whether to include integrity... internal
+checking whether to enable realtime support... yes
+checking whether to enable OCF resource agents... no
+checking for default run directory... /run
+checking whether to build cluster mirror log daemon... no
+checking pkg-config is at least version 0.9.0... yes
+checking whether to enable debugging... no
+checking whether aarch64-linux-gnu-gcc accepts -Wjump-misses-init flag... yes
+checking whether aarch64-linux-gnu-gcc accepts -Wclobbered flag... yes
+checking whether aarch64-linux-gnu-gcc accepts -Wsync-nand flag... yes
+checking for C optimisation flag... -Os
+checking whether to use symbol versioning... gnu
+checking whether to gather gcov profiling data... no
+checking whether to enable valgrind awareness of pools... no
+checking for valgrind... no
+checking whether to use device-mapper... yes
+checking whether to build lvmpolld... no
+checking whether to build lvmlockdsanlock... no
+checking whether to build lvmlockddlm... no
+checking whether to build lvmlockddlmcontrol... no
+checking whether to build lvmlockdidm... no
+checking whether to build lvmlockd... no
+checking for systemd/sd-journal.h... yes
+checking whether to log to systemd journal... no
+checking for systemd/sd-id128.h... yes
+checking whether to support systemd appmachineid... no
+checking for systemd/sd-daemon.h... yes
+checking whether to enable to sd_notify... yes
+checking for aarch64-linux-gnu-systemd-run... no
+checking for systemd-run... no
+checking for app running udev background service... /usr/bin/systemd-run
+checking for blkid >= 2.24... yes
+checking for blkid.h defines BLKID_SUBLKS_FSINFO.... yes
+checking whether to enable libblkid detection of signatures when wiping... yes
+checking for libnvme >= 1.4... no
+checking whether to use libnvme for alternate WWIDs... no
+checking whether to enable synchronization with udev processing... no
+checking whether to enable installation of udev rules required for synchronization... no
+checking whether to enable executable path detection in udev rules... no
+checking whether udev supports built-in blkid... yes
+checking whether to enable O_DIRECT... yes
+checking whether to include Python D-Bus support... no
+checking whether to build notifydbus... no
+checking for libsystemd... yes
+checking whether to install fsadm... yes
+checking whether to install lvm_import_vdo... yes
+checking whether to install blkdeactivate... yes
+checking whether to use dmeventd... no
+checking whether to compile liblvm2cmd.so... no
+checking whether to build dmfilemapd... no
+checking for getline in -lc... yes
+checking for canonicalize_file_name in -lc... yes
+checking for dlopen in -ldl... yes
+checking for log10 in -lm... yes
+checking for pthread_mutex_lock in -lpthread... yes
+checking whether to enable selinux support... no
+checking for BLKZEROOUT in sys/ioctl.h.... yes
+checking whether to use BLKZEROOUT for device zeroing... yes
+checking for clock_gettime... yes
+checking for struct stat has st_ctim.... yes
+checking for getopt.h... (cached) yes
+checking whether to enable internationalisation... no
+checking for kernel modules directory... /lib/modules
+checking whether to enable readline... no
+checking whether to enable editline... no
+checking for aarch64-linux-gnu-gcc options needed to detect all undeclared functions... none needed
+checking whether strerror_r is declared... yes
+checking for dlfcn.h... yes
+checking for default lock directory... /run/lock/lvm
+checking for kernel interface choice... ioctl
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating make.tmpl
+config.status: creating libdm/make.tmpl
+config.status: creating daemons/Makefile
+config.status: creating daemons/cmirrord/Makefile
+config.status: creating daemons/dmeventd/Makefile
+config.status: creating daemons/dmeventd/libdevmapper-event.pc
+config.status: creating daemons/dmeventd/plugins/Makefile
+config.status: creating daemons/dmeventd/plugins/lvm2/Makefile
+config.status: creating daemons/dmeventd/plugins/raid/Makefile
+config.status: creating daemons/dmeventd/plugins/mirror/Makefile
+config.status: creating daemons/dmeventd/plugins/snapshot/Makefile
+config.status: creating daemons/dmeventd/plugins/thin/Makefile
+config.status: creating daemons/dmeventd/plugins/vdo/Makefile
+config.status: creating daemons/lvmdbusd/Makefile
+config.status: creating daemons/lvmdbusd/lvmdbusd
+config.status: creating daemons/lvmdbusd/lvmdb.py
+config.status: creating daemons/lvmdbusd/lvm_shell_proxy.py
+config.status: creating daemons/lvmdbusd/path.py
+config.status: creating daemons/lvmpolld/Makefile
+config.status: creating daemons/lvmlockd/Makefile
+config.status: creating conf/Makefile
+config.status: creating conf/example.conf
+config.status: creating conf/lvmlocal.conf
+config.status: creating conf/command_profile_template.profile
+config.status: creating conf/metadata_profile_template.profile
+config.status: creating include/Makefile
+config.status: creating lib/Makefile
+config.status: creating include/lvm-version.h
+config.status: creating libdaemon/Makefile
+config.status: creating libdaemon/client/Makefile
+config.status: creating libdaemon/server/Makefile
+config.status: creating libdm/Makefile
+config.status: creating libdm/dm-tools/Makefile
+config.status: creating libdm/libdevmapper.pc
+config.status: creating man/Makefile
+config.status: creating po/Makefile
+config.status: creating scripts/lvm2-pvscan.service
+config.status: creating scripts/blkdeactivate.sh
+config.status: creating scripts/blk_availability_init_red_hat
+config.status: creating scripts/blk_availability_systemd_red_hat.service
+config.status: creating scripts/cmirrord_init_red_hat
+config.status: creating scripts/com.redhat.lvmdbus1.service
+config.status: creating scripts/dm_event_systemd_red_hat.service
+config.status: creating scripts/dm_event_systemd_red_hat.socket
+config.status: creating scripts/lvm2_cmirrord_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmdbusd_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_init_red_hat
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.socket
+config.status: creating scripts/lvmlockd.service
+config.status: creating scripts/lvmlocks.service
+config.status: creating scripts/lvm2_monitoring_init_red_hat
+config.status: creating scripts/lvm2_monitoring_systemd_red_hat.service
+config.status: creating scripts/lvm2_tmpfiles_red_hat.conf
+config.status: creating scripts/lvmdump.sh
+config.status: creating scripts/Makefile
+config.status: creating test/Makefile
+config.status: creating tools/Makefile
+config.status: creating udev/Makefile
+config.status: creating include/configure.h
+configure: WARNING: You should also install latest thin_check vsn 0.7.0 (or later) for lvm2 thin provisioning
+configure: WARNING: You should install latest cache_check vsn 0.7.0 to use lvm2 cache metadata format 2
+configure: WARNING: Unrecognized 'vdoformat' tool is REQUIRED for VDO logical volume creation!
+dh override_dh_auto_configure --parallel
+make[1]: Leaving directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31'
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31'
+dh_auto_build --sourcedirectory=debian/build/build_deb -- \
+	V=1 \
+	LIB_VERSION_DM=1.02.1
+	cd debian/build/build_deb && make -j4 V=1 LIB_VERSION_DM=1.02.1
+make[2]: Entering directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31/debian/build/build_deb'
+Makefile:46: base/Makefile: No such file or directory
+make[2]: *** No rule to make target 'base/Makefile'.  Stop.
+make[2]: Leaving directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31/debian/build/build_deb'
+dh_auto_build: error: cd debian/build/build_deb && make -j4 V=1 LIB_VERSION_DM=1.02.1 returned exit code 2
+make[1]: *** [debian/rules:100: dh_auto_build.deb] Error 25
+make[1]: Leaving directory '/workspaces/src/package-rebuilds-work/lvm2/lvm2-2.03.31'
+make: *** [debian/rules:87: binary-arch] Error 2
+dpkg-buildpackage: error: debian/rules binary-arch subprocess returned exit status 2

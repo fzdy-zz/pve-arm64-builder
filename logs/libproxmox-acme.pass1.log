@@ -1,0 +1,164 @@
+HEAD is now at 7535b87 proxmox-acme: extend comment for _json_decode
+dpkg-buildpackage: info: source package libproxmox-acme-build-deps
+dpkg-buildpackage: info: source version 1.7.1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/libproxmox-acme-build-deps/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libproxmox-acme-build-deps' in '../libproxmox-acme-build-deps_1.7.1_all.deb'.
+ dpkg-genbuildinfo --build=binary -O../libproxmox-acme-build-deps_1.7.1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../libproxmox-acme-build-deps_1.7.1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package libproxmox-acme-build-deps.
+(Reading database ... 93876 files and directories currently installed.)
+Preparing to unpack libproxmox-acme-build-deps_1.7.1_all.deb ...
+Unpacking libproxmox-acme-build-deps (1.7.1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
+  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
+  libaprutil1t64:arm64 libcairo-gobject2:arm64
+  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
+  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
+  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
+  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
+  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
+  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
+  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
+  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
+  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
+  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
+  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
+  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+1 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Setting up libproxmox-acme-build-deps (1.7.1) ...
+test -d "src/acme.sh"/README.md || git submodule update --init --recursive
+rm -rf libproxmox-acme-1.7.1 libproxmox-acme-1.7.1.tmp
+cp -a src libproxmox-acme-1.7.1.tmp
+cp -a debian libproxmox-acme-1.7.1.tmp/
+echo "git clone git://git.proxmox.com/git/proxmox-acme\\ngit checkout 7535b8770aff503e8d056b7ca4830a43bbf92e1d" > libproxmox-acme-1.7.1.tmp/debian/SOURCE
+mv libproxmox-acme-1.7.1.tmp libproxmox-acme-1.7.1
+cd libproxmox-acme-1.7.1; dpkg-buildpackage -d -b -us -uc
+dpkg-buildpackage: info: source package libproxmox-acme
+dpkg-buildpackage: info: source version 1.7.1
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make[1]: Entering directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+dh clean
+   dh_auto_clean
+	make -j4 distclean
+make[2]: Entering directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+rm -rf *~
+make[2]: Leaving directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+   dh_clean
+make[1]: Leaving directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+ debian/rules binary
+make[1]: Entering directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j4 "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install
+	make -j4 install DESTDIR=/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1/debian/tmp AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+install -D -m 0744 proxmox-acme /workspaces/src/proxmox-acme/libproxmox-acme-1.7.1/debian/tmp/usr/share/proxmox-acme//proxmox-acme
+install -D -m 0644 dns-challenge-schema.json /workspaces/src/proxmox-acme/libproxmox-acme-1.7.1/debian/tmp/usr/share/proxmox-acme//dns-challenge-schema.json
+for f in dnsapi/dns_1984hosting.sh dnsapi/dns_acmedns.sh dnsapi/dns_acmeproxy.sh dnsapi/dns_active24.sh dnsapi/dns_ad.sh dnsapi/dns_ali.sh dnsapi/dns_alviy.sh dnsapi/dns_anx.sh dnsapi/dns_artfiles.sh dnsapi/dns_arvan.sh dnsapi/dns_aurora.sh dnsapi/dns_autodns.sh dnsapi/dns_aws.sh dnsapi/dns_azion.sh dnsapi/dns_azure.sh dnsapi/dns_beget.sh dnsapi/dns_bookmyname.sh dnsapi/dns_bunny.sh dnsapi/dns_cf.sh dnsapi/dns_clouddns.sh dnsapi/dns_cloudns.sh dnsapi/dns_cn.sh dnsapi/dns_conoha.sh dnsapi/dns_constellix.sh dnsapi/dns_cpanel.sh dnsapi/dns_curanet.sh dnsapi/dns_cyon.sh dnsapi/dns_da.sh dnsapi/dns_ddnss.sh dnsapi/dns_desec.sh dnsapi/dns_df.sh dnsapi/dns_dgon.sh dnsapi/dns_dnsexit.sh dnsapi/dns_dnshome.sh dnsapi/dns_dnsimple.sh dnsapi/dns_dnsservices.sh dnsapi/dns_doapi.sh dnsapi/dns_domeneshop.sh dnsapi/dns_dp.sh dnsapi/dns_dpi.sh dnsapi/dns_dreamhost.sh dnsapi/dns_duckdns.sh dnsapi/dns_durabledns.sh dnsapi/dns_dyn.sh dnsapi/dns_dynu.sh dnsapi/dns_dynv6.sh dnsapi/dns_easydns.sh dnsapi/dns_edgecenter.sh dnsapi/dns_edgedns.sh dnsapi/dns_euserv.sh dnsapi/dns_exoscale.sh dnsapi/dns_fornex.sh dnsapi/dns_freedns.sh dnsapi/dns_freemyip.sh dnsapi/dns_gandi_livedns.sh dnsapi/dns_gcloud.sh dnsapi/dns_gcore.sh dnsapi/dns_gd.sh dnsapi/dns_geoscaling.sh dnsapi/dns_googledomains.sh dnsapi/dns_he.sh dnsapi/dns_he_ddns.sh dnsapi/dns_hetzner.sh dnsapi/dns_hetznercloud.sh dnsapi/dns_hexonet.sh dnsapi/dns_hostingde.sh dnsapi/dns_huaweicloud.sh dnsapi/dns_infoblox.sh dnsapi/dns_infomaniak.sh dnsapi/dns_internetbs.sh dnsapi/dns_inwx.sh dnsapi/dns_ionos.sh dnsapi/dns_ionos_cloud.sh dnsapi/dns_ipv64.sh dnsapi/dns_ispconfig.sh dnsapi/dns_jd.sh dnsapi/dns_joker.sh dnsapi/dns_kappernet.sh dnsapi/dns_kas.sh dnsapi/dns_kinghost.sh dnsapi/dns_knot.sh dnsapi/dns_la.sh dnsapi/dns_leaseweb.sh dnsapi/dns_lexicon.sh dnsapi/dns_limacity.sh dnsapi/dns_linode.sh dnsapi/dns_linode_v4.sh dnsapi/dns_loopia.sh dnsapi/dns_lua.sh dnsapi/dns_maradns.sh dnsapi/dns_me.sh dnsapi/dns_miab.sh dnsapi/dns_mijnhost.sh dnsapi/dns_misaka.sh dnsapi/dns_myapi.sh dnsapi/dns_mydevil.sh dnsapi/dns_mydnsjp.sh dnsapi/dns_mythic_beasts.sh dnsapi/dns_namecheap.sh dnsapi/dns_namecom.sh dnsapi/dns_namesilo.sh dnsapi/dns_nanelo.sh dnsapi/dns_nederhost.sh dnsapi/dns_neodigit.sh dnsapi/dns_netcup.sh dnsapi/dns_netlify.sh dnsapi/dns_nic.sh dnsapi/dns_njalla.sh dnsapi/dns_nm.sh dnsapi/dns_nsd.sh dnsapi/dns_nsone.sh dnsapi/dns_nsupdate.sh dnsapi/dns_nw.sh dnsapi/dns_oci.sh dnsapi/dns_omglol.sh dnsapi/dns_one.sh dnsapi/dns_online.sh dnsapi/dns_openprovider.sh dnsapi/dns_openprovider_rest.sh dnsapi/dns_openstack.sh dnsapi/dns_opnsense.sh dnsapi/dns_ovh.sh dnsapi/dns_pdns.sh dnsapi/dns_pleskxml.sh dnsapi/dns_pointhq.sh dnsapi/dns_porkbun.sh dnsapi/dns_rackcorp.sh dnsapi/dns_rackspace.sh dnsapi/dns_rage4.sh dnsapi/dns_rcode0.sh dnsapi/dns_regru.sh dnsapi/dns_scaleway.sh dnsapi/dns_schlundtech.sh dnsapi/dns_selectel.sh dnsapi/dns_selfhost.sh dnsapi/dns_servercow.sh dnsapi/dns_simply.sh dnsapi/dns_spaceship.sh dnsapi/dns_technitium.sh dnsapi/dns_tele3.sh dnsapi/dns_tencent.sh dnsapi/dns_timeweb.sh dnsapi/dns_transip.sh dnsapi/dns_udr.sh dnsapi/dns_ultra.sh dnsapi/dns_unoeuro.sh dnsapi/dns_variomedia.sh dnsapi/dns_veesp.sh dnsapi/dns_vercel.sh dnsapi/dns_vscale.sh dnsapi/dns_vultr.sh dnsapi/dns_websupport.sh dnsapi/dns_west_cn.sh dnsapi/dns_world4you.sh dnsapi/dns_yandex360.sh dnsapi/dns_yc.sh dnsapi/dns_zilore.sh dnsapi/dns_zone.sh dnsapi/dns_zoneedit.sh dnsapi/dns_zonomi.sh ; do install -D -m 0644 acme.sh/$f /workspaces/src/proxmox-acme/libproxmox-acme-1.7.1/debian/tmp/usr/share/proxmox-acme//$f; done
+install -d -m 0755 /workspaces/src/proxmox-acme/libproxmox-acme-1.7.1/debian/tmp/usr/share/perl5/PVE
+install -d -m 0755 /workspaces/src/proxmox-acme/libproxmox-acme-1.7.1/debian/tmp/usr/share/perl5/PVE/ACME
+for f in ACME.pm ACME/Challenge.pm ACME/DNSChallenge.pm ACME/StandAlone.pm ; do install -D -m 0644 PVE/$f /workspaces/src/proxmox-acme/libproxmox-acme-1.7.1/debian/tmp/usr/share/perl5/PVE/$f; done
+make[2]: Leaving directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_lintian
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libproxmox-acme-perl' in '../libproxmox-acme-perl_1.7.1_all.deb'.
+dpkg-deb: building package 'libproxmox-acme-plugins' in '../libproxmox-acme-plugins_1.7.1_all.deb'.
+make[1]: Leaving directory '/workspaces/src/proxmox-acme/libproxmox-acme-1.7.1'
+ dpkg-genbuildinfo --build=binary -O../libproxmox-acme_1.7.1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../libproxmox-acme_1.7.1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+: # lintian disabled for cross build
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libproxmox-acme-perl libproxmox-acme-plugins libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-i18n pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
+dpkg-scanpackages: info: Wrote 102 entries to output Packages file.
+Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
+Ign:2 file:/workspaces/pve/out/arm64 ./ Release
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages
+Err:3 file:/workspaces/pve/out/arm64 ./ Packages
+  Read error - read (21: Is a directory)
+Get:3 file:/workspaces/pve/out/arm64 ./ Packages [23.8 kB]
+Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
+Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
+Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
+Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
+Reading package lists...
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
+W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

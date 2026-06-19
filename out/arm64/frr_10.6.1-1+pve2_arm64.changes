@@ -1,0 +1,60 @@
+Format: 1.8
+Date: Sun, 17 May 2026 01:04:13 +0200
+Source: frr
+Binary: frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64 all
+Version: 10.6.1-1+pve2
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ frr        - FRRouting suite of internet protocols (BGP, OSPF, IS-IS, ...)
+ frr-doc    - FRRouting suite - user manual
+ frr-pythontools - FRRouting suite - Python tools
+ frr-rpki-rtrlib - FRRouting suite - BGP RPKI support (rtrlib)
+ frr-snmp   - FRRouting suite - SNMP support
+ frr-test-tools - FRRouting suite - Testing Tools
+Changes:
+ frr (10.6.1-1+pve2) trixie; urgency=medium
+ .
+   * fix leaked EVPN routes with wrong nexthop when ipv4 via ipv6 is used
+ .
+   * fix race-conditions with the EVPN local RT2 leaking patch
+Checksums-Sha1:
+ 7f052e37df1bf013108027b7785b1f332d1cb0d1 16335300 frr-dbgsym_10.6.1-1+pve2_arm64.deb
+ bdcc103bec3be37305fda450c4aae709f368db67 2010148 frr-doc_10.6.1-1+pve2_all.deb
+ 256fcd930e72e86283d5dbd6bcf90ccf8eee5ba5 45456 frr-pythontools_10.6.1-1+pve2_all.deb
+ 4a3de43544681e28b4b442eddc5b69b3ad08629e 99824 frr-rpki-rtrlib-dbgsym_10.6.1-1+pve2_arm64.deb
+ a3181d0db975c36f37a4d6be92e31ab6b66f0cc0 30564 frr-rpki-rtrlib_10.6.1-1+pve2_arm64.deb
+ 825c107e1e170e5be35be507c0b43fb78b8efefe 306312 frr-snmp-dbgsym_10.6.1-1+pve2_arm64.deb
+ e472dd8215b0baa5275a0d3e2a2ef2ce3532ba5c 64216 frr-snmp_10.6.1-1+pve2_arm64.deb
+ 3d3c8f8dc59b2509eaada49a0e9d73614d4ae741 37576 frr-test-tools-dbgsym_10.6.1-1+pve2_arm64.deb
+ d59aa09b33495f8e6d0fcb9a59118384be7a8d59 17488 frr-test-tools_10.6.1-1+pve2_arm64.deb
+ fe02fe4021fa687f448e0de8a5f0da726743a3f5 11614 frr_10.6.1-1+pve2_arm64.buildinfo
+ 0bb6745498584d6f6f6578e500bc9124840a5ed5 5764348 frr_10.6.1-1+pve2_arm64.deb
+Checksums-Sha256:
+ 974be9fb945a822688088514e145419cf3b5c9458a46da78e1cc6919bc63e6ba 16335300 frr-dbgsym_10.6.1-1+pve2_arm64.deb
+ 6a89b70e1f3864103bd0d874aa07f56b124510f57398aee230a6d7c557b629e4 2010148 frr-doc_10.6.1-1+pve2_all.deb
+ 73660a139e7bd1a71daa22d8368f3ed4c0180542911c1af34a2438ab1d01a721 45456 frr-pythontools_10.6.1-1+pve2_all.deb
+ c1f47bddf0843654d2605f7f39313c8c1edc942fa66ec1810b18f4b6ee8ed9f0 99824 frr-rpki-rtrlib-dbgsym_10.6.1-1+pve2_arm64.deb
+ 74ee4381d71b012423b640cbb010230c4dc16e0f7c3015d7367c9b50fc616ed8 30564 frr-rpki-rtrlib_10.6.1-1+pve2_arm64.deb
+ 3b9f5ffa93fd7bc0fd8d852022958ff777553934676b8f24165e9ec8cdcbb40f 306312 frr-snmp-dbgsym_10.6.1-1+pve2_arm64.deb
+ 7cb9248f1c9ed3bd991d2581b0251841959ec1e8ee315253255338c08119b835 64216 frr-snmp_10.6.1-1+pve2_arm64.deb
+ 6eb05aecceeb32d9a6f9b0a07f499495e7d51a81012eac7af99c99dbca074ad1 37576 frr-test-tools-dbgsym_10.6.1-1+pve2_arm64.deb
+ 17215783519b7adf410658877b53ac022b4c0fd20240bf839f01714ff53f0a13 17488 frr-test-tools_10.6.1-1+pve2_arm64.deb
+ 7288a08bdc073d8dd29be667821b20c8afd626959b52bda674634269cb4ca905 11614 frr_10.6.1-1+pve2_arm64.buildinfo
+ b9814f1b06c89718fc844e313a955716505eefad17441ea1613f1e38fbdca0a2 5764348 frr_10.6.1-1+pve2_arm64.deb
+Files:
+ 9d7242371ab0d6f6f82c69d9ff95f8f4 16335300 debug optional frr-dbgsym_10.6.1-1+pve2_arm64.deb
+ c3628791a497cb06edb670335cc22736 2010148 doc optional frr-doc_10.6.1-1+pve2_all.deb
+ 37e45fea59d591ea4784d88cd9e2849c 45456 net optional frr-pythontools_10.6.1-1+pve2_all.deb
+ 786eca57172c592421c46074dda4a644 99824 debug optional frr-rpki-rtrlib-dbgsym_10.6.1-1+pve2_arm64.deb
+ 6b68e549053348141dac1a0ff618a53b 30564 net optional frr-rpki-rtrlib_10.6.1-1+pve2_arm64.deb
+ 5d56c2aabea1833d1a614acb7f96c8d5 306312 debug optional frr-snmp-dbgsym_10.6.1-1+pve2_arm64.deb
+ 51ba31389751253d5a7b16ec0bf468dd 64216 net optional frr-snmp_10.6.1-1+pve2_arm64.deb
+ a211af0883b05cf7909e598f5fb8645f 37576 debug optional frr-test-tools-dbgsym_10.6.1-1+pve2_arm64.deb
+ 0318a8828b6d359942565749586d2848 17488 net optional frr-test-tools_10.6.1-1+pve2_arm64.deb
+ 0d7cd391198f41f0c57430386d9ee88d 11614 net optional frr_10.6.1-1+pve2_arm64.buildinfo
+ 1cbda0f58bc787d29916940e50b434d6 5764348 net optional frr_10.6.1-1+pve2_arm64.deb

@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Thu, 21 May 2026 22:27:14 +0200
+Source: pve-docs
+Binary: pve-doc-generator pve-docs pve-docs-mediawiki
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 9.2.2
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pve-doc-generator - Proxmox VE Documentation helpers
+ pve-docs   - Proxmox VE Documentation
+ pve-docs-mediawiki - Proxmox VE Documentation - mediawiki plugin
+Changes:
+ pve-docs (9.2.2) trixie; urgency=medium
+ .
+   * faq: make EOL description more explicit and fix Debian Bookworm EOL date,
+     it got moved a month back, Proxmox VE will keep the original one.
+ .
+   * sdn: fabrics: wireguard: update endpoint documentation.
+ .
+   * update static/schema information for API viewer and generated synopsis.
+Checksums-Sha1:
+ f18fc9424c8869f65392f42ece948b80fc8ad1ac 31464 pve-doc-generator_9.2.2_all.deb
+ 0d23c74f36909d3013a00665f9ca7569633a24c4 21868 pve-docs-mediawiki_9.2.2_all.deb
+ 4ec66b89565551d8c42018438b39675a74c12f7e 18488 pve-docs_9.2.2_all.deb
+ bb8ae000358159b05d380b2f79efcb5bf755d1f2 17681 pve-docs_9.2.2_amd64.buildinfo
+Checksums-Sha256:
+ 94af16a7e70000e7fe4a7f94dcaf9fef6962e294be9cd07743ae314ab1b094f3 31464 pve-doc-generator_9.2.2_all.deb
+ f1dfdebf54f9479ef85899b88bdc9fc1235a5fbf7f0cc6f610623c677907ed41 21868 pve-docs-mediawiki_9.2.2_all.deb
+ c39fa627c14c5f453e12fb95ae2adaa8346904ad6f4ea4a6ac7fe73520a12887 18488 pve-docs_9.2.2_all.deb
+ a77ec07e41c710cc83ac7956a78cbb3c42b7a5ba5a84b385748f35dbfe66d39f 17681 pve-docs_9.2.2_amd64.buildinfo
+Files:
+ 7e01ead8a12368a82c4d4e0c8271d5e2 31464 perl optional pve-doc-generator_9.2.2_all.deb
+ 8ed439e8eab0e26397dee652462cd0d6 21868 doc optional pve-docs-mediawiki_9.2.2_all.deb
+ b2cc04918a2e37ea10476ff728dd8b1a 18488 doc optional pve-docs_9.2.2_all.deb
+ 9bf84d7156e3201cd181ae770e747b40 17681 perl optional pve-docs_9.2.2_amd64.buildinfo

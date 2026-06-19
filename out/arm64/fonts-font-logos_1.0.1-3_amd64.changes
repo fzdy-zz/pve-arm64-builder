@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Mon, 23 Oct 2023 17:19:38 +0200
+Source: fonts-font-logos
+Binary: fonts-font-logos
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 1.0.1-3
+Distribution: bookworm
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ fonts-font-logos - Icon font for Distributions and FOSS
+Changes:
+ fonts-font-logos (1.0.1-3) bookworm; urgency=medium
+ .
+   * re-build for Debian Bookworm based releases
+Checksums-Sha1:
+ 8f3f848fe4dca88859bcceec2441e5804f94a784 111992 fonts-font-logos_1.0.1-3_all.deb
+ b124d71788c57bdaaaeb50a5c4604a425515914d 5009 fonts-font-logos_1.0.1-3_amd64.buildinfo
+Checksums-Sha256:
+ b8c584234438fcb7b0482935b3d228e4e462a2528cee6497a276ae9b5e975470 111992 fonts-font-logos_1.0.1-3_all.deb
+ 5e63c1cf76984e92488e6f8a08dd81441a3ce274d9e7b0df3da2247866b8351a 5009 fonts-font-logos_1.0.1-3_amd64.buildinfo
+Files:
+ 903ac287a5151ae0ffe4850ca8f9208a 111992 fonts optional fonts-font-logos_1.0.1-3_all.deb
+ ca0c341f4dd66002df5d94bc4a7ab0c1 5009 fonts optional fonts-font-logos_1.0.1-3_amd64.buildinfo

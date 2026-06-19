@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Tue, 09 Jun 2026 17:10:15 +0200
+Source: proxmox-i18n
+Binary: pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n pve-i18n pve-yew-mobile-i18n
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 3.8.0
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pbs-i18n   - Internationalization support for Proxmox Backup Server
+ pdm-i18n   - Internationalization support for Proxmox Datacenter Manager
+ pmg-i18n   - Internationalization support for Proxmox Mail Gateway
+ pmg-yew-quarantine-i18n - Internationalization support for Proxmox Mail Gateway Quartantine
+ pve-i18n   - Internationalization support for Proxmox VE
+ pve-yew-mobile-i18n - Internationalization support for Proxmox Virtual Environment (yew
+Changes:
+ proxmox-i18n (3.8.0) trixie; urgency=medium
+ .
+   * update and improve the following translations:
+     - French
+     - German
+     - Italian
+     - Korean
+     - Simplified Chinese
+     - Spanish
+Checksums-Sha1:
+ 297c170fc55da7f03c8ca62fa12fb67a1fdfb2d5 415560 pbs-i18n_3.8.0_all.deb
+ fbaec5ab458985781eac22d1f200148ac62393dc 876532 pdm-i18n_3.8.0_all.deb
+ edca4ab12b663311f15f035366e4ef344bd0d5a9 495712 pmg-i18n_3.8.0_all.deb
+ 92395519cad11a4e0080521cb990aea4701a9f0e 208012 pmg-yew-quarantine-i18n_3.8.0_all.deb
+ 715fb72ed96f38f2da746be6854e571ed952256a 6506 proxmox-i18n_3.8.0_amd64.buildinfo
+ f883e60796b0e22603222a8aae55a92e6b178c02 639260 pve-i18n_3.8.0_all.deb
+ 1ac0d3d9643602a7ff39446e4a9ec7e8c6693f0d 213040 pve-yew-mobile-i18n_3.8.0_all.deb
+Checksums-Sha256:
+ 51b93a8e7affb2c60964c5a51060a07b2f1a41516a833067ab9b57537392ec95 415560 pbs-i18n_3.8.0_all.deb
+ 74f2243940f2e0f95aa30c75b8c88b90cd691056f18d219cc140786db982f3d3 876532 pdm-i18n_3.8.0_all.deb
+ 78f851d24ca363a3fd1e82c74e912cf313fbec3d9e37ba7bfd9f975bad60826d 495712 pmg-i18n_3.8.0_all.deb
+ 65ebb58dc235bbc5390523b559e48e5558b1e94df46add3bcd8fcd4885aa89fe 208012 pmg-yew-quarantine-i18n_3.8.0_all.deb
+ 4834cafa65f131d24de57ff9eb9944bc071bf01373ca1daf8979581ae47553bf 6506 proxmox-i18n_3.8.0_amd64.buildinfo
+ 72cdc11f29f4221d93b3b5753760b28ca530bc9eac3fe7e86613165210e2e99d 639260 pve-i18n_3.8.0_all.deb
+ 42913a4c9f7f2222d35c2e06534273e9088c611f8c93bc6e94a04dfca01163e3 213040 pve-yew-mobile-i18n_3.8.0_all.deb
+Files:
+ 47839f2f0c362c28d1f73a4527b458e8 415560 perl optional pbs-i18n_3.8.0_all.deb
+ 882382db6895afb98f1693c1ea055595 876532 perl optional pdm-i18n_3.8.0_all.deb
+ 361c21c33b96c987646c0c020bede009 495712 perl optional pmg-i18n_3.8.0_all.deb
+ 93f5d51e7a734323a62999ed373bf8d0 208012 perl optional pmg-yew-quarantine-i18n_3.8.0_all.deb
+ a99df4dacf436264a8a8e9893f2d5a5e 6506 perl optional proxmox-i18n_3.8.0_amd64.buildinfo
+ 43cb576030ca575e9083b89a56d1892e 639260 perl optional pve-i18n_3.8.0_all.deb
+ b005aa7f844c791310973eba689d735b 213040 perl optional pve-yew-mobile-i18n_3.8.0_all.deb

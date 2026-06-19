@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Fri, 15 May 2026 11:15:51 +0200
+Source: pve-yew-mobile-gui
+Binary: pve-yew-mobile-gui
+Built-For-Profiles: nocheck cross
+Architecture: arm64
+Version: 0.7.0
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ pve-yew-mobile-gui - Mobile Web UI to for the Proxmox Virtual Environment
+Changes:
+ pve-yew-mobile-gui (0.7.0) trixie; urgency=medium
+ .
+   * add a basic firewall view as new tabs on the QEMU and LXC guest pages and
+     on cluster nodes, plus a dedicated cluster firewall page accessible from
+     the configuration menu. The view currently shows the rules and options of
+     the respective firewall.
+ .
+   * fix #7330: dashboard: display the total CPU utilization across all nodes
+     correctly and clarify the presentation by also showing the total amount of
+     CPUs next to the utilization bar.
+ .
+   * fix #7290: login: url-decode the OpenID Connect authorization code, so
+     OIDC providers that emit characters requiring URL encoding, for example
+     Google, can complete the login flow.
+ .
+   * dashboard: use a proper plural translation string for the CPU label
+     instead of a hard-coded "CPU(s)" string.
+ .
+   * display the human-readable subscription level (for example "Community") on
+     the resources and node pages, instead of the raw single-character code,
+     and unify the mapping logic with the dashboard.
+ .
+   * align the layout of the cluster node status, LXC, and QEMU guest pages by
+     adding icons to the top-level tab bar and making it scrollable.
+ .
+   * lxc: use the shared network and options panels from proxmox-yew-comp
+     instead of carrying separate local copies.
+ .
+   * harden HTML sanitization for rendered content like the login consent
+     banner by switching to an explicit element and attribute allowlist and by
+     namespacing id and name attributes to prevent DOM clobbering of the
+     surrounding UI.
+Checksums-Sha1:
+ 429f87501220193de487dcbd2cc8fd5f1bb63ef6 26162 pve-yew-mobile-gui_0.7.0_arm64.buildinfo
+ 88796943bd0de04d9f8daf6a5b4701672aa7e2da 2588432 pve-yew-mobile-gui_0.7.0_arm64.deb
+Checksums-Sha256:
+ 6a1ccc1cf356eda0351ecf9920fa3e4a40195990a2cc1ee94a46d2028f196cdb 26162 pve-yew-mobile-gui_0.7.0_arm64.buildinfo
+ 9cd95f1cba076ac8dd1c7dd0f6f6792ce46627649fa49bc063e95bf3f74ffe7e 2588432 pve-yew-mobile-gui_0.7.0_arm64.deb
+Files:
+ 7d44b1e4cc2f6cadbef109ad84c5f0c0 26162 admin optional pve-yew-mobile-gui_0.7.0_arm64.buildinfo
+ 754026554701dd9c397c3af8cdac9bb1 2588432 admin optional pve-yew-mobile-gui_0.7.0_arm64.deb

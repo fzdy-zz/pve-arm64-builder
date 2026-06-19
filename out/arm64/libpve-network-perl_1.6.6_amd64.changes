@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 21 May 2026 14:04:39 +0200
+Source: libpve-network-perl
+Binary: libpve-network-api-perl libpve-network-perl
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 1.6.6
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ libpve-network-api-perl - API endpoints for Proxmox VE's SDN stack
+ libpve-network-perl - Proxmox VE's SDN (Software Defined Network) stack
+Changes:
+ libpve-network-perl (1.6.6) trixie; urgency=medium
+ .
+   * fabrics: make ip_prefix and ip6_prefix deletable. This allows users to
+     update (and remove) the prefixes of fabrics which don't have any nodes
+     configured. There still has to be at least one IPv6 or IPv4 prefix on the
+     fabric.
+Checksums-Sha1:
+ 3633c0663d73b8487d665b7747e1f6d8569daad7 29088 libpve-network-api-perl_1.6.6_all.deb
+ dd163f396ee25a351bffce6b27ee42dd0e44224f 55880 libpve-network-perl_1.6.6_all.deb
+ 9c55963188b6f0b93f31dfb0eef67c141baccf62 11433 libpve-network-perl_1.6.6_amd64.buildinfo
+Checksums-Sha256:
+ 2549166ccbd9c87ffe29d19af6364e026bf901e09852f06250d54f47a92a59c3 29088 libpve-network-api-perl_1.6.6_all.deb
+ a20e84fbddc55fdd22084fd4bd5a95f2ff0ae826faeba97cb29f29e96df802c2 55880 libpve-network-perl_1.6.6_all.deb
+ ca33e8a40281296c258367fe005a101d2b78c9524bb66fcd4bb6c8889c996d80 11433 libpve-network-perl_1.6.6_amd64.buildinfo
+Files:
+ c630824994474b6ff12e3cb3f1e652d1 29088 perl optional libpve-network-api-perl_1.6.6_all.deb
+ eb36286c31ae3f26e06526c2c47307bc 55880 perl optional libpve-network-perl_1.6.6_all.deb
+ 74e8e79f8d0866a4faa1fec07d64461e 11433 perl optional libpve-network-perl_1.6.6_amd64.buildinfo

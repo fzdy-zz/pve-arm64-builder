@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Wed, 20 May 2026 05:48:48 +0200
+Source: proxmox-firewall
+Binary: proxmox-firewall proxmox-firewall-dbgsym
+Built-For-Profiles: nocheck cross
+Architecture: arm64
+Version: 1.2.3
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ proxmox-firewall - Proxmox's nftables-based firewall written in rust
+Changes:
+ proxmox-firewall (1.2.3) trixie; urgency=medium
+ .
+   * fix #6399: update to proxmox-ve-config 0.10 to ensure firewall rules whose
+     comment contains a hash sign no longer abort rule parsing, so the firewall
+     starts as expected.
+ .
+   * skip a single firewall rule that fails to generate, logging a warning,
+     instead of aborting the whole ruleset update, so that one unresolvable
+     rule reference no longer drops the rest of the host's rules.
+Checksums-Sha1:
+ 0995da0e1faeff947a82bf4a7f0939e09b9c99c5 15456560 proxmox-firewall-dbgsym_1.2.3_arm64.deb
+ 5728db8849647281afa052d2a593ab16777dd24e 23884 proxmox-firewall_1.2.3_arm64.buildinfo
+ 888239b5cc4cbb92c770fc9573405e4f43bb40a9 643440 proxmox-firewall_1.2.3_arm64.deb
+Checksums-Sha256:
+ bae79c28bc61756cef7abe1f106ce0bee9177f2e3231f80db4bf27d2496ad62c 15456560 proxmox-firewall-dbgsym_1.2.3_arm64.deb
+ 119d3ed189004d22dd4d2710db1b7532d29fe2ad7a482f20fdfd1485b2a793cc 23884 proxmox-firewall_1.2.3_arm64.buildinfo
+ e1b2c158d5f5a71d294ece328f5cde39d562c8130e3fc1d87dd1f20690909805 643440 proxmox-firewall_1.2.3_arm64.deb
+Files:
+ 429d234b4c8c8bd1b456dc179b4feef9 15456560 debug optional proxmox-firewall-dbgsym_1.2.3_arm64.deb
+ 4d9e362a9d59a794651b80cb67c43930 23884 admin optional proxmox-firewall_1.2.3_arm64.buildinfo
+ 926321719b71b6733f27417dec9df861 643440 admin optional proxmox-firewall_1.2.3_arm64.deb

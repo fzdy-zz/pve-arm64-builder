@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 07 May 2026 11:53:11 +0200
+Source: novnc-pve
+Binary: novnc-pve
+Built-For-Profiles: nocheck
+Architecture: all
+Version: 1.7.0-1
+Distribution: trixie
+Urgency: medium
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Changed-By: Proxmox Support Team <support@proxmox.com>
+Description:
+ novnc-pve  - HTML5 VNC client
+Changes:
+ novnc-pve (1.7.0-1) trixie; urgency=medium
+ .
+   * upgrade noVNC and patches to new 1.7.0 upstream release
+Checksums-Sha1:
+ 1c5dd3ecc161af04b5cda1f10c06d616b5c1b6f1 517740 novnc-pve_1.7.0-1_all.deb
+ 0a41917e9b137b293e3e644bc24bf6ac0e0bd67b 5167 novnc-pve_1.7.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 462ca55dbb9251410002fa59338fbe64f429537290d66d6f635b7cc807ebb7f6 517740 novnc-pve_1.7.0-1_all.deb
+ e0a3a461cbc6f7309bdbafa911197aa7f3fdbf64b1b139bc87c7ccfd6e633ec7 5167 novnc-pve_1.7.0-1_amd64.buildinfo
+Files:
+ b1e6f7f50cae2c3f19b0a5438e44b1a8 517740 web optional novnc-pve_1.7.0-1_all.deb
+ a3f48322bb1f6ff401b8b103d570665c 5167 web optional novnc-pve_1.7.0-1_amd64.buildinfo
