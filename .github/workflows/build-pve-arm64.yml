@@ -33,6 +33,7 @@ jobs:
         run: |
           mkdir -p out/arm64 logs
           docker run --rm \
+            --user root \
             -v ${{ github.workspace }}:/workspaces/pve \
             -w /workspaces/pve \
             -e OUT_DIR=/workspaces/pve/out/arm64 \
