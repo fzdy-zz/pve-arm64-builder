@@ -1,15 +1,24 @@
 name: Build PVE arm64
 
 on:
-  workflow_dispatch:           # 手动触发（强烈建议第一次手动跑）
-  schedule:
-    - cron: '0 4 * * 0'        # 每周日 UTC 凌晨4点自动构建
-  push:
-    paths:
-      - 'patches/**'
-      - 'build_pve_arm64.sh'
-      - 'Dockerfile'
-      - '.github/workflows/build-pve-arm64.yml'
+  workflow_dispatch:
+    inputs:
+      only_sources:
+        description: '只构建指定源码包（逗号分隔，留空=全部）'
+        required: false
+        default: ''
+      max_passes:
+        description: '最大构建重试次数'
+        required: false
+        default: '4'
+      resume_built:
+        description: '复用已构建包 (1=是, 0=否)'
+        required: false
+        default: '1'
+      jobs:
+        description: '并行任务数（推荐 2-4）'
+        required: false
+        default: '3'
 
 jobs:
   build:
@@ -22,6 +31,17 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: false
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: true
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -38,19 +58,58 @@ jobs:
             -w /workspaces/pve \
             -e OUT_DIR=/workspaces/pve/out/arm64 \
             -e LOG_DIR=/workspaces/pve/logs \
-            -e RESUME_BUILT=1 \
-            -e MAX_PASSES=3 \
-            -e JOBS=4 \
+            -e REGENERATE_PLAN=1 \
+            -e RESUME_BUILT=${{ inputs.resume_built }} \
+            -e MAX_PASSES=${{ inputs.max_passes }} \
+            -e JOBS=${{ inputs.jobs }} \
+            -e ONLY_SOURCES="${{ inputs.only_sources }}" \
             -e INSTALL_ALL_PROXMOX_DEVEL_PACKAGES=true \
             pve-arm64-builder:trixie \
             bash -lc '/workspaces/pve/build_pve_arm64.sh'
 
-      - name: Prepare binary directory for GitHub Pages
+      - name: Prepare binary directory
         run: |
           mkdir -p binary-arm64
           cp -r out/arm64/*.deb binary-arm64/ 2>/dev/null || true
           cp out/arm64/Packages* binary-arm64/ 2>/dev/null || true
           cp README.md binary-arm64/README.md 2>/dev/null || true
+
+      # === 直接生成 GPG 密钥并签名（无需 Secrets）===
+      - name: Generate GPG key and sign repository
+        run: |
+          # 生成批量 GPG 密钥
+          cat > /tmp/gpg-batch <<EOF
+          %echo Generating a basic OpenPGP key
+          Key-Type: RSA
+          Key-Length: 4096
+          Subkey-Type: RSA
+          Subkey-Length: 4096
+          Name-Real: PVE arm64 Builder (fzdy-zz)
+          Name-Comment: Auto-generated for https://github.com/fzdy-zz/pve-arm64-builder
+          Name-Email: pve-arm64-builder@users.noreply.github.com
+          Expire-Date: 0
+          %no-protection
+          %commit
+          %echo done
+          EOF
+
+          gpg --batch --gen-key /tmp/gpg-batch
+
+          # 获取密钥 ID
+          KEYID=$(gpg --list-keys --keyid-format=long | grep -oP '(?<=/)[0-9A-F]{16}' | head -n1)
+
+          cd binary-arm64
+          apt-ftparchive release . > Release
+
+          # 签名
+          gpg --default-key $KEYID --armor --detach-sign -o Release.gpg Release
+          gpg --default-key $KEYID --clearsign -o InRelease Release
+
+          # 导出公钥供用户使用
+          gpg --armor --export $KEYID > pve-arm64-builder-pubkey.asc
+
+          echo "✅ GPG signing completed with key ID: $KEYID"
+          echo "Public key saved as pve-arm64-builder-pubkey.asc"
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
@@ -60,11 +119,11 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
 
-      - name: Commit build artifacts to main (optional)
+      - name: Commit artifacts to main (optional)
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add out/arm64/ logs/ binary-arm64/ || true
-          git commit -m "chore: update arm64 build artifacts $(date -u +%Y-%m-%d)" || echo "No changes"
+          git commit -m "chore: update arm64 build + GPG signature $(date -u +%Y-%m-%d)" || echo "No changes"
           git push || true
