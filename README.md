@@ -3,7 +3,22 @@
 This repository builds Proxmox VE Debian packages for Debian trixie on `arm64`
 and `riscv64`. The build container itself runs on `amd64` and uses Debian
 cross-building toolchains.
-
+# 测试自用
+# 下载最新公钥
+```
+sudo curl -fsSL https://raw.githubusercontent.com/fzdy-zz/pve-arm64-builder/gh-pages/pve-arm64-builder-pubkey.asc \
+  -o /etc/apt/trusted.gpg.d/fzdy-zz-pve-arm64.asc
+```
+# 添加源（使用 signed-by，更安全）
+```
+echo "deb [arch=arm64 signed-by=/etc/apt/trusted.gpg.d/fzdy-zz-pve-arm64.asc] https://raw.githubusercontent.com/fzdy-zz/pve-arm64-builder/gh-pages ./" \
+  | sudo tee /etc/apt/sources.list.d/pve-arm64.list
+```
+# 安装
+```
+sudo apt update
+sudo apt install proxmox-ve
+```
 ## Build The Container
 
 Run this inside the repository directory.
