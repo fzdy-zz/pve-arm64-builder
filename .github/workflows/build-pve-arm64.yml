@@ -74,10 +74,9 @@ jobs:
           cp out/arm64/Packages* binary-arm64/ 2>/dev/null || true
           cp README.md binary-arm64/README.md 2>/dev/null || true
 
-      # === 直接生成 GPG 密钥并签名（无需 Secrets）===
+      # === GPG 签名（无需 Secrets）===
       - name: Generate GPG key and sign repository
         run: |
-          # 生成批量 GPG 密钥
           cat > /tmp/gpg-batch <<EOF
           %echo Generating a basic OpenPGP key
           Key-Type: RSA
@@ -85,7 +84,7 @@ jobs:
           Subkey-Type: RSA
           Subkey-Length: 4096
           Name-Real: PVE arm64 Builder (fzdy-zz)
-          Name-Comment: Auto-generated for https://github.com/fzdy-zz/pve-arm64-builder
+          Name-Comment: Auto-generated
           Name-Email: pve-arm64-builder@users.noreply.github.com
           Expire-Date: 0
           %no-protection
@@ -94,22 +93,16 @@ jobs:
           EOF
 
           gpg --batch --gen-key /tmp/gpg-batch
-
-          # 获取密钥 ID
           KEYID=$(gpg --list-keys --keyid-format=long | grep -oP '(?<=/)[0-9A-F]{16}' | head -n1)
 
           cd binary-arm64
           apt-ftparchive release . > Release
 
-          # 签名
           gpg --default-key $KEYID --armor --detach-sign -o Release.gpg Release
           gpg --default-key $KEYID --clearsign -o InRelease Release
-
-          # 导出公钥供用户使用
           gpg --armor --export $KEYID > pve-arm64-builder-pubkey.asc
 
-          echo "✅ GPG signing completed with key ID: $KEYID"
-          echo "Public key saved as pve-arm64-builder-pubkey.asc"
+          echo "GPG Key ID: $KEYID"
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
@@ -119,11 +112,16 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
 
-      - name: Commit artifacts to main (optional)
+      # === 修复后的 master commit 步骤（带 pull --rebase）===
+      - name: Commit artifacts to master (optional)
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # 安全 pull + rebase
+          git pull --rebase origin master || echo "Pull failed, continuing anyway"
+          
           git add out/arm64/ logs/ binary-arm64/ || true
-          git commit -m "chore: update arm64 build + GPG signature $(date -u +%Y-%m-%d)" || echo "No changes"
-          git push || true
+          git commit -m "chore: update arm64 build + GPG signature $(date -u +%Y-%m-%d)" || echo "No changes to commit"
+          git push origin master || echo "Push to master failed (non-blocking)"
