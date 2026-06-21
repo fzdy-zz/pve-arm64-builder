@@ -1,228 +1,0 @@
-HEAD is now at 680dfc7 bump version to 7.0.0-2
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  libapparmor-dev:arm64 libapparmor1:arm64
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
-Need to get 121 kB of archives.
-After this operation, 378 kB of additional disk space will be used.
-Get:1 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libapparmor1 arm64 4.1.0-1 [42.9 kB]
-Get:2 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libapparmor-dev arm64 4.1.0-1 [77.7 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Teletype
-debconf: unable to initialize frontend: Teletype
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Noninteractive
-Fetched 121 kB in 2s (68.6 kB/s)
-Selecting previously unselected package libapparmor1:arm64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86045 files and directories currently installed.)
-Preparing to unpack .../libapparmor1_4.1.0-1_arm64.deb ...
-Unpacking libapparmor1:arm64 (4.1.0-1) ...
-Selecting previously unselected package libapparmor-dev:arm64.
-Preparing to unpack .../libapparmor-dev_4.1.0-1_arm64.deb ...
-Unpacking libapparmor-dev:arm64 (4.1.0-1) ...
-Setting up libapparmor1:arm64 (4.1.0-1) ...
-Setting up libapparmor-dev:arm64 (4.1.0-1) ...
-Processing triggers for man-db (2.13.1-1) ...
-Processing triggers for libc-bin (2.41-12+deb13u3) ...
-dpkg-buildpackage: info: source package lxc-pve-cross-build-deps-depends
-dpkg-buildpackage: info: source version 7.0.0-2
-dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@148d306fa492>
-dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture arm64
- debian/rules clean
-dh clean
-dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
-dh: warning: using emulation)
-dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
-dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
-dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
-dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
-dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
-dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
-   dh_clean
- debian/rules binary
-dh binary
-dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
-dh: warning: using emulation)
-dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
-dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
-dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
-dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
-dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
-dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
-   dh_update_autotools_config
-   dh_autoreconf
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_auto_install --destdir=debian/lxc-pve-cross-build-deps-depends/
-   dh_install
-   dh_installdocs
-   dh_installchangelogs
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_dwz
-   dh_strip
-   dh_makeshlibs
-   dh_shlibdeps
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'lxc-pve-cross-build-deps-depends' in '../lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.deb'.
- dpkg-genbuildinfo --build=binary -O../lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.buildinfo
- dpkg-genchanges --build=binary -O../lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
-
-The package has been created.
-Attention, the package has been created in the current directory,
-not in ".." as indicated by the message above!
-Selecting previously unselected package lxc-pve-cross-build-deps-depends:arm64.
-(Reading database ... 86067 files and directories currently installed.)
-Preparing to unpack lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.deb ...
-Unpacking lxc-pve-cross-build-deps-depends:arm64 (7.0.0-2) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Correcting dependencies...Starting pkgProblemResolver with broken count: 0
-Starting 2 pkgProblemResolver with broken count: 0
-Done
- Done
-Starting pkgProblemResolver with broken count: 0
-Starting 2 pkgProblemResolver with broken count: 0
-Done
-The following additional packages will be installed:
-  dh-apparmor libdbus-1-3:arm64 libdbus-1-dev:arm64 libseccomp-dev:arm64
-  libseccomp2:arm64
-Suggested packages:
-  apparmor-utils seccomp:arm64
-Recommended packages:
-  dbus:arm64
-The following NEW packages will be installed:
-  dh-apparmor libdbus-1-3:arm64 libdbus-1-dev:arm64 libseccomp-dev:arm64
-  libseccomp2:arm64
-0 upgraded, 5 newly installed, 0 to remove and 2 not upgraded.
-1 not fully installed or removed.
-Need to get 532 kB/549 kB of archives.
-After this operation, 2280 kB of additional disk space will be used.
-Get:1 file:/workspaces/pve/out/arm64 ./ dh-apparmor 4.1.1-pmx1 [17.3 kB]
-Get:2 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libdbus-1-3 arm64 1.16.2-2 [169 kB]
-Get:3 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libdbus-1-dev arm64 1.16.2-2 [216 kB]
-Get:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libseccomp2 arm64 2.6.0-2 [51.0 kB]
-Get:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main arm64 libseccomp-dev arm64 2.6.0-2 [96.0 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Teletype
-debconf: unable to initialize frontend: Teletype
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Noninteractive
-Fetched 532 kB in 3s (180 kB/s)
-Selecting previously unselected package dh-apparmor.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86071 files and directories currently installed.)
-Preparing to unpack .../dh-apparmor_4.1.1-pmx1_all.deb ...
-Unpacking dh-apparmor (4.1.1-pmx1) ...
-Selecting previously unselected package libdbus-1-3:arm64.
-Preparing to unpack .../libdbus-1-3_1.16.2-2_arm64.deb ...
-Unpacking libdbus-1-3:arm64 (1.16.2-2) ...
-Selecting previously unselected package libdbus-1-dev:arm64.
-Preparing to unpack .../libdbus-1-dev_1.16.2-2_arm64.deb ...
-Unpacking libdbus-1-dev:arm64 (1.16.2-2) ...
-Selecting previously unselected package libseccomp2:arm64.
-Preparing to unpack .../libseccomp2_2.6.0-2_arm64.deb ...
-Unpacking libseccomp2:arm64 (2.6.0-2) ...
-Selecting previously unselected package libseccomp-dev:arm64.
-Preparing to unpack .../libseccomp-dev_2.6.0-2_arm64.deb ...
-Unpacking libseccomp-dev:arm64 (2.6.0-2) ...
-Setting up libseccomp2:arm64 (2.6.0-2) ...
-Setting up libdbus-1-3:arm64 (1.16.2-2) ...
-Setting up dh-apparmor (4.1.1-pmx1) ...
-Setting up libseccomp-dev:arm64 (2.6.0-2) ...
-Setting up libdbus-1-dev:arm64 (1.16.2-2) ...
-Processing triggers for sgml-base (1.31+nmu1) ...
-Processing triggers for libc-bin (2.41-12+deb13u3) ...
-Processing triggers for man-db (2.13.1-1) ...
-Setting up lxc-pve-cross-build-deps-depends:arm64 (7.0.0-2) ...
-test -f "lxc/debian/changelog" || git submodule update --init
-rm -rf lxc-pve-7.0.0
-cp -a lxc lxc-pve-7.0.0
-cp -a debian lxc-pve-7.0.0/debian
-mkdir lxc-pve-7.0.0/debian/config
-for i in config/*.conf.in; do \
-  sed -e 's|@LXCTEMPLATECONFIG@|/usr/share/lxc/config|g' $i > lxc-pve-7.0.0/debian/${i%.in} ; \
-done
-echo "git clone git://git.proxmox.com/git/lxc.git\\ngit checkout 680dfc7595269dff54d7d262f3cb7dc4b5297f3d" > lxc-pve-7.0.0/debian/SOURCE
-rm -f *.deb
-cd lxc-pve-7.0.0; dpkg-buildpackage -d -b -us -uc
-dpkg-buildpackage: info: source package lxc-pve
-dpkg-buildpackage: info: source version 7.0.0-2
-dpkg-buildpackage: info: source distribution trixie
-dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture arm64
-dpkg-source: info: using patch list from debian/patches/series
-dpkg-source: info: applying apparmor/0001-apparmor-allow-lxc-start-to-create-user-namespaces.patch
-dpkg-source: info: applying apparmor/0002-apparmor-use-abi-directive-in-apparmor-profiles.patch
-dpkg-source: info: applying pve/0001-PVE-Config-deny-rw-mounting-of-sys-and-proc.patch
-dpkg-source: info: applying pve/0002-PVE-Config-attach-always-use-getent.patch
-dpkg-source: info: applying pve/0003-dhclient-script-set-RFC3442-classless-routes.patch
-dpkg-source: info: applying cgroupv1-warnings/0001-PVE-Revert-lxc-conf-drop-cgroup1-config-options-lxc..patch
-dpkg-source: info: applying cgroupv1-warnings/0002-PVE-ignore-cgroupv1-settings-with-a-warning.patch
- debian/rules clean
-make[1]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
-dh clean
-   debian/rules override_dh_auto_clean
-make[2]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
-rm -fr build
-make[2]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
-   dh_clean
-make[1]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
- debian/rules binary
-make[1]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
-dh binary
-   dh_update_autotools_config
-   dh_autoreconf
-   debian/rules override_dh_auto_configure
-make[2]: Entering directory '/workspaces/src/lxc/lxc-pve-7.0.0'
-mkdir -p build
-cd build && meson .. --prefix=/usr \
-	-Dinit-script=systemd \
-	-Dapparmor=true \
-	-Dseccomp=true \
-	-Dselinux=false \
-	-Dman=true \
-	-Dexamples=false \
-	-Dcgroup-pattern='lxc/%n'
-The Meson build system
-Version: 1.7.0
-Source dir: /workspaces/src/lxc/lxc-pve-7.0.0
-Build dir: /workspaces/src/lxc/lxc-pve-7.0.0/build
-Build type: native build
-Project name: lxc
-Project version: 7.0.0
-
-../meson.build:4:0: ERROR: Could not invoke sanity test executable: [Errno 8] Exec format error: '/workspaces/src/lxc/lxc-pve-7.0.0/build/meson-private/sanitycheckc.exe'.
-
-A full log can be found at /workspaces/src/lxc/lxc-pve-7.0.0/build/meson-logs/meson-log.txt
-WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
-make[2]: *** [debian/rules:18: override_dh_auto_configure] Error 1
-make[2]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
-make[1]: *** [debian/rules:11: binary] Error 2
-make[1]: Leaving directory '/workspaces/src/lxc/lxc-pve-7.0.0'
-dpkg-buildpackage: error: debian/rules binary subprocess returned exit status 2
-make: *** [Makefile:39: lxc-pve_7.0.0-2_arm64.deb] Error 2

@@ -1,526 +1,0 @@
-HEAD is now at 817dab1 build: fail when recognized CPUID flags list changes
-Removing pve-qemu-kvm-11.0.0/
-[2026-06-21T09:05:27Z] pve-qemu-kvm: applying patch patches/qemu-target-entension/pve-qemu-kvm-add-riscv64-loongarch64-targets.patch
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libproxmox-backup-qemu0-dev:arm64 is already the newest version (2.0.2).
-0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
-Progress: 0 / 26 (dtc)[KDownload dtc...
-  -> Already downloaded
-Progress: 1 / 26 ()[KProgress: 1 / 26 (libc-0.2-rs)[KDownload libc-0.2-rs...
-  -> Already downloaded
-Progress: 2 / 26 ()[KProgress: 2 / 26 (foreign-0.3-rs)[KDownload foreign-0.3-rs...
-  -> Already downloaded
-Progress: 3 / 26 ()[KProgress: 3 / 26 (glib-sys-0.21-rs)[KProgress: 3 / 26 (berkeley-testfloat-3, glib-sys-0.21-rs)[KDownload glib-sys-0.21-rs...
-  -> Already downloaded
-Progress: 4 / 26 (berkeley-testfloat-3)[KProgress: 4 / 26 (berkeley-testfloat-3, proc-macro-error-1-rs)[KProgress: 4 / 26 (slirp, berkeley-testfloat-3, proc-macro-error-1-rs)[KProgress: 4 / 26 (slirp, berkeley-testfloat-3, attrs-0.2-rs, proc-macro-erro...)[KDownload proc-macro-error-1-rs...
-  -> Already downloaded
-Progress: 5 / 26 (slirp, berkeley-testfloat-3, attrs-0.2-rs)[KProgress: 5 / 26 (slirp, berkeley-testfloat-3, attrs-0.2-rs, syn-2-rs)[KDownload attrs-0.2-rs...
-  -> Already downloaded
-Progress: 6 / 26 (slirp, berkeley-testfloat-3, syn-2-rs)[KProgress: 6 / 26 (probe-0.5-rs, slirp, berkeley-testfloat-3, syn-2-rs)[KDownload syn-2-rs...
-  -> Already downloaded
-Progress: 7 / 26 (probe-0.5-rs, slirp, berkeley-testfloat-3)[KProgress: 7 / 26 (probe-0.5-rs, slirp, berkeley-testfloat-3, libblkio)[KDownload probe-0.5-rs...
-  -> Already downloaded
-Progress: 8 / 26 (slirp, berkeley-testfloat-3, libblkio)[KProgress: 8 / 26 (slirp, berkeley-testfloat-3, bilge-impl-0.2-rs, libblkio)[KProgress: 8 / 26 (slirp, bilge-impl-0.2-rs, libblkio, berkeley-testfloat-3, ...)[KDownload libblkio...
-  -> Already downloaded
-Progress: 9 / 26 (slirp, bilge-impl-0.2-rs, berkeley-testfloat-3, proc-macro...)[KProgress: 9 / 26 (slirp, bilge-0.2-rs, bilge-impl-0.2-rs, berkeley-testfloat...)[KDownload bilge-impl-0.2-rs...
-  -> Already downloaded
-Progress: 10 / 26 (slirp, bilge-0.2-rs, berkeley-testfloat-3, proc-macro2-1-rs)[KDownload proc-macro2-1-rs...
-  -> Already downloaded
-Progress: 11 / 26 (slirp, bilge-0.2-rs, berkeley-testfloat-3)[KProgress: 11 / 26 (slirp, bilge-0.2-rs, arbitrary-int-1-rs, berkeley-testflo...)[KDownload slirp...
-  -> Already downloaded
-Progress: 12 / 26 (bilge-0.2-rs, arbitrary-int-1-rs, berkeley-testfloat-3)[KDownload berkeley-testfloat-3...
-  -> Already downloaded
-Progress: 13 / 26 (bilge-0.2-rs, arbitrary-int-1-rs)[KDownload arbitrary-int-1-rs...
-  -> Already downloaded
-Progress: 14 / 26 (bilge-0.2-rs)[KDownload bilge-0.2-rs...
-  -> Already downloaded
-Progress: 15 / 26 ()[KProgress: 15 / 26 (quote-1-rs)[KProgress: 15 / 26 (quote-1-rs, proc-macro-error-attr-1-rs)[KProgress: 15 / 26 (quote-1-rs, proc-macro-error-attr-1-rs, keycodemapdb)[KProgress: 15 / 26 (quote-1-rs, proc-macro-error-attr-1-rs, libvfio-user, key...)[KProgress: 15 / 26 (quote-1-rs, anyhow-1-rs, proc-macro-error-attr-1-rs, libv...)[KProgress: 15 / 26 (quote-1-rs, anyhow-1-rs, unicode-ident-1-rs, proc-macro-e...)[KProgress: 15 / 26 (quote-1-rs, anyhow-1-rs, unicode-ident-1-rs, proc-macro-e...)[KProgress: 15 / 26 (quote-1-rs, berkeley-softfloat-3, anyhow-1-rs, unicode-id...)[KDownload quote-1-rs...
-  -> Already downloaded
-Progress: 16 / 26 (berkeley-softfloat-3, anyhow-1-rs, unicode-ident-1-rs, pr...)[KProgress: 16 / 26 (berkeley-softfloat-3, anyhow-1-rs, unicode-ident-1-rs, pr...)[KDownload proc-macro-error-attr-1-rs...
-  -> Already downloaded
-Progress: 17 / 26 (berkeley-softfloat-3, anyhow-1-rs, unicode-ident-1-rs, ei...)[KProgress: 17 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs, unicode...)[KDownload libvfio-user...
-  -> Already downloaded
-Progress: 18 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs, unicode...)[KProgress: 18 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs, unicode...)[KDownload unicode-ident-1-rs...
-  -> Already downloaded
-Progress: 19 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs, either-...)[KDownload itertools-0.11-rs...
-  -> Already downloaded
-Progress: 20 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs, either-...)[KDownload either-1-rs...
-  -> Already downloaded
-Progress: 21 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs, keycode...)[KDownload keycodemapdb...
-  -> Already downloaded
-Progress: 22 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs, libvduse)[KDownload libvduse...
-  -> Already downloaded
-Progress: 23 / 26 (libvhost-user, berkeley-softfloat-3, anyhow-1-rs)[KDownload berkeley-softfloat-3...
-  -> Already downloaded
-Progress: 24 / 26 (libvhost-user, anyhow-1-rs)[KDownload anyhow-1-rs...
-  -> Already downloaded
-Progress: 25 / 26 (libvhost-user)[KDownload libvhost-user...
-  -> Already downloaded
-Progress: 26 / 26 ()[Kdpkg-buildpackage: info: source package pve-qemu-kvm-cross-build-deps-depends
-dpkg-buildpackage: info: source version 11.0.0-4
-dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@148d306fa492>
-dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture arm64
- debian/rules clean
-dh clean
-dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
-dh: warning: using emulation)
-dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
-dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
-dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
-dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
-dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
-dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
-   dh_clean
- debian/rules binary
-dh binary
-dh: warning: Running tests during cross-builds is not supported in the general case (except for special cases or by
-dh: warning: using emulation)
-dh: warning: If the build fails, please consider rebuilding with DEB_BUILD_OPTIONS=nocheck.
-dh: warning: Additionally, you might have to set the "cross" profile.  For dpkg-buildpackage, you do this by
-dh: warning: passing the -Pcross option. Check the documentation of your build tool for how to set
-dh: warning: DEB_BUILD_PROFILES if you use another build tool that does not auto-configure cross-building for you
-dh: warning: If you have setup the relevant support for running cross-compiled binaries and want to silence this
-dh: warning: warning, please use DEB_BUILD_OPTIONS=crossbuildcanrunhostbinaries
-   dh_update_autotools_config
-   dh_autoreconf
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_auto_install --destdir=debian/pve-qemu-kvm-cross-build-deps-depends/
-   dh_install
-   dh_installdocs
-   dh_installchangelogs
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_dwz
-   dh_strip
-   dh_makeshlibs
-   dh_shlibdeps
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'pve-qemu-kvm-cross-build-deps-depends' in '../pve-qemu-kvm-cross-build-deps-depends_11.0.0-4_arm64.deb'.
- dpkg-genbuildinfo --build=binary -O../pve-qemu-kvm-cross-build-deps-depends_11.0.0-4_arm64.buildinfo
- dpkg-genchanges --build=binary -O../pve-qemu-kvm-cross-build-deps-depends_11.0.0-4_arm64.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
-
-The package has been created.
-Attention, the package has been created in the current directory,
-not in ".." as indicated by the message above!
-Selecting previously unselected package pve-qemu-kvm-cross-build-deps-depends:arm64.
-(Reading database ... 113221 files and directories currently installed.)
-Preparing to unpack pve-qemu-kvm-cross-build-deps-depends_11.0.0-4_arm64.deb ...
-Unpacking pve-qemu-kvm-cross-build-deps-depends:arm64 (11.0.0-4) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Correcting dependencies...Starting pkgProblemResolver with broken count: 3
-Starting 2 pkgProblemResolver with broken count: 3
-Investigating (0) python3:amd64 < 3.13.5-1 @ii K Ib >
-Broken python3:amd64 PreDepends on python3-minimal:amd64 < 3.13.5-1 @ii R > (= 3.13.5-1)
-  Considering python3-minimal:amd64 -1 as a solution to python3:amd64 62
-  Added python3-minimal:amd64 to the remove list
-  Fixing python3:amd64 via keep of python3-minimal:amd64
-Investigating (0) python3.13:amd64 < 3.13.5-2+deb13u2 @ii K Ib >
-Broken python3.13:amd64 Depends on python3.13-minimal:amd64 < 3.13.5-2+deb13u2 @ii R > (= 3.13.5-2+deb13u2)
-  Considering python3.13-minimal:amd64 -1 as a solution to python3.13:amd64 51
-  Added python3.13-minimal:amd64 to the remove list
-  Fixing python3.13:amd64 via keep of python3.13-minimal:amd64
-Investigating (0) python3.13-minimal:arm64 < none -> 3.13.5-2+deb13u2 @un uN Ib >
-Broken python3.13-minimal:arm64 Conflicts on python3.13-minimal:amd64 < 3.13.5-2+deb13u2 @ii K Ib >
-  Considering python3.13-minimal:amd64 -1 as a solution to python3.13-minimal:arm64 0
-  Added python3.13-minimal:amd64 to the remove list
-  Fixing python3.13-minimal:arm64 via remove of python3.13-minimal:amd64
-Investigating (0) python3-minimal:arm64 < none -> 3.13.5-1 @un uN Ib >
-Broken python3-minimal:arm64 Conflicts on python3-minimal:amd64 < 3.13.5-1 @ii K Ib >
-  Considering python3-minimal:amd64 -1 as a solution to python3-minimal:arm64 0
-  Added python3-minimal:amd64 to the remove list
-  Fixing python3-minimal:arm64 via remove of python3-minimal:amd64
-Investigating (0) pve-qemu-kvm-cross-build-deps-depends:arm64 < 11.0.0-4 @iU K Nb Ib >
-Broken pve-qemu-kvm-cross-build-deps-depends:arm64 Depends on python3-sphinx:arm64 < none @un H >
-  Removing pve-qemu-kvm-cross-build-deps-depends:arm64 because I can't find python3-sphinx:arm64
-Investigating (1) python3:amd64 < 3.13.5-1 @ii K Ib >
-Broken python3:amd64 PreDepends on python3-minimal:amd64 < 3.13.5-1 @ii R > (= 3.13.5-1)
-  Considering python3-minimal:amd64 -1 as a solution to python3:amd64 62
-  Added python3-minimal:amd64 to the remove list
-  Fixing python3:amd64 via keep of python3-minimal:amd64
-Investigating (1) python3.13:amd64 < 3.13.5-2+deb13u2 @ii K Ib >
-Broken python3.13:amd64 Depends on python3.13-minimal:amd64 < 3.13.5-2+deb13u2 @ii R > (= 3.13.5-2+deb13u2)
-  Considering python3.13-minimal:amd64 -1 as a solution to python3.13:amd64 51
-  Added python3.13-minimal:amd64 to the remove list
-  Fixing python3.13:amd64 via keep of python3.13-minimal:amd64
-Investigating (1) python3.13-minimal:arm64 < none -> 3.13.5-2+deb13u2 @un uN Ib >
-Broken python3.13-minimal:arm64 Conflicts on python3.13-minimal:amd64 < 3.13.5-2+deb13u2 @ii K Ib >
-  Considering python3.13-minimal:amd64 -1 as a solution to python3.13-minimal:arm64 0
-  Added python3.13-minimal:amd64 to the remove list
-  Fixing python3.13-minimal:arm64 via remove of python3.13-minimal:amd64
-Investigating (1) python3-minimal:arm64 < none -> 3.13.5-1 @un uN Ib >
-Broken python3-minimal:arm64 Conflicts on python3-minimal:amd64 < 3.13.5-1 @ii K Ib >
-  Considering python3-minimal:amd64 -1 as a solution to python3-minimal:arm64 0
-  Added python3-minimal:amd64 to the remove list
-  Fixing python3-minimal:arm64 via remove of python3-minimal:amd64
-Investigating (2) python3:amd64 < 3.13.5-1 @ii K Ib >
-Broken python3:amd64 PreDepends on python3-minimal:amd64 < 3.13.5-1 @ii R > (= 3.13.5-1)
-  Considering python3-minimal:amd64 -1 as a solution to python3:amd64 62
-  Added python3-minimal:amd64 to the remove list
-  Fixing python3:amd64 via keep of python3-minimal:amd64
-Investigating (2) python3.13:amd64 < 3.13.5-2+deb13u2 @ii K Ib >
-Broken python3.13:amd64 Depends on python3.13-minimal:amd64 < 3.13.5-2+deb13u2 @ii R > (= 3.13.5-2+deb13u2)
-  Considering python3.13-minimal:amd64 -1 as a solution to python3.13:amd64 51
-  Added python3.13-minimal:amd64 to the remove list
-  Fixing python3.13:amd64 via keep of python3.13-minimal:amd64
-Investigating (2) python3.13-minimal:arm64 < none -> 3.13.5-2+deb13u2 @un uN Ib >
-Broken python3.13-minimal:arm64 Conflicts on python3.13-minimal:amd64 < 3.13.5-2+deb13u2 @ii K Ib >
-  Considering python3.13-minimal:amd64 51 as a solution to python3.13-minimal:arm64 0
-  Holding Back python3.13-minimal:arm64 rather than change python3.13-minimal:amd64
-Investigating (2) python3-minimal:arm64 < none -> 3.13.5-1 @un uN Ib >
-Broken python3-minimal:arm64 PreDepends on python3.13-minimal:arm64 < none | 3.13.5-2+deb13u2 @un uH > (>= 3.13.5-1~)
-  Considering python3.13-minimal:arm64 0 as a solution to python3-minimal:arm64 0
-  Holding Back python3-minimal:arm64 rather than change python3.13-minimal:arm64
-Done
- Done
-Starting pkgProblemResolver with broken count: 0
-Starting 2 pkgProblemResolver with broken count: 0
-Done
-The following packages will be REMOVED:
-  pve-qemu-kvm-cross-build-deps-depends:arm64
-0 upgraded, 0 newly installed, 1 to remove and 2 not upgraded.
-1 not fully installed or removed.
-After this operation, 10.2 kB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113225 files and directories currently installed.)
-Removing pve-qemu-kvm-cross-build-deps-depends:arm64 (11.0.0-4) ...
-mk-build-deps: Unable to install pve-qemu-kvm-cross-build-deps-depends at /usr/bin/mk-build-deps line 460.
-mk-build-deps: Unable to install all build-dep packages
-# check if qemu/ was used for a build
-# if so, please run 'make distclean' in the submodule and try again
-test ! -f qemu/build/config.status
-rm -rf pve-qemu-kvm-11.0.0.tmp pve-qemu-kvm-11.0.0
-cp -a qemu pve-qemu-kvm-11.0.0.tmp
-cp -a debian pve-qemu-kvm-11.0.0.tmp/debian
-rm -rf pve-qemu-kvm-11.0.0.tmp/roms/edk2 # packaged separately
-rm -rf pve-qemu-kvm-11.0.0.tmp/pc-bios/dtb
-find pve-qemu-kvm-11.0.0.tmp/pc-bios -type f | grep -e "hppa-firmware.img" -e "hppa-firmware64.img" -e "openbios-ppc" -e "openbios-sparc32" -e "openbios-sparc64" -e "palcode-clipper" -e "s390-ccw.img" -e "s390-netboot.img" -e "u-boot.e500" -e "qemu_vga.ndrv" -e "slof.bin" -e "opensbi-riscv.*-generic-fw_dynamic.bin" | xargs rm -f
-sed -i -e "/hppa-firmware.img/d" -e "/hppa-firmware64.img/d" -e "/openbios-ppc/d" -e "/openbios-sparc32/d" -e "/openbios-sparc64/d" -e "/palcode-clipper/d" -e "/s390-ccw.img/d" -e "/s390-netboot.img/d" -e "/u-boot.e500/d" -e "/qemu_vga.ndrv/d" -e "/slof.bin/d" -e "/opensbi-riscv.*-generic-fw_dynamic.bin/d" pve-qemu-kvm-11.0.0.tmp/pc-bios/meson.build
-sed -i "/subdir('dtb')/d" pve-qemu-kvm-11.0.0.tmp/pc-bios/meson.build
-echo "git clone git://git.proxmox.com/git/pve-qemu.git\\ngit checkout 817dab1cdae098114aa95c4ba48a6d038a904647" > pve-qemu-kvm-11.0.0.tmp/debian/SOURCE
-mv pve-qemu-kvm-11.0.0.tmp pve-qemu-kvm-11.0.0
-cd pve-qemu-kvm-11.0.0; dpkg-buildpackage -d -b -aarm64 -us -uc
-dpkg-buildpackage: info: source package pve-qemu-kvm
-dpkg-buildpackage: info: source version 11.0.0-4
-dpkg-buildpackage: info: source distribution trixie
-dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture arm64
-dpkg-source: info: using patch list from debian/patches/series
-dpkg-source: info: applying extra/0001-monitor-qmp-fix-race-with-clients-disconnecting-earl.patch
-dpkg-source: info: applying extra/0002-ide-avoid-potential-deadlock-when-draining-during-tr.patch
-dpkg-source: info: applying extra/0003-block-io-fallback-to-bounce-buffer-if-BLKZEROOUT-is-.patch
-dpkg-source: info: applying extra/0004-fdmon-io_uring-avoid-idle-event-loop-being-accounted.patch
-dpkg-source: info: applying extra/0005-target-i386-tcg-fix-decoding-of-MOVBE-and-CRC32-in-1.patch
-dpkg-source: info: applying extra/0006-hw-display-don-t-accidentally-autofree-existing-virg.patch
-dpkg-source: info: applying extra/0007-hw-i386-vapic-restore-IRQ-polling-for-non-kernel-irq.patch
-dpkg-source: info: applying extra/0008-target-i386-fix-strList-leak-in-x86_cpu_get_unavaila.patch
-dpkg-source: info: applying extra/0009-target-i386-fix-missing-PF_INSTR-in-SIGSEGV-context.patch
-dpkg-source: info: applying extra/0010-migration-vmstate_save_state_v-fix-double-error_setg.patch
-dpkg-source: info: applying extra/0011-block-export-fuse-fix-regression-when-mmap-ing-expor.patch
-dpkg-source: info: applying extra/0012-block-export-fuse-fix-regression-with-block-device-e.patch
-dpkg-source: info: applying extra/0013-virtio-blk-add-missing-VIRTIO_BLK_T_SCSI_CMD-size-ch.patch
-dpkg-source: info: applying extra/0014-lsi53c895a-fix-use-after-free-of-cancelled-request.patch
-dpkg-source: info: applying extra/0015-lsi53c895a-clear-tag-byte-when-processing-messages.patch
-dpkg-source: info: applying extra/0016-apic-fix-delivery-bitmask-with-modified-xAPIC-ids.patch
-dpkg-source: info: applying extra/0017-block-linux-aio-bound-ioq_submit-recursion-depth.patch
-dpkg-source: info: applying extra/0018-vfio-user-reject-zero-DMA-page-size-capability.patch
-dpkg-source: info: applying extra/0019-vfio-user-reject-zero-migration-page-size-capability.patch
-dpkg-source: info: applying extra/0020-vfio-container-Restrict-dma_map_file-to-shared-RAM-o.patch
-dpkg-source: info: applying bitmap-mirror/0001-drive-mirror-add-support-for-sync-bitmap-mode-never.patch
-dpkg-source: info: applying bitmap-mirror/0002-drive-mirror-add-support-for-conditional-and-always-.patch
-dpkg-source: info: applying bitmap-mirror/0003-mirror-add-check-for-bitmap-mode-without-bitmap.patch
-dpkg-source: info: applying bitmap-mirror/0004-mirror-switch-to-bdrv_dirty_bitmap_merge_internal.patch
-dpkg-source: info: applying bitmap-mirror/0005-iotests-add-test-for-bitmap-mirror.patch
-dpkg-source: info: applying bitmap-mirror/0006-mirror-move-some-checks-to-qmp.patch
-dpkg-source: info: applying pve/0001-PVE-Config-block-file-change-locking-default-to-off.patch
-dpkg-source: info: applying pve/0002-PVE-Config-Adjust-network-script-path-to-etc-kvm.patch
-dpkg-source: info: applying pve/0003-PVE-Config-set-the-CPU-model-to-kvm64-32-instead-of-.patch
-dpkg-source: info: applying pve/0004-PVE-Config-ui-spice-default-to-pve-certificates.patch
-dpkg-source: info: applying pve/0005-PVE-Config-glusterfs-no-default-logfile-if-daemonize.patch
-dpkg-source: info: applying pve/0006-PVE-Config-rbd-block-rbd-disable-rbd_cache_writethro.patch
-dpkg-source: info: applying pve/0007-PVE-Up-glusterfs-allow-partial-reads.patch
-dpkg-source: info: applying pve/0008-PVE-Up-qemu-img-return-success-on-info-without-snaps.patch
-dpkg-source: info: applying pve/0009-PVE-Up-qemu-img-dd-add-osize-and-read-from-to-stdin-.patch
-dpkg-source: info: applying pve/0010-PVE-Up-qemu-img-dd-add-isize-parameter.patch
-dpkg-source: info: applying pve/0011-PVE-Up-qemu-img-dd-add-n-skip_create.patch
-dpkg-source: info: applying pve/0012-qemu-img-dd-add-l-option-for-loading-a-snapshot.patch
-dpkg-source: info: applying pve/0013-PVE-virtio-balloon-improve-query-balloon.patch
-dpkg-source: info: applying pve/0014-PVE-qapi-modify-query-machines.patch
-dpkg-source: info: applying pve/0015-PVE-qapi-modify-spice-query.patch
-dpkg-source: info: applying pve/0016-PVE-add-IOChannel-implementation-for-savevm-async.patch
-dpkg-source: info: applying pve/0017-PVE-add-savevm-async-for-background-state-snapshots.patch
-dpkg-source: info: applying pve/0018-PVE-add-optional-buffer-size-to-QEMUFile.patch
-dpkg-source: info: applying pve/0019-PVE-block-add-the-zeroinit-block-driver-filter.patch
-dpkg-source: info: applying pve/0020-PVE-Add-dummy-id-command-line-parameter.patch
-dpkg-source: info: applying pve/0021-PVE-Config-Revert-target-i386-disable-LINT0-after-re.patch
-dpkg-source: info: applying pve/0022-PVE-Up-Config-file-posix-make-locking-optiono-on-cre.patch
-dpkg-source: info: applying pve/0023-PVE-monitor-disable-oob-capability.patch
-dpkg-source: info: applying pve/0024-PVE-Allow-version-code-in-machine-type.patch
-dpkg-source: info: applying pve/0025-block-backup-move-bcs-bitmap-initialization-to-job-c.patch
-dpkg-source: info: applying pve/0026-PVE-Backup-add-vma-backup-format-code.patch
-dpkg-source: info: applying pve/0027-PVE-Backup-add-backup-dump-block-driver.patch
-dpkg-source: info: applying pve/0028-PVE-Add-sequential-job-transaction-support.patch
-dpkg-source: info: applying pve/0029-PVE-Backup-Proxmox-backup-patches-for-QEMU.patch
-dpkg-source: info: applying pve/0030-PVE-Backup-pbs-restore-new-command-to-restore-from-p.patch
-dpkg-source: info: applying pve/0031-PVE-Add-PBS-block-driver-to-map-backup-archives-into.patch
-dpkg-source: info: applying pve/0032-PVE-redirect-stderr-to-journal-when-daemonized.patch
-dpkg-source: info: applying pve/0033-PVE-Migrate-dirty-bitmap-state-via-savevm.patch
-dpkg-source: info: applying pve/0034-migration-block-dirty-bitmap-migrate-other-bitmaps-e.patch
-dpkg-source: info: applying pve/0035-PVE-fall-back-to-open-iscsi-initiatorname.patch
-dpkg-source: info: applying pve/0036-PVE-block-stream-increase-chunk-size.patch
-dpkg-source: info: applying pve/0037-block-add-alloc-track-driver.patch
-dpkg-source: info: applying pve/0038-PVE-backup-add-fleecing-option.patch
-dpkg-source: info: applying pve/0039-adapt-machine-version-deprecation-for-Proxmox-VE.patch
-dpkg-source: info: applying pve/0040-PVE-backup-factor-out-helper-to-clear-backup-state-s.patch
-dpkg-source: info: applying pve/0041-PVE-backup-factor-out-helper-to-initialize-backup-st.patch
-dpkg-source: info: applying pve/0042-PVE-backup-add-target-ID-in-backup-state.patch
-dpkg-source: info: applying pve/0043-PVE-backup-get-device-info-allow-caller-to-specify-f.patch
-dpkg-source: info: applying pve/0044-PVE-backup-implement-backup-access-setup-and-teardow.patch
-dpkg-source: info: applying pve/0045-PVE-backup-prepare-for-the-switch-to-using-blockdev-.patch
-dpkg-source: info: applying pve/0046-savevm-async-reuse-migration-blocker-check-for-snaps.patch
- debian/rules clean
-make[1]: Entering directory '/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0'
-dh_testdir
-dh_testroot
-rm -f build-stamp
-# Add here commands to clean up before the build process.
-/usr/bin/make distclean
-make[2]: Entering directory '/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0'
-Makefile:177: *** Please call configure before running make.  Stop.
-make[2]: Leaving directory '/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0'
-make[1]: [debian/rules:111: clean] Error 2 (ignored)
-dh_clean
-make[1]: Leaving directory '/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0'
- debian/rules binary
-make[1]: Entering directory '/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0'
-dh_testdir
-# Add here commands to configure the package.
-cp -f /usr/share/misc/config.sub config.sub
-cp -f /usr/share/misc/config.guess config.guess
-# guest-agent is only required for guest systems
-./configure \
-    --disable-download \
-	    --cross-prefix="aarch64-linux-gnu-" \
-	    --host-cc="gcc" \
-	    --cpu="aarch64" \
-    --docdir=/usr/share/doc/pve-qemu-kvm \
-    --localstatedir=/var \
-    --prefix=/usr \
-    --sysconfdir=/etc \
-    --target-list=x86_64-softmmu,aarch64-softmmu,riscv64-softmmu,loongarch64-softmmu \
-    --with-suffix="kvm" \
-    --with-pkgversion="pve-qemu-kvm_11.0.0-4" \
-    --audio-drv-list="alsa" \
-    --datadir=/usr/share \
-    --libexecdir=/usr/lib/kvm \
-    --disable-capstone \
-    --disable-gtk \
-    --disable-guest-agent \
-    --disable-guest-agent-msi \
-    --disable-libnfs \
-    --disable-libssh \
-    --disable-sdl \
-    --disable-smartcard \
-    --disable-strip \
-    --disable-xen \
-    --enable-curl \
-    --enable-docs \
-    --enable-fuse \
-    --enable-gnutls \
-    --enable-libiscsi \
-    --enable-libusb \
-    --enable-linux-aio \
-    --enable-linux-io-uring \
-    --enable-numa \
-    --enable-opengl \
-    --disable-rbd \
-    --enable-seccomp \
-    --enable-slirp \
-    --enable-spice \
-    --enable-usb-redir \
-    --enable-virglrenderer \
-    --enable-virtfs \
-    --enable-zstd
-Using './build' as the directory for build output
-python determined to be '/usr/bin/python3'
-python version: Python 3.13.5
-mkvenv: Creating non-isolated virtual environment at 'pyvenv'
-mkvenv: checking for meson>=1.5.0
-mkvenv: checking for pycotap>=1.1.0
-mkvenv: checking for qemu.qmp>=0.0.5
-mkvenv: checking for setuptools>=44.1.1
-mkvenv: checking for wheel>=0.34.2
-mkvenv: checking for pip>=20.3.4
-mkvenv: installing qemu.qmp==0.0.5
-mkvenv: installing /workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/python
-mkvenv: checking for sphinx>=3.4.3
-mkvenv: checking for sphinx_rtd_theme>=0.5
-The Meson build system
-Version: 1.7.0
-Source dir: /workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0
-Build dir: /workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/build
-Build type: cross build
-Project name: qemu
-Project version: 11.0.0
-C compiler for the host machine: aarch64-linux-gnu-gcc (gcc 14.2.0 "aarch64-linux-gnu-gcc (Debian 14.2.0-19) 14.2.0")
-C linker for the host machine: aarch64-linux-gnu-gcc ld.bfd 2.44
-C compiler for the build machine: gcc (gcc 14.2.0 "gcc (Debian 14.2.0-19) 14.2.0")
-C linker for the build machine: gcc ld.bfd 2.44
-Build machine cpu family: x86_64
-Build machine cpu: x86_64
-Host machine cpu family: aarch64
-Host machine cpu: aarch64
-Target machine cpu family: aarch64
-Target machine cpu: aarch64
-Program scripts/symlink-install-tree.py found: YES (/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/build/pyvenv/bin/python3 /workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/scripts/symlink-install-tree.py)
-Program sh found: YES (/usr/bin/sh)
-Program python3 found: YES (/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/build/pyvenv/bin/python3)
-C++ compiler for the host machine: aarch64-linux-gnu-g++ (gcc 14.2.0 "aarch64-linux-gnu-g++ (Debian 14.2.0-19) 14.2.0")
-C++ linker for the host machine: aarch64-linux-gnu-g++ ld.bfd 2.44
-Compiler for language rust skipped: feature rust disabled
-Program iasl found: NO
-Program bzip2 found: YES (/usr/bin/bzip2)
-Checking for size of "void *" : 8 
-Compiler for C supports arguments -fno-link-libatomic: NO 
-Compiler for C supports link arguments -Wl,-z,relro: YES 
-Compiler for C supports link arguments -Wl,-z,now: YES 
-Checking if "-fzero-call-used-regs=used-gpr" compiles: YES 
-Compiler for C supports arguments -D_GNU_SOURCE: YES 
-Compiler for C supports arguments -D_FILE_OFFSET_BITS=64: YES 
-Compiler for C supports arguments -D_LARGEFILE_SOURCE: YES 
-Compiler for C supports arguments -fno-strict-aliasing: YES 
-Compiler for C supports arguments -fno-common: YES 
-Compiler for C supports arguments -fwrapv: YES 
-Compiler for C supports arguments -ftrivial-auto-var-init=zero: YES 
-Compiler for C supports arguments -fzero-call-used-regs=used-gpr: YES 
-Compiler for C supports arguments -fstack-protector-strong: YES 
-Compiler for C supports arguments -Wempty-body: YES 
-Compiler for C supports arguments -Wendif-labels: YES 
-Compiler for C supports arguments -Wexpansion-to-defined: YES 
-Compiler for C supports arguments -Wformat-overflow=2: YES 
-Compiler for C supports arguments -Wformat-security: YES 
-Compiler for C supports arguments -Wformat-y2k: YES 
-Compiler for C supports arguments -Wignored-qualifiers: YES 
-Compiler for C supports arguments -Wimplicit-fallthrough=2: YES 
-Compiler for C supports arguments -Winit-self: YES 
-Compiler for C supports arguments -Wmissing-format-attribute: YES 
-Compiler for C supports arguments -Wmissing-prototypes: YES 
-Compiler for C supports arguments -Wnested-externs: YES 
-Compiler for C supports arguments -Wold-style-declaration: YES 
-Compiler for C supports arguments -Wold-style-definition: YES 
-Compiler for C supports arguments -Wredundant-decls: YES 
-Compiler for C supports arguments -Wshadow=local: YES 
-Compiler for C supports arguments -Wstrict-prototypes: YES 
-Compiler for C supports arguments -Wtype-limits: YES 
-Compiler for C supports arguments -Wundef: YES 
-Compiler for C supports arguments -Wvla: YES 
-Compiler for C supports arguments -Wwrite-strings: YES 
-Compiler for C supports arguments -Wno-gnu-variable-sized-type-not-at-end: NO 
-Compiler for C supports arguments -Wno-initializer-overrides: NO 
-Compiler for C supports arguments -Wno-missing-include-dirs: YES 
-Compiler for C supports arguments -Wno-psabi: YES 
-Compiler for C supports arguments -Wno-shift-negative-value: YES 
-Compiler for C supports arguments -Wno-string-plus-int: NO 
-Compiler for C supports arguments -Wno-tautological-type-limit-compare: NO 
-Compiler for C supports arguments -Wno-typedef-redefinition: NO 
-Compiler for C++ supports arguments -D_GNU_SOURCE: YES 
-Compiler for C++ supports arguments -D_FILE_OFFSET_BITS=64: YES 
-Compiler for C++ supports arguments -D_LARGEFILE_SOURCE: YES 
-Compiler for C++ supports arguments -fno-strict-aliasing: YES 
-Compiler for C++ supports arguments -fno-common: YES 
-Compiler for C++ supports arguments -fwrapv: YES 
-Compiler for C++ supports arguments -ftrivial-auto-var-init=zero: YES 
-Compiler for C++ supports arguments -fzero-call-used-regs=used-gpr: YES 
-Compiler for C++ supports arguments -D__STDC_LIMIT_MACROS: YES 
-Compiler for C++ supports arguments -D__STDC_CONSTANT_MACROS: YES 
-Compiler for C++ supports arguments -D__STDC_FORMAT_MACROS: YES 
-Compiler for C++ supports arguments -fstack-protector-strong: YES 
-Compiler for C++ supports arguments -Wempty-body: YES 
-Compiler for C++ supports arguments -Wendif-labels: YES 
-Compiler for C++ supports arguments -Wexpansion-to-defined: YES 
-Compiler for C++ supports arguments -Wformat-overflow=2: YES 
-Compiler for C++ supports arguments -Wformat-security: YES 
-Compiler for C++ supports arguments -Wformat-y2k: YES 
-Compiler for C++ supports arguments -Wignored-qualifiers: YES 
-Compiler for C++ supports arguments -Wimplicit-fallthrough=2: YES 
-Compiler for C++ supports arguments -Winit-self: YES 
-Compiler for C++ supports arguments -Wmissing-format-attribute: YES 
-Compiler for C++ supports arguments -Wmissing-prototypes: NO 
-Compiler for C++ supports arguments -Wnested-externs: NO 
-Compiler for C++ supports arguments -Wold-style-declaration: NO 
-Compiler for C++ supports arguments -Wold-style-definition: NO 
-Compiler for C++ supports arguments -Wredundant-decls: YES 
-Compiler for C++ supports arguments -Wshadow=local: YES 
-Compiler for C++ supports arguments -Wstrict-prototypes: NO 
-Compiler for C++ supports arguments -Wtype-limits: YES 
-Compiler for C++ supports arguments -Wundef: YES 
-Compiler for C++ supports arguments -Wvla: YES 
-Compiler for C++ supports arguments -Wwrite-strings: YES 
-Compiler for C++ supports arguments -Wno-gnu-variable-sized-type-not-at-end: NO 
-Compiler for C++ supports arguments -Wno-initializer-overrides: NO 
-Compiler for C++ supports arguments -Wno-missing-include-dirs: YES 
-Compiler for C++ supports arguments -Wno-psabi: YES 
-Compiler for C++ supports arguments -Wno-shift-negative-value: YES 
-Compiler for C++ supports arguments -Wno-string-plus-int: NO 
-Compiler for C++ supports arguments -Wno-tautological-type-limit-compare: NO 
-Compiler for C++ supports arguments -Wno-typedef-redefinition: NO 
-Program cgcc found: NO
-Library m found: YES
-Run-time dependency threads found: YES
-Library util found: YES
-Run-time dependency appleframeworks found: NO (tried framework)
-Found pkg-config: YES (/usr/bin/aarch64-linux-gnu-pkg-config) 1.8.1
-Run-time dependency glib-2.0 found: YES 2.84.4
-Run-time dependency gmodule-no-export-2.0 found: YES 2.84.4
-Run-time dependency gio-2.0 found: YES 2.84.4
-Program gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
-Run-time dependency gio-unix-2.0 found: YES 2.84.4
-Program scripts/xml-preprocess.py found: YES (/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/build/pyvenv/bin/python3 /workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/scripts/xml-preprocess.py)
-Run-time dependency pixman-1 found: NO (tried pkgconfig)
-Run-time dependency zlib found: YES 1.3.1
-Has header "libaio.h" : YES 
-Library aio found: YES
-Run-time dependency liburing found: YES 2.9
-Dependency libnfs skipped: feature libnfs disabled
-Run-time dependency appleframeworks found: NO (tried framework)
-Run-time dependency appleframeworks found: NO (tried framework)
-Run-time dependency libseccomp found: YES 2.6.0
-Header "seccomp.h" has symbol "SCMP_FLTATR_API_SYSRAWRC" with dependency libseccomp: YES 
-Has header "cap-ng.h" : NO 
-Run-time dependency xkbcommon found: YES 1.7.0
-Run-time dependency slirp found: YES 4.8.0
-Has header "libvdeplug.h" : NO 
-Run-time dependency libpulse found: NO (tried pkgconfig)
-Run-time dependency alsa found: YES 1.2.14
-Run-time dependency jack found: NO (tried pkgconfig)
-Run-time dependency libpipewire-0.3 found: NO (tried pkgconfig)
-Run-time dependency sndio found: NO (tried pkgconfig)
-Run-time dependency spice-protocol found: NO (tried pkgconfig)
-
-../meson.build:1348:14: ERROR: Feature spice cannot be enabled: cannot enable SPICE if pixman is not available
-
-A full log can be found at /workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0/build/meson-logs/meson-log.txt
-
-ERROR: meson setup failed
-
-make[1]: *** [debian/rules:41: build/config.status] Error 1
-make[1]: Leaving directory '/workspaces/src/pve-qemu/pve-qemu-kvm-11.0.0'
-dpkg-buildpackage: error: debian/rules binary subprocess returned exit status 2
-make: *** [Makefile:60: pve-qemu-kvm_11.0.0-4_arm64.deb] Error 2

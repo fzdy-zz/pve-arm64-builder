@@ -1,160 +1,0 @@
-HEAD is now at 78d7f85 bump version to 4.0
-dpkg-buildpackage: info: source package proxmox-archive-keyring-build-deps
-dpkg-buildpackage: info: source version 4.0
-dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture amd64
- debian/rules clean
-dh clean
-   dh_clean
- debian/rules binary
-dh binary
-   dh_update_autotools_config
-   dh_autoreconf
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_auto_install --destdir=debian/proxmox-archive-keyring-build-deps/
-   dh_install
-   dh_installdocs
-   dh_installchangelogs
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'proxmox-archive-keyring-build-deps' in '../proxmox-archive-keyring-build-deps_4.0_all.deb'.
- dpkg-genbuildinfo --build=binary -O../proxmox-archive-keyring-build-deps_4.0_amd64.buildinfo
- dpkg-genchanges --build=binary -O../proxmox-archive-keyring-build-deps_4.0_amd64.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
-
-The package has been created.
-Attention, the package has been created in the current directory,
-not in ".." as indicated by the message above!
-Selecting previously unselected package proxmox-archive-keyring-build-deps.
-(Reading database ... 84891 files and directories currently installed.)
-Preparing to unpack proxmox-archive-keyring-build-deps_4.0_all.deb ...
-Unpacking proxmox-archive-keyring-build-deps (4.0) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Correcting dependencies...Starting pkgProblemResolver with broken count: 0
-Starting 2 pkgProblemResolver with broken count: 0
-Done
- Done
-Starting pkgProblemResolver with broken count: 0
-Starting 2 pkgProblemResolver with broken count: 0
-Done
-The following additional packages will be installed:
-  sq
-The following NEW packages will be installed:
-  sq
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-1 not fully installed or removed.
-Need to get 5653 kB of archives.
-After this operation, 22.9 MB of additional disk space will be used.
-Get:1 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 sq amd64 1.3.1-2+b2 [5653 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Teletype
-debconf: unable to initialize frontend: Teletype
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Noninteractive
-Fetched 5653 kB in 4s (1574 kB/s)
-Selecting previously unselected package sq.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84895 files and directories currently installed.)
-Preparing to unpack .../sq_1.3.1-2+b2_amd64.deb ...
-Unpacking sq (1.3.1-2+b2) ...
-Setting up sq (1.3.1-2+b2) ...
-Setting up proxmox-archive-keyring-build-deps (4.0) ...
-Processing triggers for man-db (2.13.1-1) ...
-rm -rf proxmox-archive-keyring-4.0 proxmox-archive-keyring-4.0.tmp
-mkdir -p proxmox-archive-keyring-4.0.tmp/debian
-cp -ar debian/* proxmox-archive-keyring-4.0.tmp/debian/
-echo "git clone git://git.proxmox.com/git/proxmox-archive-keyring.git\\ngit checkout 78d7f854019cd012c708838b2c925a250d2e2a6e" > proxmox-archive-keyring-4.0.tmp/debian/SOURCE
-mv proxmox-archive-keyring-4.0.tmp proxmox-archive-keyring-4.0
-cd proxmox-archive-keyring-4.0; dpkg-buildpackage -d -b -uc -us
-dpkg-buildpackage: info: source package proxmox-archive-keyring
-dpkg-buildpackage: info: source version 4.0
-dpkg-buildpackage: info: source distribution trixie
-dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture amd64
- debian/rules clean
-make[1]: Entering directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
-dh clean
-   debian/rules override_dh_auto_clean
-make[2]: Entering directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
-rm -f proxmox-archive-keyring.gpg.tmp proxmox-archive-keyring.gpg
-dh_auto_build
-make[2]: Leaving directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
-   dh_clean
-make[1]: Leaving directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
- debian/rules binary
-make[1]: Entering directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
-dh binary
-   dh_update_autotools_config
-   dh_autoreconf
-   debian/rules override_dh_auto_build
-make[2]: Entering directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
-sq keyring merge debian/proxmox-release*.gpg | sq packet dearmor >proxmox-archive-keyring.gpg.tmp
-mv proxmox-archive-keyring.gpg.tmp proxmox-archive-keyring.gpg
-dh_auto_build
-make[2]: Leaving directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_auto_install --destdir=debian/proxmox-archive-keyring/
-   dh_install
-   dh_installdocs
-   dh_installchangelogs
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'proxmox-archive-keyring' in '../proxmox-archive-keyring_4.0_all.deb'.
-make[1]: Leaving directory '/workspaces/src/proxmox-archive-keyring/proxmox-archive-keyring-4.0'
- dpkg-genbuildinfo --build=binary -O../proxmox-archive-keyring_4.0_amd64.buildinfo
- dpkg-genchanges --build=binary -O../proxmox-archive-keyring_4.0_amd64.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
-: # lintian disabled for cross build
-dpkg-scanpackages: warning: Packages in archive but missing from override file:
-dpkg-scanpackages: warning:   proxmox-archive-keyring
-dpkg-scanpackages: info: Wrote 1 entries to output Packages file.
-Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
-Ign:2 file:/workspaces/pve/out/arm64 ./ Release
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages
-Err:3 file:/workspaces/pve/out/arm64 ./ Packages
-  Read error - read (21: Is a directory)
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages
-Err:3 file:/workspaces/pve/out/arm64 ./ Packages
-  Read error - read (21: Is a directory)
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages
-Err:3 file:/workspaces/pve/out/arm64 ./ Packages
-  Read error - read (21: Is a directory)
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages [376 B]
-Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
-Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
-Hit:6 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
-Hit:7 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
-Reading package lists...
-W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
-W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
-W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)

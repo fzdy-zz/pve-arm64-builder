@@ -1,237 +1,0 @@
-HEAD is now at 5ccd07d bump version to 9.1.1
-dpkg-buildpackage: info: source package libpve-access-control-build-deps
-dpkg-buildpackage: info: source version 9.1.1
-dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture amd64
- debian/rules clean
-dh clean
-   dh_clean
- debian/rules binary
-dh binary
-   dh_update_autotools_config
-   dh_autoreconf
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_auto_install --destdir=debian/libpve-access-control-build-deps/
-   dh_install
-   dh_installdocs
-   dh_installchangelogs
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'libpve-access-control-build-deps' in '../libpve-access-control-build-deps_9.1.1_all.deb'.
- dpkg-genbuildinfo --build=binary -O../libpve-access-control-build-deps_9.1.1_amd64.buildinfo
- dpkg-genchanges --build=binary -O../libpve-access-control-build-deps_9.1.1_amd64.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
-
-The package has been created.
-Attention, the package has been created in the current directory,
-not in ".." as indicated by the message above!
-Selecting previously unselected package libpve-access-control-build-deps.
-(Reading database ... 98857 files and directories currently installed.)
-Preparing to unpack libpve-access-control-build-deps_9.1.1_all.deb ...
-Unpacking libpve-access-control-build-deps (9.1.1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Correcting dependencies...Starting pkgProblemResolver with broken count: 1
-Starting 2 pkgProblemResolver with broken count: 1
-Investigating (0) libpve-access-control-build-deps:amd64 < 9.1.1 @iU K Nb Ib >
-Broken libpve-access-control-build-deps:amd64 Depends on libpve-cluster-perl:amd64 < none @un H >
-  Considering libpve-cluster-perl:amd64 1 as a solution to libpve-access-control-build-deps:amd64 -2
-  Removing libpve-access-control-build-deps:amd64 rather than change libpve-cluster-perl:amd64
-Done
- Done
-Starting pkgProblemResolver with broken count: 0
-Starting 2 pkgProblemResolver with broken count: 0
-Done
-The following packages were automatically installed and are no longer required:
-  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
-  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
-  libaprutil1t64:arm64 libcairo-gobject2:arm64
-  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
-  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
-  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
-  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
-  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
-  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
-  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
-  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
-  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
-  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
-  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
-  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
-Use 'apt autoremove' to remove them.
-The following additional packages will be installed:
-  libhttp-daemon-perl
-The following packages will be REMOVED:
-  libpve-access-control-build-deps
-The following NEW packages will be installed:
-  libhttp-daemon-perl
-0 upgraded, 1 newly installed, 1 to remove and 5 not upgraded.
-1 not fully installed or removed.
-Need to get 23.5 kB of archives.
-After this operation, 51.2 kB of additional disk space will be used.
-Get:1 http://chinanet.mirrors.ustc.edu.cn/debian trixie/main amd64 libhttp-daemon-perl all 6.16-1 [23.5 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Teletype
-debconf: unable to initialize frontend: Teletype
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Noninteractive
-Fetched 23.5 kB in 1s (22.4 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98860 files and directories currently installed.)
-Removing libpve-access-control-build-deps (9.1.1) ...
-Selecting previously unselected package libhttp-daemon-perl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98857 files and directories currently installed.)
-Preparing to unpack .../libhttp-daemon-perl_6.16-1_all.deb ...
-Unpacking libhttp-daemon-perl (6.16-1) ...
-Setting up libhttp-daemon-perl (6.16-1) ...
-Processing triggers for man-db (2.13.1-1) ...
-mk-build-deps: Unable to install libpve-access-control-build-deps at /usr/bin/mk-build-deps line 460.
-mk-build-deps: Unable to install all build-dep packages
-[2026-06-19T05:49:55Z] libpve-access-control: continuing after build-deps install failure
-rm -rf libpve-access-control-9.1.1
-cp -a src libpve-access-control-9.1.1
-cp -a debian libpve-access-control-9.1.1/
-echo "git clone git://git.proxmox.com/git/pve-access-control.git\\ngit checkout 5ccd07d9302562b73374d331b63d25b04b86766c" > libpve-access-control-9.1.1/debian/SOURCE
-cd libpve-access-control-9.1.1; dpkg-buildpackage -d -b -us -uc
-dpkg-buildpackage: info: source package libpve-access-control
-dpkg-buildpackage: info: source version 9.1.1
-dpkg-buildpackage: info: source distribution trixie
-dpkg-buildpackage: info: source changed by Proxmox Support Team <support@proxmox.com>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture amd64
- debian/rules clean
-make[1]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-dh clean
-   dh_auto_clean
-	make -j4 distclean
-make[2]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-make cleanup-docgen
-make[3]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-rm -f *.xml.tmp *.1 *.5 *.8 *.adoc docinfo.xml
-rm -rf generated
-make[3]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-make[2]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-   dh_clean
-make[1]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
- debian/rules binary
-make[1]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-dh binary
-   dh_update_autotools_config
-   dh_autoreconf
-   dh_auto_configure
-   dh_auto_build
-	make -j4 "INSTALL=install --strip-program=true"
-make[2]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-make[2]: Nothing to be done for 'all'.
-make[2]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-dh: command-omitted: The call to "dh_auto_test" was omitted due to "DEB_BUILD_OPTIONS=nocheck"
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_auto_install --destdir=debian/libpve-access-control/
-	make -j4 install DESTDIR=/workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
-make[2]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-printf ".TH pveum 1\n.SH NAME\npveum\n" > pveum.1
-: > pveum.bash-completion
-: > pveum.zsh-completion
-install -d /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/bin
-install -d /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/sbin
-install -m 0755 pveum /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/sbin
-install -m 0755 oathkeygen /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/bin
-make -C PVE install
-make[3]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE'
-make -C Auth install
-make[4]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/Auth'
-for i in Plugin.pm PVE.pm PAM.pm AD.pm LDAP.pm OpenId.pm; do install -D -m 0644 $i /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/Auth/$i; done
-make[4]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/Auth'
-install -D -m 0644 AccessControl.pm /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/AccessControl.pm
-install -D -m 0644 RPCEnvironment.pm /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/RPCEnvironment.pm
-install -D -m 0644 TokenConfig.pm /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/TokenConfig.pm
-make -C API2 install
-make[4]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/API2'
-for i in AccessControl.pm Domains.pm ACL.pm Role.pm Group.pm User.pm TFA.pm OpenId.pm; do install -D -m 0644 $i /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/API2/$i; done
-set -e && for i in Jobs; do make -C $i install; done
-make[5]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/API2/Jobs'
-for i in RealmSync.pm ; do install -D -m 0644 $i /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/API2/Jobs/$i; done
-make[5]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/API2/Jobs'
-make[4]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/API2'
-make -C CLI install
-make[4]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/CLI'
-install -d -m 0755 /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/CLI
-for i in pveum.pm; do install -D -m 0644 $i /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/CLI/$i; done
-make[4]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/CLI'
-make -C Jobs install
-make[4]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/Jobs'
-install -d -m 0755 /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/Jobs
-for i in RealmSync.pm; do install -D -m 0644 $i /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/perl5/PVE/Jobs/$i; done
-make[4]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE/Jobs'
-make[3]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1/PVE'
-install -d /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control//usr/share/man/man1/
-install -d /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control//usr/share/doc/libpve-access-control
-install -m 0644 pveum.1 /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control//usr/share/man/man1/
-install -m 0644 -D pveum.bash-completion /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/bash-completion/completions//pveum
-install -m 0644 -D pveum.zsh-completion /workspaces/src/pve-access-control/libpve-access-control-9.1.1/debian/libpve-access-control/usr/share/zsh/vendor-completions//_pveum
-make[2]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-   dh_installdocs
-   dh_installchangelogs
-   dh_installman
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   debian/rules override_dh_missing
-make[2]: Entering directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-dh_missing --fail-missing
-make[2]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'libpve-access-control' in '../libpve-access-control_9.1.1_all.deb'.
-make[1]: Leaving directory '/workspaces/src/pve-access-control/libpve-access-control-9.1.1'
- dpkg-genbuildinfo --build=binary -O../libpve-access-control_9.1.1_amd64.buildinfo
- dpkg-genchanges --build=binary -O../libpve-access-control_9.1.1_amd64.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
-: # lintian disabled for cross build
-dpkg-scanpackages: warning: Packages in archive but missing from override file:
-dpkg-scanpackages: warning:   apparmor apparmor-dbgsym apparmor-notify apparmor-profiles apparmor-utils corosync corosync-dbgsym corosync-doc corosync-notifyd corosync-notifyd-dbgsym corosync-vqsim corosync-vqsim-dbgsym dh-apparmor fonts-font-logos frr frr-dbgsym frr-doc frr-pythontools frr-rpki-rtrlib frr-rpki-rtrlib-dbgsym frr-snmp frr-snmp-dbgsym frr-test-tools frr-test-tools-dbgsym ifupdown2 libapache2-mod-apparmor libapache2-mod-apparmor-dbgsym libapparmor-dev libapparmor1 libapparmor1-dbgsym libcfg-dev libcfg7 libcfg7-dbgsym libcmap-dev libcmap4 libcmap4-dbgsym libcorosync-common-dev libcorosync-common4 libcorosync-common4-dbgsym libcpg-dev libcpg4 libcpg4-dbgsym libcrypt-openssl-rsa-perl libcrypt-openssl-rsa-perl-dbgsym libjs-extjs libjs-qrcodejs libknet-dev libknet-doc libknet1t64 libknet1t64-dbgsym libnozzle-dev libnozzle1t64 libnozzle1t64-dbgsym libpam-apparmor libpam-apparmor-dbgsym libproxmox-acme-perl libproxmox-acme-plugins libproxmox-rs-perl libpve-access-control libpve-apiclient-perl libpve-cluster-api-perl libpve-cluster-perl libpve-common-perl libpve-notify-perl libpve-rs-perl libpve-rs-perl-dbgsym libquorum-dev libquorum5 libquorum5-dbgsym librrd-dev librrd8t64 librrd8t64-dbgsym librrdp-perl librrds-perl librrds-perl-dbgsym libsam-dev libsam4 libsam4-dbgsym libtpms-dev libtpms0 libtpms0-dbgsym libvotequorum-dev libvotequorum8 libvotequorum8-dbgsym pbs-i18n pdm-i18n pmg-i18n pmg-yew-quarantine-i18n proxmox-archive-keyring proxmox-widget-toolkit proxmox-widget-toolkit-dev pve-cluster pve-cluster-dbgsym pve-i18n pve-yew-mobile-i18n python3-apparmor python3-libapparmor python3-libapparmor-dbgsym rrdcached rrdcached-dbgsym rrdtool rrdtool-dbgsym rrdtool-tcl rrdtool-tcl-dbgsym smartmontools smartmontools-dbgsym swtpm swtpm-dbgsym swtpm-dev swtpm-libs swtpm-libs-dbgsym swtpm-tools swtpm-tools-dbgsym
-dpkg-scanpackages: info: Wrote 113 entries to output Packages file.
-Ign:1 file:/workspaces/pve/out/arm64 ./ InRelease
-Ign:2 file:/workspaces/pve/out/arm64 ./ Release
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages
-Err:3 file:/workspaces/pve/out/arm64 ./ Packages
-  Read error - read (21: Is a directory)
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages
-Err:3 file:/workspaces/pve/out/arm64 ./ Packages
-  Read error - read (21: Is a directory)
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages
-Err:3 file:/workspaces/pve/out/arm64 ./ Packages
-  Read error - read (21: Is a directory)
-Get:3 file:/workspaces/pve/out/arm64 ./ Packages [26.7 kB]
-Hit:4 http://chinanet.mirrors.ustc.edu.cn/debian trixie InRelease
-Hit:5 http://chinanet.mirrors.ustc.edu.cn/debian trixie-updates InRelease
-Hit:6 http://chinanet.mirrors.ustc.edu.cn/debian-security trixie-security InRelease
-Hit:7 https://chinanet.mirrors.ustc.edu.cn/proxmox/debian/devel trixie InRelease
-Reading package lists...
-W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.xz failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
-W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.bz2 failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
-W: Symlinking file  to /var/lib/apt/lists/partial/_workspaces_pve_out_arm64_._Packages.lzma failed - pkgAcqIndex::StageDownloadDone (2: No such file or directory)
