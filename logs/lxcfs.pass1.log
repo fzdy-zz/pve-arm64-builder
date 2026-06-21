@@ -2,7 +2,7 @@ HEAD is now at 45bcd28 bump version to 7.0.0-pve1
 dpkg-buildpackage: info: source package lxcfs-cross-build-deps-depends
 dpkg-buildpackage: info: source version 7.0.0-pve1
 dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@148d306fa492>
 dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
  dpkg-source --before-build .
 dpkg-buildpackage: info: host architecture arm64
@@ -60,7 +60,7 @@ The package has been created.
 Attention, the package has been created in the current directory,
 not in ".." as indicated by the message above!
 Selecting previously unselected package lxcfs-cross-build-deps-depends:arm64.
-(Reading database ... 93698 files and directories currently installed.)
+(Reading database ... 85949 files and directories currently installed.)
 Preparing to unpack lxcfs-cross-build-deps-depends_7.0.0-pve1_arm64.deb ...
 Unpacking lxcfs-cross-build-deps-depends:arm64 (7.0.0-pve1) ...
 Reading package lists...
@@ -73,28 +73,11 @@ Done
 Starting pkgProblemResolver with broken count: 0
 Starting 2 pkgProblemResolver with broken count: 0
 Done
-The following packages were automatically installed and are no longer required:
-  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
-  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
-  libaprutil1t64:arm64 libcairo-gobject2:arm64
-  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
-  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
-  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
-  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
-  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
-  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
-  libpixman-1-dev:arm64 libpng-dev:arm64 libpython3-all-dev:arm64
-  libpython3-dev:arm64 libpython3.13:arm64 libpython3.13-dev:arm64
-  libpython3.13-minimal:arm64 libpython3.13-stdlib:arm64 libsm-dev:arm64
-  libsm6:arm64 libtcl8.6:arm64 libthai-dev:arm64 libxcb-render0-dev:arm64
-  libxcb-shm0-dev:arm64 libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64
-  libxml2-dev:arm64 libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
-Use 'apt autoremove' to remove them.
 The following additional packages will be installed:
   help2man liblocale-gettext-perl
 The following NEW packages will be installed:
   help2man liblocale-gettext-perl
-0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
 1 not fully installed or removed.
 Need to get 213 kB of archives.
 After this operation, 609 kB of additional disk space will be used.
@@ -109,9 +92,9 @@ debconf: falling back to frontend: Teletype
 debconf: unable to initialize frontend: Teletype
 debconf: (This frontend requires a controlling tty.)
 debconf: falling back to frontend: Noninteractive
-Fetched 213 kB in 3s (72.8 kB/s)
+Fetched 213 kB in 4s (55.3 kB/s)
 Selecting previously unselected package liblocale-gettext-perl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93702 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 85953 files and directories currently installed.)
 Preparing to unpack .../liblocale-gettext-perl_1.07-7+b1_amd64.deb ...
 Unpacking liblocale-gettext-perl (1.07-7+b1) ...
 Selecting previously unselected package help2man.
@@ -120,7 +103,6 @@ Unpacking help2man (1.49.3) ...
 Setting up liblocale-gettext-perl (1.07-7+b1) ...
 Setting up help2man (1.49.3) ...
 Setting up lxcfs-cross-build-deps-depends:arm64 (7.0.0-pve1) ...
-Processing triggers for install-info (7.1.1-1+b1) ...
 Processing triggers for man-db (2.13.1-1) ...
 test -f "lxcfs/README" || git submodule update --init
 rm -rf lxcfs-7.0.0

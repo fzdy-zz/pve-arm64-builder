@@ -48,3 +48,4 @@ pve-docs
 pve-manager
 proxmox-enterprise-support-keyring
 proxmox-ve
+lvm2

@@ -5,28 +5,11 @@ Building dependency tree...
 Reading state information...
 libapparmor1:arm64 is already the newest version (4.1.0-1).
 libapparmor-dev:arm64 is already the newest version (4.1.0-1).
-The following packages were automatically installed and are no longer required:
-  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
-  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
-  libaprutil1t64:arm64 libcairo-gobject2:arm64
-  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
-  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
-  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
-  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
-  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
-  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
-  libpixman-1-dev:arm64 libpython3-all-dev:arm64 libpython3-dev:arm64
-  libpython3.13:arm64 libpython3.13-dev:arm64 libpython3.13-minimal:arm64
-  libpython3.13-stdlib:arm64 libsm-dev:arm64 libsm6:arm64 libtcl8.6:arm64
-  libthai-dev:arm64 libxcb-render0-dev:arm64 libxcb-shm0-dev:arm64
-  libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64 libxml2-dev:arm64
-  libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
-Use 'apt autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 dpkg-buildpackage: info: source package lxc-pve-cross-build-deps-depends
 dpkg-buildpackage: info: source version 7.0.0-2
 dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@bc7499769d45>
+dpkg-buildpackage: info: source changed by Equivs Dummy Package Generator <root@148d306fa492>
 dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
  dpkg-source --before-build .
 dpkg-buildpackage: info: host architecture arm64
@@ -83,7 +66,7 @@ dpkg-buildpackage: info: binary-only upload (no source included)
 The package has been created.
 Attention, the package has been created in the current directory,
 not in ".." as indicated by the message above!
-(Reading database ... 167248 files and directories currently installed.)
+(Reading database ... 113221 files and directories currently installed.)
 Preparing to unpack lxc-pve-cross-build-deps-depends_7.0.0-2_arm64.deb ...
 Unpacking lxc-pve-cross-build-deps-depends:arm64 (7.0.0-2) over (7.0.0-2) ...
 Reading package lists...
@@ -92,24 +75,7 @@ Reading state information...
 Starting pkgProblemResolver with broken count: 0
 Starting 2 pkgProblemResolver with broken count: 0
 Done
-The following packages were automatically installed and are no longer required:
-  gir1.2-freedesktop:arm64 gir1.2-freedesktop-dev:arm64
-  gir1.2-harfbuzz-0.0:arm64 gir1.2-pango-1.0:arm64 libapr1t64:arm64
-  libaprutil1t64:arm64 libcairo-gobject2:arm64
-  libcairo-script-interpreter2:arm64 libcairo2-dev:arm64 libdatrie-dev:arm64
-  libexpat1-dev:arm64 libfontconfig-dev:arm64 libfreetype-dev:arm64
-  libfribidi-dev:arm64 libgraphite2-dev:arm64 libharfbuzz-cairo0:arm64
-  libharfbuzz-dev:arm64 libharfbuzz-gobject0:arm64 libharfbuzz-icu0:arm64
-  libharfbuzz-subset0:arm64 libice-dev:arm64 libice6:arm64 libicu-dev:arm64
-  libicu76:arm64 libpango1.0-dev:arm64 libpangoxft-1.0-0:arm64
-  libpixman-1-dev:arm64 libpython3-all-dev:arm64 libpython3-dev:arm64
-  libpython3.13:arm64 libpython3.13-dev:arm64 libpython3.13-minimal:arm64
-  libpython3.13-stdlib:arm64 libsm-dev:arm64 libsm6:arm64 libtcl8.6:arm64
-  libthai-dev:arm64 libxcb-render0-dev:arm64 libxcb-shm0-dev:arm64
-  libxext-dev:arm64 libxft-dev:arm64 libxft2:arm64 libxml2-dev:arm64
-  libxrender-dev:arm64 tcl-dev:arm64 tcl8.6-dev:arm64
-Use 'apt autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 1 not fully installed or removed.
 After this operation, 0 B of additional disk space will be used.
 Setting up lxc-pve-cross-build-deps-depends:arm64 (7.0.0-2) ...
